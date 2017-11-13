@@ -12,7 +12,9 @@ myprintf PROC EXPORT
 ;mov [r10+32], rsp
 ;mov rsp, gs:[0f8h]
 mov rcx, 1
+sub rsp, 28h
 call ocall_generic
+add rsp, 28h
 ;mov r10, gs:[0f0h]
 ;mov rsp, [r10+32]
 ret
