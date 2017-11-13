@@ -286,10 +286,11 @@ unsigned long long ocall_generic(unsigned long long ptr)
 {
 	if (ptr == 1)
 	{
+	printf("ptr:%llx\n", ptr);
 		return LaunchApp((void*)printf);
 	}
+	printf("ptr:%llx\n", ptr);
 	return 0;
-	//printf("ptr:%llx\n", ptr);
 }
 
 #if defined(_MSC_VER)
@@ -361,11 +362,14 @@ int SGX_CDECL main(int argc, char *argv[])
 
 	#define SWAP_AREA 0x900000000ULL
 
+
+
 	if((void*)SWAP_AREA != VirtualAlloc((void*)SWAP_AREA, 4096, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
 		printf("Swap allocation failed\n");
 		return 0;
 	}
-	
+#define FORMAT_STRING "Hello world %d %d %d %d\n"
+	strcpy_s((char*)(SWAP_AREA + 0x100), sizeof(FORMAT_STRING) + 1, FORMAT_STRING);
 
 	unsigned char *val = (unsigned char*)SWAP_AREA; //NtCurrentTeb();
 	*(unsigned long long*)(val + 0xf0) = (unsigned long long)malloc(64);
