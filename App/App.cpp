@@ -382,7 +382,7 @@ int SGX_CDECL main(int argc, char *argv[])
 
 
 	#define SWAP_AREA 0x900000000ULL
-	#define GLOBAL_AREA 0xA00000000ULL
+	#define GLOBAL_AREA 0xA0000000000ULL
 
 	printf("Hello world\n");
 
@@ -398,10 +398,28 @@ int SGX_CDECL main(int argc, char *argv[])
 	strcpy_s((char*)(SWAP_AREA + 0x100), sizeof(FORMAT_STRING) + 1, FORMAT_STRING);
 
 	unsigned char *val = (unsigned char*)SWAP_AREA; //NtCurrentTeb();
-	*(unsigned long long*)(val + 0xf8) = (unsigned long long)malloc(8192 * 16);
+	//*(unsigned long long*)(val + 0xf8) = (unsigned long long)malloc(8192 * 16);
 	*(unsigned long long*)(val + 0xf8) += (8192 * 16 - 1024- 8);
 
 
+	unsigned long long ret;
+
+	ecall_big_malloc(global_eid, &ret);
+
+	ret = (ret + (4096*16 -1)) & ~0xffff;
+	printf("ret:%llx\n", ret);
+	unsigned long long private_stack_end = ret + 4096 * 16;
+	unsigned long long public_stack_end = private_stack_end + (1ULL << 30);
+	unsigned long long public_stack_start = ret + (1ULL << 30);
+	*(unsigned long long*)(val + 0xf8) = public_stack_end - 64 - 8;
+
+	printf("public_stak_start:%llx\n", public_stack_start);
+	if((void*)public_stack_start != VirtualAlloc((void*)public_stack_start, 4096 * 16, MEM_RESERVE | MEM_COMMIT , PAGE_READWRITE)){
+		printf("Public stack creation failed\n");
+		return -1;
+	}
+
+		
 	ecall_main(global_eid);
  
 #if 0

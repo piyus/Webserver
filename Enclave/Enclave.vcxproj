@@ -207,7 +207,7 @@
       <Message>Ehllo</Message>
     </PostBuildEvent1>
 	<PostBuildEvent>
-      <Command>python C:\Users\piyus\sgxc_support\dll_patch.py $(OutDir)Enclave.dll sgxg_pub 0xA00000000 &amp;&amp; echo HELLO2 &amp;&amp; "$(SGXSDKInstallPath)bin\win32\release\sgx_sign.exe" sign -key "Enclave_private.pem" -enclave "$(OutDir)Enclave.dll" -out "$(OutDir)Enclave.signed.dll" -config "Enclave.config.xml"</Command>
+      <Command>python C:\Users\piyus\sgxc_support\dll_patch.py $(OutDir)Enclave.dll sgxg_pub 0xA0000000000 &amp;&amp; echo HELLO2 &amp;&amp; "$(SGXSDKInstallPath)bin\win32\release\sgx_sign.exe" sign -key "Enclave_private.pem" -enclave "$(OutDir)Enclave.dll" -out "$(OutDir)Enclave.signed.dll" -config "Enclave.config.xml"</Command>
 	  <Command1>echo Hello</Command1>
     </PostBuildEvent>
   </ItemDefinitionGroup>

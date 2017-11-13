@@ -21,6 +21,7 @@ enclave {
 
 	trusted {
 		public void ecall_main(void);
+		public unsigned long long ecall_big_malloc(void);
 	};
     /* 
      * ocall_print_string - invokes OCALL to display string buffer inside the enclave.

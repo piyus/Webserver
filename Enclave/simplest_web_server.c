@@ -19,7 +19,7 @@ static void ev_handler(struct mg_connection *nc, int ev, void *p) {
 }*/
 
 int main(void) {
-	printf("Starting web server\n");
+	printf("Starting web server %p  data:%p\n", ev_handler, &s_http_server_opts);
   struct mg_mgr mgr;
   struct mg_connection *nc;
 

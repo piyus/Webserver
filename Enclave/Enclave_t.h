@@ -33,6 +33,7 @@ typedef union union_foo_t {
 size_t get_buffer_len(const char* val);
 
 void ecall_main();
+unsigned long long ecall_big_malloc();
 void ecall_type_char(char val);
 void ecall_type_int(int val);
 void ecall_type_float(float val);
