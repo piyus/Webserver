@@ -3,7 +3,7 @@
 EXTERN ocall_generic : PROC
 
 
-myprintf PROC EXPORT
+printf PROC EXPORT
 mov rax, 0900000000h
 mov [rax], rcx
 mov [rax + 8], rdx
@@ -29,6 +29,6 @@ mov rax, [rcx + 64]
 mov [rsp], rdx
 
 ret
-myprintf ENDP
+printf ENDP
 
 END
