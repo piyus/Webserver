@@ -24,11 +24,12 @@ fout.close()
 fout=open(sys.argv[3], "w")
 
 counter = 1
-
+fout.write('#include "includes.h"\n')
 fout.write("void* function_pointers[] = {\n")
 fout.write("\tNULL,\n")
 f=open(sys.argv[1])
 for i in f.read().strip().split("\n"):
 	fout.write("\t(void*)"+i+", // "+ str(counter)+"\n")
+	counter+=1
 fout.write("};\n")
 

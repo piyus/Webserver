@@ -299,6 +299,20 @@ extern "C" {
 FILE* getSTDOUT(void) {
 	return stdout;
 }
+
+
+void* mymalloc(size_t a){
+	return malloc(a);
+}
+void *mycalloc(size_t a, size_t b) {
+	return calloc(a, b);
+}
+void *myrealloc(void* a, size_t b) {
+	return  realloc(a, b);
+}
+void myfree(void *a) {
+	free(a);
+}
 }
 #if defined(_MSC_VER)
 /* query and enable SGX device*/
@@ -370,13 +384,13 @@ int SGX_CDECL main(int argc, char *argv[])
 	#define SWAP_AREA 0x900000000ULL
 	#define GLOBAL_AREA 0xA00000000ULL
 
-
+	printf("Hello world\n");
 
 	if((void*)SWAP_AREA != VirtualAlloc((void*)SWAP_AREA, 4096, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
 		printf("Swap allocation failed\n");
 		return 0;
 	}
-	if((void*)GLOBAL_AREA != VirtualAlloc((void*)GLOBAL_AREA, 4096, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
+	if((void*)GLOBAL_AREA != VirtualAlloc((void*)GLOBAL_AREA, 4096*16, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
 		printf("global allocation failed\n");
 		return 0;
 	}
@@ -384,9 +398,8 @@ int SGX_CDECL main(int argc, char *argv[])
 	strcpy_s((char*)(SWAP_AREA + 0x100), sizeof(FORMAT_STRING) + 1, FORMAT_STRING);
 
 	unsigned char *val = (unsigned char*)SWAP_AREA; //NtCurrentTeb();
-	*(unsigned long long*)(val + 0xf0) = (unsigned long long)malloc(64);
-	*(unsigned long long*)(val + 0xf8) = (unsigned long long)malloc(8192);
-	*(unsigned long long*)(val + 0xf8) += (8192 - 1024- 8);
+	*(unsigned long long*)(val + 0xf8) = (unsigned long long)malloc(8192 * 16);
+	*(unsigned long long*)(val + 0xf8) += (8192 * 16 - 1024- 8);
 
 
 	ecall_main(global_eid);
@@ -405,10 +418,12 @@ int SGX_CDECL main(int argc, char *argv[])
 #endif
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
+	Sleep(100);
+	exit(0);
     
     //printf("Info: SampleEnclave successfully returned.\n");
 
     //printf("Enter a character before exit ...\n");
     //getchar();
-    return 0;
+    //return 0;
 }
