@@ -280,10 +280,16 @@ void ocall_print_string(const char *str)
     printf("%s", str);
 }
 
+extern "C" unsigned long long LaunchApp(void*);
+
 unsigned long long ocall_generic(unsigned long long ptr)
 {
-	printf("ptr:%llx\n", ptr);
+	if (ptr == 1)
+	{
+		return 0;// LaunchApp((void*)printf);
+	}
 	return 0;
+	//printf("ptr:%llx\n", ptr);
 }
 
 #if defined(_MSC_VER)
