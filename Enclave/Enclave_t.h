@@ -69,7 +69,7 @@ void ecall_producer();
 void ecall_consumer();
 
 sgx_status_t SGX_CDECL ocall_print_string(const char* str);
-sgx_status_t SGX_CDECL ocall_generic(unsigned long long ptr);
+sgx_status_t SGX_CDECL ocall_generic(unsigned long long* retval, unsigned long long ptr);
 sgx_status_t SGX_CDECL ocall_pointer_user_check(int* val);
 sgx_status_t SGX_CDECL ocall_pointer_in(int* val);
 sgx_status_t SGX_CDECL ocall_pointer_out(int* val);

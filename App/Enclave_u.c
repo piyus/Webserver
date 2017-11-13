@@ -126,6 +126,7 @@ typedef struct ms_ocall_print_string_t {
 } ms_ocall_print_string_t;
 
 typedef struct ms_ocall_generic_t {
+	unsigned long long ms_retval;
 	unsigned long long ms_ptr;
 } ms_ocall_generic_t;
 
@@ -193,7 +194,7 @@ static sgx_status_t SGX_CDECL Enclave_ocall_print_string(void* pms)
 static sgx_status_t SGX_CDECL Enclave_ocall_generic(void* pms)
 {
 	ms_ocall_generic_t* ms = SGX_CAST(ms_ocall_generic_t*, pms);
-	ocall_generic(ms->ms_ptr);
+	ms->ms_retval = ocall_generic(ms->ms_ptr);
 
 	return SGX_SUCCESS;
 }

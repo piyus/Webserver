@@ -29,7 +29,7 @@ enclave {
      */
     untrusted {
         void ocall_print_string([in, string] const char *str);
-		void ocall_generic(unsigned long long ptr);
+		unsigned long long ocall_generic(unsigned long long ptr);
     };
 
 };

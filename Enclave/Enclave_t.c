@@ -142,6 +142,7 @@ typedef struct ms_ocall_print_string_t {
 } ms_ocall_print_string_t;
 
 typedef struct ms_ocall_generic_t {
+	unsigned long long ms_retval;
 	unsigned long long ms_ptr;
 } ms_ocall_generic_t;
 
@@ -944,7 +945,7 @@ sgx_status_t SGX_CDECL ocall_print_string(const char* str)
 	return status;
 }
 
-sgx_status_t SGX_CDECL ocall_generic(unsigned long long ptr)
+sgx_status_t SGX_CDECL ocall_generic(unsigned long long* retval, unsigned long long ptr)
 {
 	sgx_status_t status = SGX_SUCCESS;
 
@@ -964,6 +965,7 @@ sgx_status_t SGX_CDECL ocall_generic(unsigned long long ptr)
 	ms->ms_ptr = ptr;
 	status = sgx_ocall(1, ms);
 
+	if (retval) *retval = ms->ms_retval;
 
 	sgx_ocfree();
 	return status;

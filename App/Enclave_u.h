@@ -32,7 +32,7 @@ typedef union union_foo_t {
 } union_foo_t;
 
 void SGX_UBRIDGE(SGX_NOCONVENTION, ocall_print_string, (const char* str));
-void SGX_UBRIDGE(SGX_NOCONVENTION, ocall_generic, (unsigned long long ptr));
+unsigned long long SGX_UBRIDGE(SGX_NOCONVENTION, ocall_generic, (unsigned long long ptr));
 void SGX_UBRIDGE(SGX_NOCONVENTION, ocall_pointer_user_check, (int* val));
 void SGX_UBRIDGE(SGX_NOCONVENTION, ocall_pointer_in, (int* val));
 void SGX_UBRIDGE(SGX_NOCONVENTION, ocall_pointer_out, (int* val));
