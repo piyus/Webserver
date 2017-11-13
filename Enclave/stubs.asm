@@ -4,19 +4,13 @@ EXTERN ocall_generic : PROC
 
 
 myprintf PROC EXPORT
-;mov r10, gs:[0f0h]
-;mov [r10], rcx
-;mov [r10+8], rdx
-;mov [r10+16], r8
-;mov [r10+24], r9
-;mov [r10+32], rsp
-;mov rsp, gs:[0f8h]
-mov rcx, 1
+mov rax, 0900000000h
+mov [rax + 0f8h], rsp
+mov rsp, [rax + 0e8h]
 sub rsp, 28h
 call ocall_generic
-add rsp, 28h
-;mov r10, gs:[0f0h]
-;mov rsp, [r10+32]
+mov rcx, 0900000000h
+mov rsp, [rcx + 0f8h]
 ret
 myprintf ENDP
 

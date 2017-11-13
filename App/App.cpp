@@ -352,10 +352,18 @@ int SGX_CDECL main(int argc, char *argv[])
     }
 
 
-	unsigned char *val = (unsigned char*)NtCurrentTeb();
+	#define SWAP_AREA 0x900000000ULL
+
+	if((void*)SWAP_AREA != VirtualAlloc((void*)SWAP_AREA, 4096, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
+		printf("Swap allocation failed\n");
+		return 0;
+	}
+	
+
+	unsigned char *val = (unsigned char*)SWAP_AREA; //NtCurrentTeb();
 	*(unsigned long long*)(val + 0xf0) = (unsigned long long)malloc(64);
 	*(unsigned long long*)(val + 0xf8) = (unsigned long long)malloc(8192);
-	*(unsigned long long*)(val + 0xf8) += (8192 - 1024 - 8);
+	*(unsigned long long*)(val + 0xf8) += (8192 - 1024- 8);
 
 
 	ecall_main(global_eid);
