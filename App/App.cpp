@@ -39,6 +39,7 @@
 #include "sgx_uae_service.h"
 #include "App.h"
 #include "Enclave_u.h"
+#include "functions.h"
 
 /* Global EID shared by multiple threads */
 sgx_enclave_id_t global_eid = 0;
@@ -284,13 +285,13 @@ extern "C" unsigned long long LaunchApp(void*);
 
 unsigned long long ocall_generic(unsigned long long ptr)
 {
-	if (ptr == 1)
-	{
-	printf("ptr:%llx\n", ptr);
-		return LaunchApp((void*)printf);
+
+	if (ptr <= 0 || ptr > sizeof(function_pointers)/sizeof(void*)){
+		printf("Invalid function id %lld\n", ptr);
+		exit(-1);
 	}
-	printf("ptr:%llx\n", ptr);
-	return 0;
+
+	return LaunchApp(function_pointers[ptr]);
 }
 
 #if defined(_MSC_VER)
@@ -368,7 +369,7 @@ int SGX_CDECL main(int argc, char *argv[])
 		printf("Swap allocation failed\n");
 		return 0;
 	}
-#define FORMAT_STRING "Hello world %d %d %d %d\n"
+#define FORMAT_STRING "Hello world %d %d %d %d %s\n"
 	strcpy_s((char*)(SWAP_AREA + 0x100), sizeof(FORMAT_STRING) + 1, FORMAT_STRING);
 
 	unsigned char *val = (unsigned char*)SWAP_AREA; //NtCurrentTeb();

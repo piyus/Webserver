@@ -31,9 +31,8 @@ mov [rsp], rdx
 ret
 common_stub ENDP
 
-printf PROC EXPORT
-mov r11, 1
-jmp common_stub
-printf ENDP
+
+include functions.asm
 
 END
+
