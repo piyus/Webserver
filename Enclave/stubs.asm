@@ -3,7 +3,7 @@
 EXTERN ocall_generic : PROC
 
 
-printf PROC EXPORT
+common_stub PROC
 mov rax, 0900000000h
 mov [rax], rcx
 mov [rax + 8], rdx
@@ -18,7 +18,7 @@ mov rsp, [rax + 0e8h]
 sub rsp, 28h
 
 lea rcx, [rax + 64]
-mov rdx, 1
+mov rdx, r11
 
 call ocall_generic
 
@@ -29,6 +29,11 @@ mov rax, [rcx + 64]
 mov [rsp], rdx
 
 ret
+common_stub ENDP
+
+printf PROC EXPORT
+mov r11, 1
+jmp common_stub
 printf ENDP
 
 END
