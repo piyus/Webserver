@@ -164,7 +164,7 @@
       </FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol />
@@ -191,7 +191,7 @@
       </FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -220,7 +220,7 @@
       </FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts_sim.lib;sgx_tstdc.lib;sgx_tservice_sim.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts_sim.lib;sgx_tstdc.lib;sgx_tservice_sim.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\debug</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -249,7 +249,7 @@
       </FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts_sim.lib;sgx_tstdc.lib;sgx_tservice_sim.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts_sim.lib;sgx_tstdc.lib;sgx_tservice_sim.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\debug</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -276,7 +276,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol />
@@ -302,7 +302,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\Release</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -329,7 +329,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>
@@ -356,7 +356,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\Release</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>

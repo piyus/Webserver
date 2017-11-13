@@ -42,7 +42,7 @@ void printf(const char *fmt, ...)
     va_end(ap);
     ocall_print_string(buf);
 }
-
+#if 0
 void ecall_main(void)
 {
 	/*int (*sgx_main)(int, char**) = (int (*)(int, char**))*(void**)(123);
@@ -55,3 +55,4 @@ void ecall_main(void)
 	
 	//printf("val:%d\n", val);
 }
+#endif

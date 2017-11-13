@@ -351,6 +351,13 @@ int SGX_CDECL main(int argc, char *argv[])
         return -1; 
     }
 
+
+	unsigned char *val = (unsigned char*)NtCurrentTeb();
+	*(unsigned long long*)(val + 0xf0) = (unsigned long long)malloc(64);
+	*(unsigned long long*)(val + 0xf8) = (unsigned long long)malloc(8192);
+	*(unsigned long long*)(val + 0xf8) += (8192 - 1024 - 8);
+
+
 	ecall_main(global_eid);
  
 #if 0
