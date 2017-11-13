@@ -202,9 +202,13 @@
       <OptimizeReferences>
       </OptimizeReferences>
     </Link>
-    <PostBuildEvent>
-      <Command>"$(SGXSDKInstallPath)bin\win32\release\sgx_sign.exe" sign -key "Enclave_private.pem" -enclave "$(OutDir)Enclave.dll" -out "$(OutDir)Enclave.signed.dll" -config "Enclave.config.xml"</Command>
-      <Message>sign the enclave</Message>
+    <PostBuildEvent1>
+      <Command>echo "Hello"</Command>
+      <Message>Ehllo</Message>
+    </PostBuildEvent1>
+	<PostBuildEvent>
+      <Command>python C:\Users\piyus\sgxc_support\dll_patch.py $(OutDir)Enclave.dll sgxg_pub 0xA00000000 &amp;&amp; echo HELLO2 &amp;&amp; "$(SGXSDKInstallPath)bin\win32\release\sgx_sign.exe" sign -key "Enclave_private.pem" -enclave "$(OutDir)Enclave.dll" -out "$(OutDir)Enclave.signed.dll" -config "Enclave.config.xml"</Command>
+	  <Command1>echo Hello</Command1>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Simulation|Win32'">
@@ -409,6 +413,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="copy_globals.c" />
     <ClCompile Include="Edger8rSyntax\Arrays.cpp" />
     <ClCompile Include="Edger8rSyntax\Functions.cpp" />
     <ClCompile Include="Edger8rSyntax\Pointers.cpp" />

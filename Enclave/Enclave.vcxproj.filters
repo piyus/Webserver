@@ -56,6 +56,9 @@
     <ClCompile Include="Enclave_t.c">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="copy_globals.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Enclave_private.pem">

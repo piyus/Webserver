@@ -2,8 +2,9 @@
 
 EXTERN main : PROC
 EXTERN ocall_generic : PROC
-
+EXTERN copy_globals: PROC
 ecall_main PROC EXPORT
+call copy_globals
 mov rax, 0900000000h
 mov [rax + 0e8h], rsp
 mov rsp, [rax + 0f8h]

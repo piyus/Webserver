@@ -39,6 +39,8 @@
 #include "sgx_uae_service.h"
 #include "App.h"
 #include "Enclave_u.h"
+
+extern "C" FILE* getSTDOUT(void);
 #include "functions.h"
 
 /* Global EID shared by multiple threads */
@@ -293,7 +295,11 @@ unsigned long long ocall_generic(unsigned long long ptr)
 
 	return LaunchApp(function_pointers[ptr]);
 }
-
+extern "C" {
+FILE* getSTDOUT(void) {
+	return stdout;
+}
+}
 #if defined(_MSC_VER)
 /* query and enable SGX device*/
 int query_sgx_status()
@@ -362,11 +368,16 @@ int SGX_CDECL main(int argc, char *argv[])
 
 
 	#define SWAP_AREA 0x900000000ULL
+	#define GLOBAL_AREA 0xA00000000ULL
 
 
 
 	if((void*)SWAP_AREA != VirtualAlloc((void*)SWAP_AREA, 4096, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
 		printf("Swap allocation failed\n");
+		return 0;
+	}
+	if((void*)GLOBAL_AREA != VirtualAlloc((void*)GLOBAL_AREA, 4096, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE)){
+		printf("global allocation failed\n");
 		return 0;
 	}
 #define FORMAT_STRING "Hello world %d %d %d %d %s\n"
