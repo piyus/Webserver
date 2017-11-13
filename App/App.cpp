@@ -286,7 +286,7 @@ unsigned long long ocall_generic(unsigned long long ptr)
 {
 	if (ptr == 1)
 	{
-		return 0;// LaunchApp((void*)printf);
+		return LaunchApp((void*)printf);
 	}
 	return 0;
 	//printf("ptr:%llx\n", ptr);
