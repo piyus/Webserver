@@ -356,6 +356,13 @@ int query_sgx_status()
 }
 #endif
 
+extern "C" void EnableMpx(unsigned char*, unsigned long long, unsigned long long, size_t);
+#define MPX_ALIGNMENT 64
+#define PAGE_SIZE 4096
+#define ALIGN(x, y) (size_t)(((size_t)(x) + (size_t)(y) - 1) & ~((size_t)(y) - 1))
+unsigned char g_MpxBuf[PAGE_SIZE + MPX_ALIGNMENT];
+
+
 /* Application entry */
 int SGX_CDECL main(int argc, char *argv[])
 {
@@ -403,7 +410,12 @@ int SGX_CDECL main(int argc, char *argv[])
 
 	unsigned long long ret;
 
+ 	unsigned char *buf = (unsigned char*)ALIGN(g_MpxBuf, MPX_ALIGNMENT);
+    memset(buf, 0, PAGE_SIZE);
+    buf[512] = 0x10;
+    buf[1024] = 0x3;
 	ecall_big_malloc(global_eid, &ret);
+
 
 	ret = (ret + (4096*16 -1)) & ~0xffff;
 	printf("ret:%llx\n", ret);
@@ -419,6 +431,7 @@ int SGX_CDECL main(int argc, char *argv[])
 	}
 
 		
+    //EnableMpx(buf, 0, 0, 0);
 	ecall_main(global_eid);
  
 #if 0

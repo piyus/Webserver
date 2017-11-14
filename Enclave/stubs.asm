@@ -27,7 +27,7 @@ mov rsp, [rcx + 0f8h]
 mov rdx, [rcx + 40]
 mov rax, [rcx + 64]
 mov [rsp], rdx
-
+add qword ptr [rsp], 8
 ret
 common_stub ENDP
 

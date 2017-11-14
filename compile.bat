@@ -26,5 +26,6 @@ cd ..
 cd app
 ml64 -c app_asm.asm
 cd ..
-msbuild SampleEnclave.sln /p:Configuration=Prerelease
+msbuild SampleEnclave.sln /p:Configuration=Simulation
+rem msbuild SampleEnclave.sln /p:Configuration=Prerelease
 
