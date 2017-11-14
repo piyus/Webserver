@@ -300,7 +300,6 @@ FILE* getSTDOUT(void) {
 	return stdout;
 }
 
-
 void* mymalloc(size_t a){
 	return malloc(a);
 }

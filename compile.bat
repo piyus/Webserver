@@ -6,7 +6,6 @@ set CCP=C:\Users\piyus\asplos\build\Release\bin
 rem call build.bat main
 rem call build.bat mongoose
 rem call build.bat simplest_web_server
-rem ar -ru main.a mongoose.o simplest_web_server.o
 rem rem move main.a main.o
 rem call build hello
 rem ar -ru main.a hello.o
@@ -27,5 +26,5 @@ cd ..
 cd app
 ml64 -c app_asm.asm
 cd ..
-msbuild SampleEnclave.sln
+msbuild SampleEnclave.sln /p:Configuration=Prerelease
 

@@ -1025,6 +1025,7 @@ char *cs_md5(char buf[33], ...) {
 #ifndef EXCLUDE_COMMON
 
 #include <assert.h>
+#define assert(...) 
 #include <string.h>
 /* Amalgamated: #include "common/mbuf.h" */
 

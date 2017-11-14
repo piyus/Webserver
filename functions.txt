@@ -38,7 +38,6 @@ _gmtime64
 _localtime64
 _rmdir
 _strdup
-_wassert
 _wfopen
 _wopen
 _wstat64

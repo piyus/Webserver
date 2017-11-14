@@ -1,4 +1,4 @@
-cscope 15 $HOME\Desktop\INTEL\src\Webserver"               0000567400
+cscope 15 $HOME\Desktop\INTEL\src\Webserver"               0000567799
 	@App/App.cpp
 
 26 
@@ -827,7 +827,7 @@ gëSTDOUT
 °dout
 ;
 
-304 * 
+303 * 
 mymÆloc
 (
 size_t
@@ -835,13 +835,13 @@ size_t
 a
 ){
 
-305  
+304  
 mÆloc
 (
 a
 );
 
-307 *
+306 *
 myˇŒoc
 (
 size_t
@@ -851,7 +851,7 @@ a
 b
 ) {
 
-308  
+307  
 ˇŒoc
 (
 a
@@ -859,7 +859,7 @@ a
 b
 );
 
-310 *
+309 *
 myªÆloc
 (* 
 a
@@ -869,7 +869,7 @@ size_t
 b
 ) {
 
-311  
+310  
 ªÆloc
 (
 a
@@ -877,35 +877,35 @@ a
 b
 );
 
-313 
+312 
 my‰ì
 (*
 a
 ) {
 
-314 
+313 
 ‰ì
 (
 a
 );
 
-317 #i‡
+316 #i‡
 deföed
 (
 _MSC_VER
 )
 
-319 
+318 
 	$quîy_sgx_°©us
 ()
 
-321 
+320 
 sgx_devi˚_°©us_t
  
 sgx_devi˚_°©us
 ;
 
-322 
+321 
 sgx_°©us_t
  
 sgx_ªt
@@ -915,89 +915,89 @@ sgx_ªt
 sgx_devi˚_°©us
 );
 
-323 i‡(
+322 i‡(
 sgx_ªt
  !
 SGX_SUCCESS
 ) {
 
-324 
+323 
 	`¥ötf
 ("FailedÅo get SGX device status.\n");
 
-328 
+327 
 sgx_devi˚_°©us
 ) {
 
-329 
+328 
 SGX_ENABLED
 :
 
-331 
+330 
 SGX_DISABLED_REBOOT_REQUIRED
 :
 
-332 
+331 
 	`¥ötf
 ("SGX device has beenÉnabled. PleaseÑeboot your machine.\n");
 
-334 
+333 
 SGX_DISABLED_LEGACY_OS
 :
 
-335 
+334 
 	`¥ötf
 ("SGX device can't beÉnabled onán OSÅhat doesn't support EFI interface.\n");
 
-337 
+336 
 SGX_DISABLED
 :
 
-338 
+337 
 	`¥ötf
 ("SGX isÇotÉnabled onÅhisÖlatform. More detailsáre unavailable.\n");
 
-340 
+339 
 SGX_DISABLED_SCI_AVAILABLE
 :
 
-341 
+340 
 	`¥ötf
 ("SGX device can beÉnabled byá Software Control Interface.\n");
 
-343 
+342 
 SGX_DISABLED_MANUAL_ENABLE
 :
 
-344 
+343 
 	`¥ötf
 ("SGX device can beÉnabled manually inÅhe BIOS setup.\n");
 
-346 
+345 
 SGX_DISABLED_HYPERV_ENABLED
 :
 
-347 
+346 
 	`¥ötf
 ("Detectedán unsupported version of Windows* 10 with Hyper-VÉnabled.\n");
 
-349 
+348 
 SGX_DISABLED_UNSUPPORTED_CPU
 :
 
-350 
+349 
 	`¥ötf
 ("SGX isÇot supported byÅhis CPU.\n");
 
-353 
+352 
 	`¥ötf
 ("UnexpectedÉrror.\n");
 
-357 
+356 
 	}
 }
 
-361 
+360 
 SGX_CDECL
  
 	$maö
@@ -1007,61 +1007,61 @@ SGX_CDECL
 ¨gv
 [])
 
-363 ()(
+362 ()(
 ¨gc
 );
 
-364 ()(
+363 ()(
 ¨gv
 );
 
-367 #i‡
+366 #i‡
 	`deföed
 (
 _MSC_VER
 )
 
-368 i‡(
+367 i‡(
 	`quîy_sgx_°©us
 () < 0) {
 
-370 
+369 
 	`¥ötf
 ("Enterá character beforeÉxit ...\n");
 
-371 
+370 
 	`gëch¨
 ();
 
-377 if(
+376 if(
 	`öôülize_í˛ave
 () < 0){
 
-378 
+377 
 	`¥ötf
 ("Enterá character beforeÉxit ...\n");
 
-379 
+378 
 	`gëch¨
 ();
 
-384 
+383 
 	#SWAP_AREA
  0x900000000ULL
 
 	)
 
-385 
+384 
 	#GLOBAL_AREA
  0xA0000000000ULL
 
 	)
 
-387 
+386 
 	`¥ötf
 ("Hello world\n");
 
-389 if((*)
+388 if((*)
 SWAP_AREA
  !
 	`VútuÆAŒoc
@@ -1073,11 +1073,11 @@ MEM_COMMIT
 PAGE_READWRITE
 )){
 
-390 
+389 
 	`¥ötf
 ("Swapállocation failed\n");
 
-393 if((*)
+392 if((*)
 GLOBAL_AREA
  !
 	`VútuÆAŒoc
@@ -1089,17 +1089,17 @@ MEM_COMMIT
 PAGE_READWRITE
 )){
 
-394 
+393 
 	`¥ötf
 ("globalállocation failed\n");
 
-397 
+396 
 	#FORMAT_STRING
  "Hñlÿw‹ld %d %d %d %d %s\n"
 
 	)
 
-398 
+397 
 	`°r˝y_s
 ((*)(
 SWAP_AREA
@@ -1107,21 +1107,21 @@ SWAP_AREA
 FORMAT_STRING
 ) + 1, FORMAT_STRING);
 
-400 *
+399 *
 vÆ
  = (*)
 SWAP_AREA
 ;
 
-402 *(*)(
+401 *(*)(
 vÆ
  + 0xf8) += (8192 * 16 - 1024- 8);
 
-405 
+404 
 ªt
 ;
 
-407 
+406 
 	`eˇŒ_big_mÆloc
 (
 globÆ_eid
@@ -1129,47 +1129,47 @@ globÆ_eid
 ªt
 );
 
-409 
+408 
 ªt
  = (ret + (4096*16 -1)) & ~0xffff;
 
-410 
+409 
 	`¥ötf
 ("ªt:%Œx\n", 
 ªt
 );
 
-411 
+410 
 ¥iv©e_°ack_íd
  = 
 ªt
  + 4096 * 16;
 
-412 
+411 
 public_°ack_íd
  = 
 ¥iv©e_°ack_íd
  + (1ULL << 30);
 
-413 
+412 
 public_°ack_°¨t
  = 
 ªt
  + (1ULL << 30);
 
-414 *(*)(
+413 *(*)(
 vÆ
  + 0xf8Ë
 public_°ack_íd
  - 64 - 8;
 
-416 
+415 
 	`¥ötf
 ("public_°ak_°¨t:%Œx\n", 
 public_°ack_°¨t
 );
 
-417 if((*)
+416 if((*)
 public_°ack_°¨t
  !
 	`VútuÆAŒoc
@@ -1181,59 +1181,59 @@ MEM_COMMIT
 PAGE_READWRITE
 )){
 
-418 
+417 
 	`¥ötf
 ("Public stack creation failed\n");
 
-423 
+422 
 	`eˇŒ_maö
 (
 globÆ_eid
 );
 
-427 
+426 
 	`edgî8r_¨øy_©åibuãs
 ();
 
-428 
+427 
 	`edgî8r_poöãr_©åibuãs
 ();
 
-429 
+428 
 	`edgî8r_ty≥_©åibuãs
 ();
 
-430 
+429 
 	`edgî8r_fun˘i⁄_©åibuãs
 ();
 
-433 
+432 
 	`eˇŒ_libc_fun˘i⁄s
 ();
 
-434 
+433 
 	`eˇŒ_libcxx_fun˘i⁄s
 ();
 
-435 
+434 
 	`eˇŒ_thªad_fun˘i⁄s
 ();
 
-438 
+437 
 	`sgx_de°roy_í˛ave
 (
 globÆ_eid
 );
 
-439 
+438 
 	`SÀï
 (100);
 
-440 
+439 
 	`exô
 (0);
 
-447 
+446 
 	}
 }
 
@@ -6700,178 +6700,174 @@ _°rdup
 ,
 
 44 (*)
-_was£π
-,
-
-45 (*)
 _wf›í
 ,
 
-46 (*)
+45 (*)
 _w›í
 ,
 
-47 (*)
+46 (*)
 _w°©64
 ,
 
-48 (*)
+47 (*)
 ac˚±
 ,
 
-49 (*)
+48 (*)
 böd
 ,
 
-50 (*)
+49 (*)
 ˛o£sockë
 ,
 
-51 (*)
+50 (*)
 c⁄√˘
 ,
 
-52 (*)
+51 (*)
 f˛o£
 ,
 
-53 (*)
+52 (*)
 fÊush
 ,
 
-54 (*)
+53 (*)
 fgëc
 ,
 
-55 (*)
+54 (*)
 fgës
 ,
 
-56 (*)
+55 (*)
 Âutc
 ,
 
-57 (*)
+56 (*)
 Âuts
 ,
 
-58 (*)
+57 (*)
 ‰ód
 ,
 
-59 (*)
+58 (*)
 f£ek
 ,
 
-60 (*)
+59 (*)
 fwrôe
 ,
 
-61 (*)
+60 (*)
 gëív
 ,
 
-62 (*)
+61 (*)
 gë≥î«me
 ,
 
-63 (*)
+62 (*)
 gësock«me
 ,
 
-64 (*)
+63 (*)
 gësock›t
 ,
 
-65 (*)
+64 (*)
 ht⁄l
 ,
 
-66 (*)
+65 (*)
 ht⁄s
 ,
 
-67 (*)
+66 (*)
 öë_¡ﬂ
 ,
 
-68 (*)
+67 (*)
 io˘lsockë
 ,
 
-69 (*)
+68 (*)
 li°í
 ,
 
-70 (*)
+69 (*)
 ¡ohl
 ,
 
-71 (*)
+70 (*)
 ¡ohs
 ,
 
-72 (*)
+71 (*)
 ønd
 ,
 
-73 (*)
+72 (*)
 ªcv
 ,
 
-74 (*)
+73 (*)
 ªcv‰om
 ,
 
-75 (*)
+74 (*)
 £À˘
 ,
 
-76 (*)
+75 (*)
 £nd
 ,
 
-77 (*)
+76 (*)
 £ndto
 ,
 
-78 (*)
+77 (*)
 £tsock›t
 ,
 
-79 (*)
+78 (*)
 shutdown
 ,
 
-80 (*)
+79 (*)
 sockë
 ,
 
-81 (*)
+80 (*)
 wcsˇt
 ,
 
-82 (*)
+81 (*)
 mymÆloc
 ,
 
-83 (*)
+82 (*)
 myªÆloc
 ,
 
-84 (*)
+83 (*)
 myˇŒoc
 ,
 
-85 (*)
+84 (*)
 my‰ì
 ,
 
-86 (*)
+85 (*)
 f›í
 ,
 
-87 (*)
+86 (*)
 exô
 ,
 
@@ -6891,37 +6887,49 @@ exô
 	~<dúe˘.h
 >
 
-12 #¥agm®
+10 
+	~<as£π.h
+>
+
+13 #¥agm®
 commít
 (
 lib
 , "Ws2_32.lib")
 
-13 #¥agm®
+14 #¥agm®
 w¨nög
 (
 dißbÀ
 :4996)
 
-17 * 
+17 
+	#_was£π
+ 
+as£π
+
+
+	)
+
+20 * 
 mymÆloc
 (
 size_t
 );
 
-18 * 
+21 * 
 myˇŒoc
 (
 size_t
 , size_t);
 
-19 * 
+22 * 
 myªÆloc
 (*, 
 size_t
 );
 
-20 
+23 
 my‰ì
 (*);
 
@@ -15643,7 +15651,7 @@ i
 
 62 
 i
-=0;i<
+=0;i<2*
 n
 ; i++) {
 
@@ -15889,27 +15897,73 @@ FILE
 °ªam
  ) {
 
-121 *
+108 
+	`as£π_¥iv©e
+(
+±r
+);
+
+109 
+	`as£π_¥iv©e
+((*)
+±r
+ + 
+size
+*
+cou¡
+);
+
+110 
+fd_ty≥
+ 
+ty≥
+ = 
+fds_ty≥
+[
+	`_fûío
+(
+°ªam
+)];
+
+111 if(
+ty≥
+ =
+UNDEFINED
+){
+
+112 
+	`¥ötf
+("AttemptingÑead on unknown file\n");
+
+113 
+	`exô
+(-1);
+
+114 }if(
+ty≥
+ =
+PUBLIC
+) {
+
+115 
+	`¥ötf
+("AttemptingÅoÑeadÖublic file withÖrivate_read\n");
+
+116 
+	`exô
+(-1);
+
+119 *
 public_±r
  = 
 	`mymÆloc
 (
 size
+ * 
+cou¡
 );
 
-122 
-fmt
-[] = "Pointer from malloc = %p\n";
-
-123 
-	`¥ötf
-(
-fmt
-, 
-public_±r
-);
-
-124 
+120 
 ªt
  = 
 	`‰ód
@@ -15923,17 +15977,29 @@ cou¡
 °ªam
 );
 
-127 
+121 
+	`mem˝y
+(
+±r
+, 
+public_±r
+, 
+ªt
+ * 
+size
+);
+
+122 
 	`my‰ì
 (
 public_±r
 );
 
-128  
+123  
 ªt
 ;
 
-130 
+124 
 	}
 }
 
@@ -87031,151 +87097,163 @@ f˛o£__wøµî
 
 	)
 
-35 #i‚de‡
+18 
+	#as£π
+(...)
+
+	)
+
+19 
+	#_was£π
+(...)
+
+	)
+
+39 #i‚de‡
 CS_MONGOOSE_SRC_COMMON_H_
 
 
-36 
+40 
 	#CS_MONGOOSE_SRC_COMMON_H_
 
 
 	)
 
-38 
+42 
 	#MG_VERSION
  "6.7"
 
 	)
 
-41 #ifde‡
+45 #ifde‡
 MG_LOCALS
 
 
-42 
+46 
 	~<mg_loˇls.h
 >
 
-46 #ifde‡
+50 #ifde‡
 MG_MODULE_LINES
 
 
-49 #i‚de‡
+53 #i‚de‡
 CS_COMMON_PLATFORM_H_
 
 
-50 
+54 
 	#CS_COMMON_PLATFORM_H_
 
 
 	)
 
-56 
+60 
 	#CS_P_CUSTOM
  0
 
 	)
 
-57 
+61 
 	#CS_P_UNIX
  1
 
 	)
 
-58 
+62 
 	#CS_P_WINDOWS
  2
 
 	)
 
-59 
+63 
 	#CS_P_ESP32
  15
 
 	)
 
-60 
+64 
 	#CS_P_ESP8266
  3
 
 	)
 
-61 
+65 
 	#CS_P_CC3200
  4
 
 	)
 
-62 
+66 
 	#CS_P_MSP432
  5
 
 	)
 
-63 
+67 
 	#CS_P_CC3100
  6
 
 	)
 
-64 
+68 
 	#CS_P_TM4C129
  14
 
 	)
 
-65 
+69 
 	#CS_P_MBED
  7
 
 	)
 
-66 
+70 
 	#CS_P_WINCE
  8
 
 	)
 
-67 
+71 
 	#CS_P_NXP_LPC
  13
 
 	)
 
-68 
+72 
 	#CS_P_NXP_KINETIS
  9
 
 	)
 
-69 
+73 
 	#CS_P_NRF51
  12
 
 	)
 
-70 
+74 
 	#CS_P_NRF52
  10
 
 	)
 
-71 
+75 
 	#CS_P_PIC32
  11
 
 	)
 
-72 
+76 
 	#CS_P_STM32
  16
 
 	)
 
-76 #i‚de‡
+80 #i‚de‡
 CS_PLATFORM
 
 
-78 #i‡
+82 #i‡
 deföed
 (
 TARGET_IS_MSP432P4XX
@@ -87183,7 +87261,7 @@ TARGET_IS_MSP432P4XX
 __MSP432P401R__
 )
 
-79 
+83 
 	#CS_PLATFORM
  
 CS_P_MSP432
@@ -87191,13 +87269,13 @@ CS_P_MSP432
 
 	)
 
-80 #ñi‡
+84 #ñi‡
 deföed
 (
 cc3200
 )
 
-81 
+85 
 	#CS_PLATFORM
  
 CS_P_CC3200
@@ -87205,7 +87283,7 @@ CS_P_CC3200
 
 	)
 
-82 #ñi‡
+86 #ñi‡
 deföed
 (
 __unix__
@@ -87213,7 +87291,7 @@ __unix__
 __APPLE__
 )
 
-83 
+87 
 	#CS_PLATFORM
  
 CS_P_UNIX
@@ -87221,13 +87299,13 @@ CS_P_UNIX
 
 	)
 
-84 #ñi‡
+88 #ñi‡
 deföed
 (
 WINCE
 )
 
-85 
+89 
 	#CS_PLATFORM
  
 CS_P_WINCE
@@ -87235,13 +87313,13 @@ CS_P_WINCE
 
 	)
 
-86 #ñi‡
+90 #ñi‡
 deföed
 (
 _WIN32
 )
 
-87 
+91 
 	#CS_PLATFORM
  
 CS_P_WINDOWS
@@ -87249,13 +87327,13 @@ CS_P_WINDOWS
 
 	)
 
-88 #ñi‡
+92 #ñi‡
 deföed
 (
 __MBED__
 )
 
-89 
+93 
 	#CS_PLATFORM
  
 CS_P_MBED
@@ -87263,13 +87341,13 @@ CS_P_MBED
 
 	)
 
-90 #ñi‡
+94 #ñi‡
 deföed
 (
 __USE_LPCOPEN
 )
 
-91 
+95 
 	#CS_PLATFORM
  
 CS_P_NXP_LPC
@@ -87277,7 +87355,7 @@ CS_P_NXP_LPC
 
 	)
 
-92 #ñi‡
+96 #ñi‡
 deföed
 (
 FRDM_K64F
@@ -87285,7 +87363,7 @@ FRDM_K64F
 FREEDOM
 )
 
-93 
+97 
 	#CS_PLATFORM
  
 CS_P_NXP_KINETIS
@@ -87293,13 +87371,13 @@ CS_P_NXP_KINETIS
 
 	)
 
-94 #ñi‡
+98 #ñi‡
 deföed
 (
 PIC32
 )
 
-95 
+99 
 	#CS_PLATFORM
  
 CS_P_PIC32
@@ -87307,13 +87385,13 @@ CS_P_PIC32
 
 	)
 
-96 #ñi‡
+100 #ñi‡
 deföed
 (
 ESP_PLATFORM
 )
 
-97 
+101 
 	#CS_PLATFORM
  
 CS_P_ESP32
@@ -87321,13 +87399,13 @@ CS_P_ESP32
 
 	)
 
-98 #ñi‡
+102 #ñi‡
 deföed
 (
 ICACHE_FLASH
 )
 
-99 
+103 
 	#CS_PLATFORM
  
 CS_P_ESP8266
@@ -87335,7 +87413,7 @@ CS_P_ESP8266
 
 	)
 
-100 #ñi‡
+104 #ñi‡
 deföed
 (
 TARGET_IS_TM4C129_RA0
@@ -87343,13 +87421,13 @@ TARGET_IS_TM4C129_RA0
 TARGET_IS_TM4C129_RA1
 ) || \
 
-101 
+105 
 	$deföed
 (
 TARGET_IS_TM4C129_RA2
 )
 
-102 
+106 
 	#CS_PLATFORM
  
 CS_P_TM4C129
@@ -87357,13 +87435,13 @@ CS_P_TM4C129
 
 	)
 
-103 #ñi‡
+107 #ñi‡
 	`deföed
 (
 STM32
 )
 
-104 
+108 
 	#CS_PLATFORM
  
 CS_P_STM32
@@ -87371,59 +87449,59 @@ CS_P_STM32
 
 	)
 
-107 #i‚de‡
+111 #i‚de‡
 CS_PLATFORM
 
 
-113 
+117 
 	#MG_NET_IF_SOCKET
  1
 
 	)
 
-114 
+118 
 	#MG_NET_IF_SIMPLELINK
  2
 
 	)
 
-115 
+119 
 	#MG_NET_IF_LWIP_LOW_LEVEL
  3
 
 	)
 
-116 
+120 
 	#MG_NET_IF_PIC32
  4
 
 	)
 
-118 
+122 
 	#MG_SSL_IF_OPENSSL
  1
 
 	)
 
-119 
+123 
 	#MG_SSL_IF_MBEDTLS
  2
 
 	)
 
-120 
+124 
 	#MG_SSL_IF_SIMPLELINK
  3
 
 	)
 
-139 #i‡!
+143 #i‡!
 	`deföed
 (
 WEAK
 )
 
-140 #i‡(
+144 #i‡(
 	`deföed
 (
 __GNUC__
@@ -87433,7 +87511,7 @@ __TI_COMPILER_VERSION__
 _WIN32
 )
 
-141 
+145 
 	#WEAK
  
 	`__©åibuã__
@@ -87443,17 +87521,17 @@ wók
 
 	)
 
-143 
+147 
 	#WEAK
 
 
 	)
 
-147 #ifde‡
+151 #ifde‡
 __GNUC__
 
 
-148 
+152 
 	#NORETURN
  
 	`__©åibuã__
@@ -87463,7 +87541,7 @@ n‹ëu∫
 
 	)
 
-149 
+153 
 	#NOINLINE
  
 	`__©åibuã__
@@ -87473,7 +87551,7 @@ noölöe
 
 	)
 
-150 
+154 
 	#WARN_UNUSED_RESULT
  
 	`__©åibuã__
@@ -87483,7 +87561,7 @@ w¨n_unu£d_ªsu…
 
 	)
 
-151 
+155 
 	#NOINSTR
  
 	`__©åibuã__
@@ -87493,7 +87571,7 @@ no_ö°rumít_fun˘i⁄
 
 	)
 
-152 
+156 
 	#DO_NOT_WARN_UNUSED
  
 	`__©åibuã__
@@ -87503,41 +87581,41 @@ unu£d
 
 	)
 
-154 
+158 
 	#NORETURN
 
 
 	)
 
-155 
+159 
 	#NOINLINE
 
 
 	)
 
-156 
+160 
 	#WARN_UNUSED_RESULT
 
 
 	)
 
-157 
+161 
 	#NOINSTR
 
 
 	)
 
-158 
+162 
 	#DO_NOT_WARN_UNUSED
 
 
 	)
 
-161 #i‚de‡
+165 #i‚de‡
 ARRAY_SIZE
 
 
-162 
+166 
 	#ARRAY_SIZE
 (
 ¨øy
@@ -87545,143 +87623,143 @@ ARRAY_SIZE
 
 	)
 
-166 #ifde‡
+170 #ifde‡
 MG_MODULE_LINES
 
 
-169 #i‚de‡
+173 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_WINDOWS_H_
 
 
-170 
+174 
 	#CS_COMMON_PLATFORMS_PLATFORM_WINDOWS_H_
 
 
 	)
 
-171 #i‡
+175 #i‡
 CS_PLATFORM
  =
 CS_P_WINDOWS
 
 
-185 #ifde‡
+189 #ifde‡
 _MSC_VER
 
 
-186 #¥agm®
+190 #¥agm®
 	`w¨nög
 (
 dißbÀ
  : 4127)
 
-187 #¥agm®
+191 #¥agm®
 	`w¨nög
 (
 dißbÀ
  : 4204)
 
-190 #i‚de‡
+194 #i‚de‡
 _WINSOCK_DEPRECATED_NO_WARNINGS
 
 
-191 
+195 
 	#_WINSOCK_DEPRECATED_NO_WARNINGS
  1
 
 	)
 
-194 #i‚de‡
+198 #i‚de‡
 _CRT_SECURE_NO_WARNINGS
 
 
-195 
+199 
 	#_CRT_SECURE_NO_WARNINGS
 
 
 	)
 
-198 
+202 
 	~<as£π.h
 >
 
-199 
+203 
 	~<dúe˘.h
 >
 
-200 
+204 
 	~<î∫o.h
 >
 
-201 
+205 
 	~<f˙é.h
 >
 
-202 
+206 
 	~<io.h
 >
 
-203 
+207 
 	~<limôs.h
 >
 
-204 
+208 
 	~<sig«l.h
 >
 
-205 
+209 
 	~<°ddef.h
 >
 
-206 
+210 
 	~<°dio.h
 >
 
-207 
+211 
 	~<°dlib.h
 >
 
-208 
+212 
 	~<sys/°©.h
 >
 
-209 
+213 
 	~<time.h
 >
 
-211 #ifde‡
+215 #ifde‡
 _MSC_VER
 
 
-212 #¥agm®
+216 #¥agm®
 	`commít
 (
 lib
 , "ws2_32.lib")
 
-215 
+219 
 	~<wösock2.h
 >
 
-216 
+220 
 	~<ws2t˝ù.h
 >
 
-217 
+221 
 	~<wödows.h
 >
 
-218 
+222 
 	~<¥o˚ss.h
 >
 
-220 #i‡
+224 #i‡
 	`deföed
 (
 _MSC_VER
 ) && _MSC_VER >= 1800
 
-221 
+225 
 	#°rdup
  
 _°rdup
@@ -87689,11 +87767,11 @@ _°rdup
 
 	)
 
-224 #i‚de‡
+228 #i‚de‡
 EINPROGRESS
 
 
-225 
+229 
 	#EINPROGRESS
  
 WSAEINPROGRESS
@@ -87701,11 +87779,11 @@ WSAEINPROGRESS
 
 	)
 
-227 #i‚de‡
+231 #i‚de‡
 EWOULDBLOCK
 
 
-228 
+232 
 	#EWOULDBLOCK
  
 WSAEWOULDBLOCK
@@ -87713,11 +87791,11 @@ WSAEWOULDBLOCK
 
 	)
 
-230 #i‚de‡
+234 #i‚de‡
 __func__
 
 
-231 
+235 
 	#STRX
 (
 x
@@ -87725,7 +87803,7 @@ x
 
 	)
 
-232 
+236 
 	#STR
 (
 x
@@ -87735,7 +87813,7 @@ x
 
 	)
 
-233 
+237 
 	#__func__
  
 __FILE__
@@ -87747,7 +87825,7 @@ __LINE__
 
 	)
 
-235 
+239 
 	#¢¥ötf
  
 _¢¥ötf
@@ -87755,7 +87833,7 @@ _¢¥ötf
 
 	)
 
-236 
+240 
 	#fûío
  
 _fûío
@@ -87763,7 +87841,7 @@ _fûío
 
 	)
 
-237 
+241 
 	#v¢¥ötf
  
 _v¢¥ötf
@@ -87771,7 +87849,7 @@ _v¢¥ötf
 
 	)
 
-238 
+242 
 	#¶ìp
 (
 x
@@ -87781,7 +87859,7 @@ x
 
 	)
 
-239 
+243 
 	#to64
 (
 x
@@ -87791,7 +87869,7 @@ x
 
 	)
 
-240 #i‡!
+244 #i‡!
 	`deföed
 (
 __MINGW32__
@@ -87799,7 +87877,7 @@ __MINGW32__
 __MINGW64__
 )
 
-241 
+245 
 	#p›í
 (
 x
@@ -87811,7 +87889,7 @@ y
 
 	)
 
-242 
+246 
 	#p˛o£
 (
 x
@@ -87821,7 +87899,7 @@ x
 
 	)
 
-244 
+248 
 	#rmdú
  
 _rmdú
@@ -87829,13 +87907,13 @@ _rmdú
 
 	)
 
-245 #i‡
+249 #i‡
 	`deföed
 (
 _MSC_VER
 ) && _MSC_VER >= 1400
 
-246 
+250 
 	#f£eko
 (
 x
@@ -87849,7 +87927,7 @@ z
 
 	)
 
-248 
+252 
 	#f£eko
 (
 x
@@ -87863,105 +87941,105 @@ z
 
 	)
 
-250 #i‡
+254 #i‡
 	`deföed
 (
 _MSC_VER
 ) && _MSC_VER <= 1200
 
-251 
+255 
 	tuöçå_t
 ;
 
-252 
+256 
 	töçå_t
 ;
 
-254 
+258 
 	tsockÀn_t
 ;
 
-255 #i‡
+259 #i‡
 _MSC_VER
  >= 1700
 
-256 
+260 
 	~<°döt.h
 >
 
-258 sig√d 
+262 sig√d 
 	töt8_t
 ;
 
-259 
+263 
 	tuöt8_t
 ;
 
-260 
+264 
 	töt32_t
 ;
 
-261 
+265 
 	tuöt32_t
 ;
 
-262 
+266 
 	töt16_t
 ;
 
-263 
+267 
 	tuöt16_t
 ;
 
-264 
+268 
 __öt64
  
 	töt64_t
 ;
 
-265 
+269 
 	t__öt64
  
 	tuöt64_t
 ;
 
-267 
+271 
 SOCKET
  
 	tsock_t
 ;
 
-268 
+272 
 uöt32_t
  
 	tö_addr_t
 ;
 
-269 #i‚de‡
+273 #i‚de‡
 UINT16_MAX
 
 
-270 
+274 
 	#UINT16_MAX
  65535
 
 	)
 
-272 #i‚de‡
+276 #i‚de‡
 UINT32_MAX
 
 
-273 
+277 
 	#UINT32_MAX
  4294967295
 
 	)
 
-275 #i‚de‡
+279 #i‚de‡
 pid_t
 
 
-276 
+280 
 	#pid_t
  
 HANDLE
@@ -87969,35 +88047,35 @@ HANDLE
 
 	)
 
-278 
+282 
 	#INT64_FMT
  "I64d"
 
 	)
 
-279 
+283 
 	#INT64_X_FMT
  "I64x"
 
 	)
 
-280 
+284 
 	#SIZE_T_FMT
  "Iu"
 
 	)
 
-281 
+285 
 _°©i64
  
 	tcs_°©_t
 ;
 
-282 #i‚de‡
+286 #i‚de‡
 S_ISDIR
 
 
-283 
+287 
 	#S_ISDIR
 (
 x
@@ -88009,11 +88087,11 @@ _S_IFDIR
 
 	)
 
-285 #i‚de‡
+289 #i‚de‡
 S_ISREG
 
 
-286 
+290 
 	#S_ISREG
 (
 x
@@ -88025,27 +88103,27 @@ _S_IFREG
 
 	)
 
-288 
+292 
 	#DIRSEP
  '\\'
 
 	)
 
-289 
+293 
 	#CS_DEFINE_DIRENT
 
 
 	)
 
-291 #i‚de‡
+295 #i‚de‡
 va_c›y
 
 
-292 #ifde‡
+296 #ifde‡
 __va_c›y
 
 
-293 
+297 
 	#va_c›y
  
 __va_c›y
@@ -88053,7 +88131,7 @@ __va_c›y
 
 	)
 
-295 
+299 
 	#va_c›y
 (
 x
@@ -88063,85 +88141,85 @@ y
 
 	)
 
-299 #i‚de‡
+303 #i‚de‡
 MG_MAX_HTTP_REQUEST_SIZE
 
 
-300 
+304 
 	#MG_MAX_HTTP_REQUEST_SIZE
  8192
 
 	)
 
-303 #i‚de‡
+307 #i‚de‡
 MG_MAX_HTTP_SEND_MBUF
 
 
-304 
+308 
 	#MG_MAX_HTTP_SEND_MBUF
  4096
 
 	)
 
-307 #i‚de‡
+311 #i‚de‡
 MG_MAX_HTTP_HEADERS
 
 
-308 
+312 
 	#MG_MAX_HTTP_HEADERS
  40
 
 	)
 
-311 #i‚de‡
+315 #i‚de‡
 CS_ENABLE_STDIO
 
 
-312 
+316 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-315 #i‚de‡
+319 #i‚de‡
 MG_ENABLE_BROADCAST
 
 
-316 
+320 
 	#MG_ENABLE_BROADCAST
  1
 
 	)
 
-319 #i‚de‡
+323 #i‚de‡
 MG_ENABLE_DIRECTORY_LISTING
 
 
-320 
+324 
 	#MG_ENABLE_DIRECTORY_LISTING
  1
 
 	)
 
-323 #i‚de‡
+327 #i‚de‡
 MG_ENABLE_FILESYSTEM
 
 
-324 
+328 
 	#MG_ENABLE_FILESYSTEM
  1
 
 	)
 
-327 #i‚de‡
+331 #i‚de‡
 MG_ENABLE_HTTP_CGI
 
 
-331 #i‚de‡
+335 #i‚de‡
 MG_NET_IF
 
 
-332 
+336 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -88149,189 +88227,189 @@ MG_NET_IF_SOCKET
 
 	)
 
-337 #ifde‡
+341 #ifde‡
 MG_MODULE_LINES
 
 
-340 #i‚de‡
+344 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_UNIX_H_
 
 
-341 
+345 
 	#CS_COMMON_PLATFORMS_PLATFORM_UNIX_H_
 
 
 	)
 
-342 #i‡
+346 #i‡
 CS_PLATFORM
  =
 CS_P_UNIX
 
 
-344 #i‚de‡
+348 #i‚de‡
 _XOPEN_SOURCE
 
 
-345 
+349 
 	#_XOPEN_SOURCE
  600
 
 	)
 
-349 #i‚de‡
+353 #i‚de‡
 __STDC_FORMAT_MACROS
 
 
-350 
+354 
 	#__STDC_FORMAT_MACROS
 
 
 	)
 
-354 #i‚de‡
+358 #i‚de‡
 __STDC_LIMIT_MACROS
 
 
-355 
+359 
 	#__STDC_LIMIT_MACROS
 
 
 	)
 
-359 #i‚de‡
+363 #i‚de‡
 _LARGEFILE_SOURCE
 
 
-360 
+364 
 	#_LARGEFILE_SOURCE
 
 
 	)
 
-364 #i‚de‡
+368 #i‚de‡
 _FILE_OFFSET_BITS
 
 
-365 
+369 
 	#_FILE_OFFSET_BITS
  64
 
 	)
 
-368 
+372 
 	~<¨∑/öë.h
 >
 
-369 
+373 
 	~<as£π.h
 >
 
-370 
+374 
 	~<˘y≥.h
 >
 
-371 
+375 
 	~<dúít.h
 >
 
-372 
+376 
 	~<î∫o.h
 >
 
-373 
+377 
 	~<f˙é.h
 >
 
-374 
+378 
 	~<öây≥s.h
 >
 
-375 
+379 
 	~<°döt.h
 >
 
-376 
+380 
 	~<limôs.h
 >
 
-377 
+381 
 	~<m©h.h
 >
 
-378 
+382 
 	~<√tdb.h
 >
 
-379 
+383 
 	~<√töë/ö.h
 >
 
-380 
+384 
 	~<±hªad.h
 >
 
-381 
+385 
 	~<sig«l.h
 >
 
-382 
+386 
 	~<°d¨g.h
 >
 
-383 
+387 
 	~<°dio.h
 >
 
-384 
+388 
 	~<°dlib.h
 >
 
-385 
+389 
 	~<°rög.h
 >
 
-386 
+390 
 	~<sys/∑øm.h
 >
 
-387 
+391 
 	~<sys/sockë.h
 >
 
-388 
+392 
 	~<sys/£À˘.h
 >
 
-389 
+393 
 	~<sys/°©.h
 >
 
-390 
+394 
 	~<sys/time.h
 >
 
-391 
+395 
 	~<sys/ty≥s.h
 >
 
-392 
+396 
 	~<uni°d.h
 >
 
-394 #ifde‡
+398 #ifde‡
 __APPLE__
 
 
-395 
+399 
 	~<machöe/ídün.h
 >
 
-396 #i‚de‡
+400 #i‚de‡
 BYTE_ORDER
 
 
-397 
+401 
 	#LITTLE_ENDIAN
  
 __DARWIN_LITTLE_ENDIAN
@@ -88339,7 +88417,7 @@ __DARWIN_LITTLE_ENDIAN
 
 	)
 
-398 
+402 
 	#BIG_ENDIAN
  
 __DARWIN_BIG_ENDIAN
@@ -88347,7 +88425,7 @@ __DARWIN_BIG_ENDIAN
 
 	)
 
-399 
+403 
 	#PDP_ENDIAN
  
 __DARWIN_PDP_ENDIAN
@@ -88355,7 +88433,7 @@ __DARWIN_PDP_ENDIAN
 
 	)
 
-400 
+404 
 	#BYTE_ORDER
  
 __DARWIN_BYTE_ORDER
@@ -88363,51 +88441,51 @@ __DARWIN_BYTE_ORDER
 
 	)
 
-410 #i‡!(
+414 #i‡!(
 	`deföed
 (
 __˝lu•lus
 ) && __cplusplus >= 201103L) && \
 
-411 !(
+415 !(
 	`deföed
 (
 __DARWIN_C_LEVEL
 ) && __DARWIN_C_LEVEL >= 200809L)
 
-412 
+416 
 	`°πﬁl
 (const *, **, );
 
-415 
+419 
 	tsock_t
 ;
 
-416 
+420 
 	#INVALID_SOCKET
  (-1)
 
 	)
 
-417 
+421 
 	#SIZE_T_FMT
  "zu"
 
 	)
 
-418 
+422 
 °©
  
 	tcs_°©_t
 ;
 
-419 
+423 
 	#DIRSEP
  '/'
 
 	)
 
-420 
+424 
 	#to64
 (
 x
@@ -88419,7 +88497,7 @@ NULL
 
 	)
 
-421 
+425 
 	#INT64_FMT
  
 PRId64
@@ -88427,7 +88505,7 @@ PRId64
 
 	)
 
-422 
+426 
 	#INT64_X_FMT
  
 PRIx64
@@ -88435,25 +88513,25 @@ PRIx64
 
 	)
 
-424 #i‚de‡
+428 #i‚de‡
 __cde˛
 
 
-425 
+429 
 	#__cde˛
 
 
 	)
 
-428 #i‚de‡
+432 #i‚de‡
 va_c›y
 
 
-429 #ifde‡
+433 #ifde‡
 __va_c›y
 
 
-430 
+434 
 	#va_c›y
  
 __va_c›y
@@ -88461,7 +88539,7 @@ __va_c›y
 
 	)
 
-432 
+436 
 	#va_c›y
 (
 x
@@ -88471,7 +88549,7 @@ y
 
 	)
 
-436 
+440 
 	#˛o£sockë
 (
 x
@@ -88481,81 +88559,81 @@ x
 
 	)
 
-438 #i‚de‡
+442 #i‚de‡
 MG_MAX_HTTP_REQUEST_SIZE
 
 
-439 
+443 
 	#MG_MAX_HTTP_REQUEST_SIZE
  8192
 
 	)
 
-442 #i‚de‡
+446 #i‚de‡
 MG_MAX_HTTP_SEND_MBUF
 
 
-443 
+447 
 	#MG_MAX_HTTP_SEND_MBUF
  4096
 
 	)
 
-446 #i‚de‡
+450 #i‚de‡
 MG_MAX_HTTP_HEADERS
 
 
-447 
+451 
 	#MG_MAX_HTTP_HEADERS
  40
 
 	)
 
-450 #i‚de‡
+454 #i‚de‡
 CS_ENABLE_STDIO
 
 
-451 
+455 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-454 #i‚de‡
+458 #i‚de‡
 MG_ENABLE_BROADCAST
 
 
-455 
+459 
 	#MG_ENABLE_BROADCAST
  1
 
 	)
 
-458 #i‚de‡
+462 #i‚de‡
 MG_ENABLE_DIRECTORY_LISTING
 
 
-459 
+463 
 	#MG_ENABLE_DIRECTORY_LISTING
  1
 
 	)
 
-462 #i‚de‡
+466 #i‚de‡
 MG_ENABLE_FILESYSTEM
 
 
-463 
+467 
 	#MG_ENABLE_FILESYSTEM
  1
 
 	)
 
-466 #i‚de‡
+470 #i‚de‡
 MG_ENABLE_HTTP_CGI
 
 
-467 
+471 
 	#MG_ENABLE_HTTP_CGI
  
 MG_ENABLE_FILESYSTEM
@@ -88563,11 +88641,11 @@ MG_ENABLE_FILESYSTEM
 
 	)
 
-470 #i‚de‡
+474 #i‚de‡
 MG_NET_IF
 
 
-471 
+475 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -88575,85 +88653,85 @@ MG_NET_IF_SOCKET
 
 	)
 
-476 #ifde‡
+480 #ifde‡
 MG_MODULE_LINES
 
 
-484 #i‚de‡
+488 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_ESP32_H_
 
 
-485 
+489 
 	#CS_COMMON_PLATFORMS_PLATFORM_ESP32_H_
 
 
 	)
 
-486 #i‡
+490 #i‡
 CS_PLATFORM
  =
 CS_P_ESP32
 
 
-488 
+492 
 	~<as£π.h
 >
 
-489 
+493 
 	~<˘y≥.h
 >
 
-490 
+494 
 	~<dúít.h
 >
 
-491 
+495 
 	~<f˙é.h
 >
 
-492 
+496 
 	~<öây≥s.h
 >
 
-493 
+497 
 	~<machöe/ídün.h
 >
 
-494 
+498 
 	~<°döt.h
 >
 
-495 
+499 
 	~<°rög.h
 >
 
-496 
+500 
 	~<sys/°©.h
 >
 
-497 
+501 
 	~<sys/time.h
 >
 
-499 
+503 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-500 
+504 
 °©
  
 	tcs_°©_t
 ;
 
-501 
+505 
 	#DIRSEP
  '/'
 
 	)
 
-502 
+506 
 	#to64
 (
 x
@@ -88665,7 +88743,7 @@ NULL
 
 	)
 
-503 
+507 
 	#INT64_FMT
  
 PRId64
@@ -88673,7 +88751,7 @@ PRId64
 
 	)
 
-504 
+508 
 	#INT64_X_FMT
  
 PRIx64
@@ -88681,29 +88759,29 @@ PRIx64
 
 	)
 
-505 
+509 
 	#__cde˛
 
 
 	)
 
-506 
+510 
 	#_FILE_OFFSET_BITS
  32
 
 	)
 
-508 
+512 
 	#MG_LWIP
  1
 
 	)
 
-510 #i‚de‡
+514 #i‚de‡
 MG_NET_IF
 
 
-511 
+515 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -88711,93 +88789,93 @@ MG_NET_IF_SOCKET
 
 	)
 
-514 #i‚de‡
+518 #i‚de‡
 CS_ENABLE_STDIO
 
 
-515 
+519 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-520 #ifde‡
+524 #ifde‡
 MG_MODULE_LINES
 
 
-528 #i‚de‡
+532 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_ESP8266_H_
 
 
-529 
+533 
 	#CS_COMMON_PLATFORMS_PLATFORM_ESP8266_H_
 
 
 	)
 
-530 #i‡
+534 #i‡
 CS_PLATFORM
  =
 CS_P_ESP8266
 
 
-532 
+536 
 	~<as£π.h
 >
 
-533 
+537 
 	~<˘y≥.h
 >
 
-534 
+538 
 	~<f˙é.h
 >
 
-535 
+539 
 	~<öây≥s.h
 >
 
-536 
+540 
 	~<machöe/ídün.h
 >
 
-537 
+541 
 	~<°rög.h
 >
 
-538 
+542 
 	~<sys/°©.h
 >
 
-539 
+543 
 	~<sys/time.h
 >
 
-541 
+545 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-542 
+546 
 °©
  
 	tcs_°©_t
 ;
 
-543 
+547 
 	#DIRSEP
  '/'
 
 	)
 
-544 
+548 
 	#CS_DEFINE_DIRENT
 
 
 	)
 
-546 
+550 
 	#to64
 (
 x
@@ -88809,7 +88887,7 @@ NULL
 
 	)
 
-547 
+551 
 	#INT64_FMT
  
 PRId64
@@ -88817,7 +88895,7 @@ PRId64
 
 	)
 
-548 
+552 
 	#INT64_X_FMT
  
 PRIx64
@@ -88825,23 +88903,23 @@ PRIx64
 
 	)
 
-549 
+553 
 	#__cde˛
 
 
 	)
 
-550 
+554 
 	#_FILE_OFFSET_BITS
  32
 
 	)
 
-552 #i‚de‡
+556 #i‚de‡
 RTOS_SDK
 
 
-553 
+557 
 	#fûío
 (
 x
@@ -88849,31 +88927,31 @@ x
 
 	)
 
-556 
+560 
 	#MG_LWIP
  1
 
 	)
 
-559 
+563 
 	#LWIP_TIMEVAL_PRIVATE
  0
 
 	)
 
-561 #i‚de‡
+565 #i‚de‡
 MG_NET_IF
 
 
-562 
+566 
 	~<lwù/›t.h
 >
 
-563 #i‡
+567 #i‡
 LWIP_SOCKET
 
 
-564 
+568 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -88881,7 +88959,7 @@ MG_NET_IF_SOCKET
 
 	)
 
-566 
+570 
 	#MG_NET_IF
  
 MG_NET_IF_LWIP_LOW_LEVEL
@@ -88889,65 +88967,65 @@ MG_NET_IF_LWIP_LOW_LEVEL
 
 	)
 
-570 #i‚de‡
+574 #i‚de‡
 CS_ENABLE_STDIO
 
 
-571 
+575 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-576 #ifde‡
+580 #ifde‡
 MG_MODULE_LINES
 
 
-584 #i‚de‡
+588 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_CC3100_H_
 
 
-585 
+589 
 	#CS_COMMON_PLATFORMS_PLATFORM_CC3100_H_
 
 
 	)
 
-586 #i‡
+590 #i‡
 CS_PLATFORM
  =
 CS_P_CC3100
 
 
-588 
+592 
 	~<as£π.h
 >
 
-589 
+593 
 	~<˘y≥.h
 >
 
-590 
+594 
 	~<î∫o.h
 >
 
-591 
+595 
 	~<öây≥s.h
 >
 
-592 
+596 
 	~<°döt.h
 >
 
-593 
+597 
 	~<°rög.h
 >
 
-594 
+598 
 	~<time.h
 >
 
-596 
+600 
 	#MG_NET_IF
  
 MG_NET_IF_SIMPLELINK
@@ -88955,7 +89033,7 @@ MG_NET_IF_SIMPLELINK
 
 	)
 
-597 
+601 
 	#MG_SSL_IF
  
 MG_SSL_IF_SIMPLELINK
@@ -88963,29 +89041,29 @@ MG_SSL_IF_SIMPLELINK
 
 	)
 
-605 
+609 
 	~<sim∂ñök.h
 >
 
-606 
+610 
 	~<√èµ.h
 >
 
-607 #unde‡
+611 #unde‡
 timevÆ
 
 
-609 
+613 
 	tsock_t
 ;
 
-610 
+614 
 	#INVALID_SOCKET
  (-1)
 
 	)
 
-612 
+616 
 	#to64
 (
 x
@@ -88997,7 +89075,7 @@ NULL
 
 	)
 
-613 
+617 
 	#INT64_FMT
  
 PRId64
@@ -89005,7 +89083,7 @@ PRId64
 
 	)
 
-614 
+618 
 	#INT64_X_FMT
  
 PRIx64
@@ -89013,19 +89091,19 @@ PRIx64
 
 	)
 
-615 
+619 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-617 
+621 
 	#SOMAXCONN
  8
 
 	)
 
-619 c⁄° *
+623 c⁄° *
 	`öë_¡›
 (
 af
@@ -89039,7 +89117,7 @@ sockÀn_t
 size
 );
 
-620 *
+624 *
 	`öë_¡ﬂ
 (
 ö_addr
@@ -89047,7 +89125,7 @@ size
 ö
 );
 
-621 
+625 
 	`öë_±⁄
 (
 af
@@ -89057,67 +89135,67 @@ af
 d°
 );
 
-625 #ifde‡
+629 #ifde‡
 MG_MODULE_LINES
 
 
-633 #i‚de‡
+637 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_CC3200_H_
 
 
-634 
+638 
 	#CS_COMMON_PLATFORMS_PLATFORM_CC3200_H_
 
 
 	)
 
-635 #i‡
+639 #i‡
 CS_PLATFORM
  =
 CS_P_CC3200
 
 
-637 
+641 
 	~<as£π.h
 >
 
-638 
+642 
 	~<˘y≥.h
 >
 
-639 
+643 
 	~<î∫o.h
 >
 
-640 
+644 
 	~<öây≥s.h
 >
 
-641 
+645 
 	~<°döt.h
 >
 
-642 
+646 
 	~<°rög.h
 >
 
-643 
+647 
 	~<time.h
 >
 
-645 #i‚de‡
+649 #i‚de‡
 __TI_COMPILER_VERSION__
 
 
-646 
+650 
 	~<f˙é.h
 >
 
-647 
+651 
 	~<sys/time.h
 >
 
-650 
+654 
 	#MG_NET_IF
  
 MG_NET_IF_SIMPLELINK
@@ -89125,7 +89203,7 @@ MG_NET_IF_SIMPLELINK
 
 	)
 
-651 
+655 
 	#MG_SSL_IF
  
 MG_SSL_IF_SIMPLELINK
@@ -89133,7 +89211,7 @@ MG_SSL_IF_SIMPLELINK
 
 	)
 
-654 #i‡
+658 #i‡
 	`deföed
 (
 CC3200_FS_SPIFFS
@@ -89141,41 +89219,41 @@ CC3200_FS_SPIFFS
 MG_ENABLE_DIRECTORY_LISTING
 )
 
-655 
+659 
 	#MG_ENABLE_DIRECTORY_LISTING
  1
 
 	)
 
-660 
+664 
 	tsock_t
 ;
 
-661 
+665 
 	#INVALID_SOCKET
  (-1)
 
 	)
 
-662 
+666 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-663 
+667 
 °©
  
 	tcs_°©_t
 ;
 
-664 
+668 
 	#DIRSEP
  '/'
 
 	)
 
-665 
+669 
 	#to64
 (
 x
@@ -89187,7 +89265,7 @@ NULL
 
 	)
 
-666 
+670 
 	#INT64_FMT
  
 PRId64
@@ -89195,7 +89273,7 @@ PRId64
 
 	)
 
-667 
+671 
 	#INT64_X_FMT
  
 PRIx64
@@ -89203,13 +89281,13 @@ PRIx64
 
 	)
 
-668 
+672 
 	#__cde˛
 
 
 	)
 
-670 
+674 
 	#fûío
 (
 x
@@ -89217,19 +89295,19 @@ x
 
 	)
 
-674 #ifde‡
+678 #ifde‡
 __˝lu•lus
 
 
-678 #ifde‡
+682 #ifde‡
 __TI_COMPILER_VERSION__
 
 
-679 
+683 
 SlTimevÆ_t
 ;
 
-680 
+684 
 	#timevÆ
  
 SlTimevÆ_t
@@ -89237,7 +89315,7 @@ SlTimevÆ_t
 
 	)
 
-681 
+685 
 	`gëtimeofday
 (
 timevÆ
@@ -89247,7 +89325,7 @@ t
 tz
 );
 
-683 
+687 
 	`a•rötf
 (**
 °Ω
@@ -89255,59 +89333,59 @@ tz
 fmt
 , ...);
 
-688 #ifde‡
+692 #ifde‡
 __TI_COMPILER_VERSION__
 
 
-690 
+694 
 	~<fûe.h
 >
 
-692 
+696 
 	tmode_t
 ;
 
-693 
+697 
 size_t
  
 	t_off_t
 ;
 
-694 
+698 
 	tssize_t
 ;
 
-696 
+700 
 	s°©
  {
 
-697 
+701 
 °_öo
 ;
 
-698 
+702 
 mode_t
  
 °_mode
 ;
 
-699 
+703 
 °_∆ök
 ;
 
-700 
+704 
 time_t
  
 °_mtime
 ;
 
-701 
+705 
 off_t
  
 °_size
 ;
 
-704 
+708 
 	`_°©
 (c⁄° *
 ∑th«me
@@ -89317,7 +89395,7 @@ off_t
 °
 );
 
-705 
+709 
 	#°©
 (
 a
@@ -89329,31 +89407,31 @@ b
 
 	)
 
-707 
+711 
 	#__S_IFMT
  0170000
 
 	)
 
-709 
+713 
 	#__S_IFDIR
  0040000
 
 	)
 
-710 
+714 
 	#__S_IFCHR
  0020000
 
 	)
 
-711 
+715 
 	#__S_IFREG
  0100000
 
 	)
 
-713 
+717 
 	#__S_ISTYPE
 (
 mode
@@ -89365,7 +89443,7 @@ __S_IFMT
 
 	)
 
-715 
+719 
 	#S_IFDIR
  
 __S_IFDIR
@@ -89373,7 +89451,7 @@ __S_IFDIR
 
 	)
 
-716 
+720 
 	#S_IFCHR
  
 __S_IFCHR
@@ -89381,7 +89459,7 @@ __S_IFCHR
 
 	)
 
-717 
+721 
 	#S_IFREG
  
 __S_IFREG
@@ -89389,7 +89467,7 @@ __S_IFREG
 
 	)
 
-718 
+722 
 	#S_ISDIR
 (
 mode
@@ -89401,7 +89479,7 @@ __S_IFDIR
 
 	)
 
-719 
+723 
 	#S_ISREG
 (
 mode
@@ -89413,7 +89491,7 @@ __S_IFREG
 
 	)
 
-722 
+726 
 	#va_c›y
 (
 ≠c
@@ -89423,17 +89501,17 @@ __S_IFREG
 
 	)
 
-726 #ifde‡
+730 #ifde‡
 CC3200_FS_SLFS
 
 
-727 
+731 
 	#MG_FS_SLFS
 
 
 	)
 
-730 #i‡(
+734 #i‡(
 	`deföed
 (
 CC3200_FS_SPIFFS
@@ -89441,103 +89519,103 @@ CC3200_FS_SPIFFS
 CC3200_FS_SLFS
 )) && \
 
-731 !
+735 !
 	$deföed
 (
 MG_ENABLE_FILESYSTEM
 )
 
-732 
+736 
 	#MG_ENABLE_FILESYSTEM
  1
 
 	)
 
-733 
+737 
 	#CS_DEFINE_DIRENT
 
 
 	)
 
-736 #i‚de‡
+740 #i‚de‡
 CS_ENABLE_STDIO
 
 
-737 
+741 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-740 #ifde‡
+744 #ifde‡
 __˝lu•lus
 
 
-741 
+745 
 	}
 }
 
-746 #ifde‡
+750 #ifde‡
 MG_MODULE_LINES
 
 
-754 #i‚de‡
+758 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_MSP432_H_
 
 
-755 
+759 
 	#CS_COMMON_PLATFORMS_PLATFORM_MSP432_H_
 
 
 	)
 
-756 #i‡
+760 #i‡
 CS_PLATFORM
  =
 CS_P_MSP432
 
 
-758 
+762 
 	~<as£π.h
 >
 
-759 
+763 
 	~<˘y≥.h
 >
 
-760 
+764 
 	~<î∫o.h
 >
 
-761 
+765 
 	~<öây≥s.h
 >
 
-762 
+766 
 	~<°döt.h
 >
 
-763 
+767 
 	~<°rög.h
 >
 
-764 
+768 
 	~<time.h
 >
 
-766 #i‚de‡
+770 #i‚de‡
 __TI_COMPILER_VERSION__
 
 
-767 
+771 
 	~<f˙é.h
 >
 
-768 
+772 
 	~<sys/time.h
 >
 
-771 
+775 
 	#MG_NET_IF
  
 MG_NET_IF_SIMPLELINK
@@ -89545,7 +89623,7 @@ MG_NET_IF_SIMPLELINK
 
 	)
 
-772 
+776 
 	#MG_SSL_IF
  
 MG_SSL_IF_SIMPLELINK
@@ -89553,35 +89631,35 @@ MG_SSL_IF_SIMPLELINK
 
 	)
 
-776 
+780 
 	tsock_t
 ;
 
-777 
+781 
 	#INVALID_SOCKET
  (-1)
 
 	)
 
-778 
+782 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-779 
+783 
 °©
  
 	tcs_°©_t
 ;
 
-780 
+784 
 	#DIRSEP
  '/'
 
 	)
 
-781 
+785 
 	#to64
 (
 x
@@ -89593,7 +89671,7 @@ NULL
 
 	)
 
-782 
+786 
 	#INT64_FMT
  
 PRId64
@@ -89601,7 +89679,7 @@ PRId64
 
 	)
 
-783 
+787 
 	#INT64_X_FMT
  
 PRIx64
@@ -89609,13 +89687,13 @@ PRIx64
 
 	)
 
-784 
+788 
 	#__cde˛
 
 
 	)
 
-786 
+790 
 	#fûío
 (
 x
@@ -89623,19 +89701,19 @@ x
 
 	)
 
-790 #ifde‡
+794 #ifde‡
 __˝lu•lus
 
 
-794 #ifde‡
+798 #ifde‡
 __TI_COMPILER_VERSION__
 
 
-795 
+799 
 SlTimevÆ_t
 ;
 
-796 
+800 
 	#timevÆ
  
 SlTimevÆ_t
@@ -89643,7 +89721,7 @@ SlTimevÆ_t
 
 	)
 
-797 
+801 
 gëtimeofday
 (
 timevÆ
@@ -89653,59 +89731,59 @@ t
 tz
 );
 
-801 #ifde‡
+805 #ifde‡
 __TI_COMPILER_VERSION__
 
 
-803 
+807 
 	~<fûe.h
 >
 
-805 
+809 
 	tmode_t
 ;
 
-806 
+810 
 size_t
  
 	t_off_t
 ;
 
-807 
+811 
 	tssize_t
 ;
 
-809 
+813 
 	s°©
  {
 
-810 
+814 
 	m°_öo
 ;
 
-811 
+815 
 mode_t
  
 	m°_mode
 ;
 
-812 
+816 
 	m°_∆ök
 ;
 
-813 
+817 
 time_t
  
 	m°_mtime
 ;
 
-814 
+818 
 off_t
  
 	m°_size
 ;
 
-817 
+821 
 _°©
 (c⁄° *
 ∑th«me
@@ -89715,7 +89793,7 @@ _°©
 °
 );
 
-818 
+822 
 	#°©
 (
 a
@@ -89727,31 +89805,31 @@ b
 
 	)
 
-820 
+824 
 	#__S_IFMT
  0170000
 
 	)
 
-822 
+826 
 	#__S_IFDIR
  0040000
 
 	)
 
-823 
+827 
 	#__S_IFCHR
  0020000
 
 	)
 
-824 
+828 
 	#__S_IFREG
  0100000
 
 	)
 
-826 
+830 
 	#__S_ISTYPE
 (
 mode
@@ -89763,7 +89841,7 @@ __S_IFMT
 
 	)
 
-828 
+832 
 	#S_IFDIR
  
 __S_IFDIR
@@ -89771,7 +89849,7 @@ __S_IFDIR
 
 	)
 
-829 
+833 
 	#S_IFCHR
  
 __S_IFCHR
@@ -89779,7 +89857,7 @@ __S_IFCHR
 
 	)
 
-830 
+834 
 	#S_IFREG
  
 __S_IFREG
@@ -89787,7 +89865,7 @@ __S_IFREG
 
 	)
 
-831 
+835 
 	#S_ISDIR
 (
 mode
@@ -89799,7 +89877,7 @@ __S_IFDIR
 
 	)
 
-832 
+836 
 	#S_ISREG
 (
 mode
@@ -89811,7 +89889,7 @@ __S_IFREG
 
 	)
 
-835 
+839 
 	#va_c›y
 (
 ≠c
@@ -89821,17 +89899,17 @@ __S_IFREG
 
 	)
 
-839 #i‚de‡
+843 #i‚de‡
 CS_ENABLE_STDIO
 
 
-840 
+844 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-843 #i‡(
+847 #i‡(
 deföed
 (
 CC3200_FS_SPIFFS
@@ -89841,95 +89919,95 @@ CC3200_FS_SLFS
 MG_ENABLE_FILESYSTEM
 )
 
-844 
+848 
 	#MG_ENABLE_FILESYSTEM
  1
 
 	)
 
-847 #ifde‡
+851 #ifde‡
 __˝lu•lus
 
 
-853 #ifde‡
+857 #ifde‡
 MG_MODULE_LINES
 
 
-861 #i‚de‡
+865 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_TM4C129_H_
 
 
-862 
+866 
 	#CS_COMMON_PLATFORMS_PLATFORM_TM4C129_H_
 
 
 	)
 
-863 #i‡
+867 #i‡
 CS_PLATFORM
  =
 CS_P_TM4C129
 
 
-865 
+869 
 	~<as£π.h
 >
 
-866 
+870 
 	~<˘y≥.h
 >
 
-867 
+871 
 	~<î∫o.h
 >
 
-868 
+872 
 	~<öây≥s.h
 >
 
-869 
+873 
 	~<°döt.h
 >
 
-870 
+874 
 	~<°rög.h
 >
 
-871 
+875 
 	~<time.h
 >
 
-873 #i‚de‡
+877 #i‚de‡
 __TI_COMPILER_VERSION__
 
 
-874 
+878 
 	~<f˙é.h
 >
 
-875 
+879 
 	~<sys/time.h
 >
 
-878 
+882 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-879 
+883 
 °©
  
 	tcs_°©_t
 ;
 
-880 
+884 
 	#DIRSEP
  '/'
 
 	)
 
-881 
+885 
 	#to64
 (
 x
@@ -89941,7 +90019,7 @@ NULL
 
 	)
 
-882 
+886 
 	#INT64_FMT
  
 PRId64
@@ -89949,7 +90027,7 @@ PRId64
 
 	)
 
-883 
+887 
 	#INT64_X_FMT
  
 PRIx64
@@ -89957,25 +90035,25 @@ PRIx64
 
 	)
 
-884 
+888 
 	#__cde˛
 
 
 	)
 
-886 #i‚de‡
+890 #i‚de‡
 MG_NET_IF
 
 
-887 
+891 
 	~<lwù/›t.h
 >
 
-888 #i‡
+892 #i‡
 LWIP_SOCKET
 
 
-889 
+893 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -89983,7 +90061,7 @@ MG_NET_IF_SOCKET
 
 	)
 
-891 
+895 
 	#MG_NET_IF
  
 MG_NET_IF_LWIP_LOW_LEVEL
@@ -89991,37 +90069,37 @@ MG_NET_IF_LWIP_LOW_LEVEL
 
 	)
 
-893 
+897 
 	#MG_LWIP
  1
 
 	)
 
-894 #ñi‡
+898 #ñi‡
 MG_NET_IF
  =
 MG_NET_IF_SIMPLELINK
 
 
-895 
+899 
 	~"comm⁄/∂©f‹ms/sim∂ñök/cs_sim∂ñök.h
 "
 
-898 #i‚de‡
+902 #i‚de‡
 CS_ENABLE_STDIO
 
 
-899 
+903 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-902 #ifde‡
+906 #ifde‡
 __TI_COMPILER_VERSION__
 
 
-904 
+908 
 	#va_c›y
 (
 ≠c
@@ -90031,101 +90109,101 @@ __TI_COMPILER_VERSION__
 
 	)
 
-907 #ifde‡
+911 #ifde‡
 __˝lu•lus
 
 
-913 #ifde‡
+917 #ifde‡
 MG_MODULE_LINES
 
 
-921 #i‚de‡
+925 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_MBED_H_
 
 
-922 
+926 
 	#CS_COMMON_PLATFORMS_PLATFORM_MBED_H_
 
 
 	)
 
-923 #i‡
+927 #i‡
 CS_PLATFORM
  =
 CS_P_MBED
 
 
-929 #ifde‡
+933 #ifde‡
 __˝lu•lus
 
 
-933 
+937 
 	~<as£π.h
 >
 
-934 
+938 
 	~<˘y≥.h
 >
 
-935 
+939 
 	~<î∫o.h
 >
 
-936 
+940 
 	~<öây≥s.h
 >
 
-937 
+941 
 	~<°döt.h
 >
 
-938 
+942 
 	~<°rög.h
 >
 
-939 
+943 
 	~<time.h
 >
 
-940 
+944 
 	~<sys/°©.h
 >
 
-941 
+945 
 	~<sys/ty≥s.h
 >
 
-942 
+946 
 	~<f˙é.h
 >
 
-943 
+947 
 	~<°dio.h
 >
 
-945 
+949 
 °©
  
 	tcs_°©_t
 ;
 
-946 
+950 
 	#DIRSEP
  '/'
 
 	)
 
-948 #i‚de‡
+952 #i‚de‡
 CS_ENABLE_STDIO
 
 
-949 
+953 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-958 #i‡
+962 #i‡
 deföed
 (
 __ARMCC_VERSION
@@ -90133,13 +90211,13 @@ __ARMCC_VERSION
 __ICCARM__
 )
 
-959 
+963 
 	#_TIMEVAL_DEFINED
 
 
 	)
 
-960 
+964 
 	#gëtimeofday
  
 _gëtimeofday
@@ -90147,53 +90225,53 @@ _gëtimeofday
 
 	)
 
-963 
+967 
 	tsu£c⁄ds_t
 ;
 
-964 
+968 
 	stimevÆ
  {
 
-965 
+969 
 time_t
  
 	mtv_£c
 ;
 
-966 
+970 
 su£c⁄ds_t
  
 	mtv_u£c
 ;
 
-971 #i‡
+975 #i‡
 MG_NET_IF
  =
 MG_NET_IF_SIMPLELINK
 
 
-973 
+977 
 	#MG_SIMPLELINK_NO_OSI
  1
 
 	)
 
-975 
+979 
 	~<sim∂ñök.h
 >
 
-977 
+981 
 	tsock_t
 ;
 
-978 
+982 
 	#INVALID_SOCKET
  (-1)
 
 	)
 
-980 
+984 
 	#to64
 (
 x
@@ -90205,7 +90283,7 @@ NULL
 
 	)
 
-981 
+985 
 	#INT64_FMT
  
 PRId64
@@ -90213,7 +90291,7 @@ PRId64
 
 	)
 
-982 
+986 
 	#INT64_X_FMT
  
 PRIx64
@@ -90221,19 +90299,19 @@ PRIx64
 
 	)
 
-983 
+987 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-985 
+989 
 	#SOMAXCONN
  8
 
 	)
 
-987 c⁄° *
+991 c⁄° *
 öë_¡›
 (
 af
@@ -90247,7 +90325,7 @@ sockÀn_t
 size
 );
 
-988 *
+992 *
 öë_¡ﬂ
 (
 ö_addr
@@ -90255,7 +90333,7 @@ size
 ö
 );
 
-989 
+993 
 öë_±⁄
 (
 af
@@ -90265,7 +90343,7 @@ af
 d°
 );
 
-990 
+994 
 öë_©⁄
 (c⁄° *
 ˝
@@ -90275,7 +90353,7 @@ d°
 öp
 );
 
-991 
+995 
 ö_addr_t
  
 öë_addr
@@ -90283,51 +90361,51 @@ d°
 ˝
 );
 
-997 #ifde‡
+1001 #ifde‡
 MG_MODULE_LINES
 
 
-1004 #i‚de‡
+1008 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_NRF51_H_
 
 
-1005 
+1009 
 	#CS_COMMON_PLATFORMS_PLATFORM_NRF51_H_
 
 
 	)
 
-1006 #i‡
+1010 #i‡
 CS_PLATFORM
  =
 CS_P_NRF51
 
 
-1008 
+1012 
 	~<as£π.h
 >
 
-1009 
+1013 
 	~<˘y≥.h
 >
 
-1010 
+1014 
 	~<öây≥s.h
 >
 
-1011 
+1015 
 	~<°döt.h
 >
 
-1012 
+1016 
 	~<°rög.h
 >
 
-1013 
+1017 
 	~<time.h
 >
 
-1015 
+1019 
 	#to64
 (
 x
@@ -90339,7 +90417,7 @@ NULL
 
 	)
 
-1017 
+1021 
 	#MG_NET_IF
  
 MG_NET_IF_LWIP_LOW_LEVEL
@@ -90347,35 +90425,35 @@ MG_NET_IF_LWIP_LOW_LEVEL
 
 	)
 
-1018 
+1022 
 	#MG_LWIP
  1
 
 	)
 
-1019 
+1023 
 	#MG_ENABLE_IPV6
  1
 
 	)
 
-1025 #i‡!
+1029 #i‡!
 deföed
 (
 __ARMCC_VERSION
 )
 
-1026 
+1030 
 	#LWIP_TIMEVAL_PRIVATE
  0
 
 	)
 
-1028 
+1032 
 	gtimevÆ
 ;
 
-1029 
+1033 
 gëtimeofday
 (
 timevÆ
@@ -90385,7 +90463,7 @@ timevÆ
 tzp
 );
 
-1032 
+1036 
 	#INT64_FMT
  
 PRId64
@@ -90393,13 +90471,13 @@ PRId64
 
 	)
 
-1033 
+1037 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-1038 
+1042 
 	#CS_ENABLE_STRDUP
  
 	`deföed
@@ -90409,55 +90487,55 @@ __ARMCC_VERSION
 
 	)
 
-1042 #ifde‡
+1046 #ifde‡
 MG_MODULE_LINES
 
 
-1049 #i‚de‡
+1053 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_NRF52_H_
 
 
-1050 
+1054 
 	#CS_COMMON_PLATFORMS_PLATFORM_NRF52_H_
 
 
 	)
 
-1051 #i‡
+1055 #i‡
 CS_PLATFORM
  =
 CS_P_NRF52
 
 
-1053 
+1057 
 	~<as£π.h
 >
 
-1054 
+1058 
 	~<˘y≥.h
 >
 
-1055 
+1059 
 	~<î∫o.h
 >
 
-1056 
+1060 
 	~<öây≥s.h
 >
 
-1057 
+1061 
 	~<°döt.h
 >
 
-1058 
+1062 
 	~<°rög.h
 >
 
-1059 
+1063 
 	~<time.h
 >
 
-1061 
+1065 
 	#to64
 (
 x
@@ -90469,7 +90547,7 @@ NULL
 
 	)
 
-1063 
+1067 
 	#MG_NET_IF
  
 MG_NET_IF_LWIP_LOW_LEVEL
@@ -90477,43 +90555,43 @@ MG_NET_IF_LWIP_LOW_LEVEL
 
 	)
 
-1064 
+1068 
 	#MG_LWIP
  1
 
 	)
 
-1065 
+1069 
 	#MG_ENABLE_IPV6
  1
 
 	)
 
-1067 #i‡!
+1071 #i‡!
 deföed
 (
 ENOSPC
 )
 
-1068 
+1072 
 	#ENOSPC
  28
 
 	)
 
-1075 #i‡!
+1079 #i‡!
 deföed
 (
 __ARMCC_VERSION
 )
 
-1076 
+1080 
 	#LWIP_TIMEVAL_PRIVATE
  0
 
 	)
 
-1079 
+1083 
 	#INT64_FMT
  
 PRId64
@@ -90521,13 +90599,13 @@ PRId64
 
 	)
 
-1080 
+1084 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-1085 
+1089 
 	#CS_ENABLE_STRDUP
  
 	`deföed
@@ -90537,21 +90615,21 @@ __ARMCC_VERSION
 
 	)
 
-1089 #ifde‡
+1093 #ifde‡
 MG_MODULE_LINES
 
 
-1097 #i‚de‡
+1101 #i‚de‡
 CS_COMMON_PLATFORMS_SIMPLELINK_CS_SIMPLELINK_H_
 
 
-1098 
+1102 
 	#CS_COMMON_PLATFORMS_SIMPLELINK_CS_SIMPLELINK_H_
 
 
 	)
 
-1101 #i‡
+1105 #i‡
 deföed
 (
 MG_NET_IF
@@ -90559,75 +90637,75 @@ MG_NET_IF
 MG_NET_IF_SIMPLELINK
  && \
 
-1102 !
+1106 !
 deföed
 (
 __SIMPLELINK_H__
 )
 
-1104 
+1108 
 	~<°dboﬁ.h
 >
 
-1106 #i‚de‡
+1110 #i‚de‡
 __TI_COMPILER_VERSION__
 
 
-1107 #unde‡
+1111 #unde‡
 __CONCAT
 
 
-1108 #unde‡
+1112 #unde‡
 FD_CLR
 
 
-1109 #unde‡
+1113 #unde‡
 FD_ISSET
 
 
-1110 #unde‡
+1114 #unde‡
 FD_SET
 
 
-1111 #unde‡
+1115 #unde‡
 FD_SETSIZE
 
 
-1112 #unde‡
+1116 #unde‡
 FD_ZERO
 
 
-1113 #unde‡
+1117 #unde‡
 fd_£t
 
 
-1118 
+1122 
 	#PROVISIONING_API_H_
 
 
 	)
 
-1119 
+1123 
 	~<sim∂ñök/u£r.h
 >
 
-1120 #unde‡
+1124 #unde‡
 PROVISIONING_API_H_
 
 
-1121 #unde‡
+1125 #unde‡
 SL_INC_STD_BSD_API_NAMING
 
 
-1123 
+1127 
 	~<sim∂ñök/ö˛ude/sim∂ñök.h
 >
 
-1124 
+1128 
 	~<sim∂ñök/ö˛ude/√èµ.h
 >
 
-1128 
+1132 
 	#AF_INET
  
 SL_AF_INET
@@ -90635,7 +90713,7 @@ SL_AF_INET
 
 	)
 
-1130 
+1134 
 	#sockÀn_t
  
 SlSockÀn_t
@@ -90643,7 +90721,7 @@ SlSockÀn_t
 
 	)
 
-1131 
+1135 
 	#sockaddr
  
 SlSockAddr_t
@@ -90651,7 +90729,7 @@ SlSockAddr_t
 
 	)
 
-1132 
+1136 
 	#sockaddr_ö
  
 SlSockAddrIn_t
@@ -90659,7 +90737,7 @@ SlSockAddrIn_t
 
 	)
 
-1133 
+1137 
 	#ö_addr
  
 SlInAddr_t
@@ -90667,7 +90745,7 @@ SlInAddr_t
 
 	)
 
-1135 
+1139 
 	#SOCK_STREAM
  
 SL_SOCK_STREAM
@@ -90675,7 +90753,7 @@ SL_SOCK_STREAM
 
 	)
 
-1136 
+1140 
 	#SOCK_DGRAM
  
 SL_SOCK_DGRAM
@@ -90683,7 +90761,7 @@ SL_SOCK_DGRAM
 
 	)
 
-1138 
+1142 
 	#ht⁄l
  
 ¶_Ht⁄l
@@ -90691,7 +90769,7 @@ SL_SOCK_DGRAM
 
 	)
 
-1139 
+1143 
 	#¡ohl
  
 ¶_Ntohl
@@ -90699,7 +90777,7 @@ SL_SOCK_DGRAM
 
 	)
 
-1140 
+1144 
 	#ht⁄s
  
 ¶_Ht⁄s
@@ -90707,7 +90785,7 @@ SL_SOCK_DGRAM
 
 	)
 
-1141 
+1145 
 	#¡ohs
  
 ¶_Ntohs
@@ -90715,11 +90793,11 @@ SL_SOCK_DGRAM
 
 	)
 
-1143 #i‚de‡
+1147 #i‚de‡
 EACCES
 
 
-1144 
+1148 
 	#EACCES
  
 SL_EACCES
@@ -90727,11 +90805,11 @@ SL_EACCES
 
 	)
 
-1146 #i‚de‡
+1150 #i‚de‡
 EAFNOSUPPORT
 
 
-1147 
+1151 
 	#EAFNOSUPPORT
  
 SL_EAFNOSUPPORT
@@ -90739,11 +90817,11 @@ SL_EAFNOSUPPORT
 
 	)
 
-1149 #i‚de‡
+1153 #i‚de‡
 EAGAIN
 
 
-1150 
+1154 
 	#EAGAIN
  
 SL_EAGAIN
@@ -90751,11 +90829,11 @@ SL_EAGAIN
 
 	)
 
-1152 #i‚de‡
+1156 #i‚de‡
 EBADF
 
 
-1153 
+1157 
 	#EBADF
  
 SL_EBADF
@@ -90763,11 +90841,11 @@ SL_EBADF
 
 	)
 
-1155 #i‚de‡
+1159 #i‚de‡
 EINVAL
 
 
-1156 
+1160 
 	#EINVAL
  
 SL_EINVAL
@@ -90775,11 +90853,11 @@ SL_EINVAL
 
 	)
 
-1158 #i‚de‡
+1162 #i‚de‡
 ENOMEM
 
 
-1159 
+1163 
 	#ENOMEM
  
 SL_ENOMEM
@@ -90787,11 +90865,11 @@ SL_ENOMEM
 
 	)
 
-1161 #i‚de‡
+1165 #i‚de‡
 EWOULDBLOCK
 
 
-1162 
+1166 
 	#EWOULDBLOCK
  
 SL_EWOULDBLOCK
@@ -90799,17 +90877,17 @@ SL_EWOULDBLOCK
 
 	)
 
-1165 
+1169 
 	#SOMAXCONN
  8
 
 	)
 
-1167 #ifde‡
+1171 #ifde‡
 __˝lu•lus
 
 
-1171 c⁄° *
+1175 c⁄° *
 öë_¡›
 (
 af
@@ -90823,7 +90901,7 @@ sockÀn_t
 size
 );
 
-1172 *
+1176 *
 öë_¡ﬂ
 (
 ö_addr
@@ -90831,7 +90909,7 @@ size
 ö
 );
 
-1173 
+1177 
 öë_±⁄
 (
 af
@@ -90841,15 +90919,15 @@ af
 d°
 );
 
-1175 
+1179 
 mg_mgr
 ;
 
-1176 
+1180 
 mg_c⁄√˘i⁄
 ;
 
-1178 (*
+1182 (*
 mg_öô_cb
 )(
 	tmg_mgr
@@ -90857,7 +90935,7 @@ mg_öô_cb
 	tmgr
 );
 
-1179 
+1183 
 boﬁ
  
 mg_°¨t_èsk
@@ -90871,7 +90949,7 @@ mg_öô_cb
 mg_öô
 );
 
-1181 
+1185 
 mg_run_ö_èsk
 ((*
 cb
@@ -90885,11 +90963,11 @@ mgr
 cb_¨g
 );
 
-1183 
+1187 
 ¶_fs_öô
 ();
 
-1185 
+1189 
 ¶_ª°¨t_cb
 (
 mg_mgr
@@ -90897,7 +90975,7 @@ mg_mgr
 mgr
 );
 
-1187 
+1191 
 ¶_£t_s¶_›ts
 (
 mg_c⁄√˘i⁄
@@ -90905,105 +90983,105 @@ mg_c⁄√˘i⁄
 nc
 );
 
-1189 #ifde‡
+1193 #ifde‡
 __˝lu•lus
 
 
-1196 #ifde‡
+1200 #ifde‡
 MG_MODULE_LINES
 
 
-1199 #i‚de‡
+1203 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_WINCE_H_
 
 
-1200 
+1204 
 	#CS_COMMON_PLATFORMS_PLATFORM_WINCE_H_
 
 
 	)
 
-1202 #i‡
+1206 #i‡
 CS_PLATFORM
  =
 CS_P_WINCE
 
 
-1216 #¥agm®
+1220 #¥agm®
 w¨nög
 (
 dißbÀ
  : 4127)
 
-1217 #¥agm®
+1221 #¥agm®
 w¨nög
 (
 dißbÀ
  : 4204)
 
-1219 #i‚de‡
+1223 #i‚de‡
 _WINSOCK_DEPRECATED_NO_WARNINGS
 
 
-1220 
+1224 
 	#_WINSOCK_DEPRECATED_NO_WARNINGS
  1
 
 	)
 
-1223 #i‚de‡
+1227 #i‚de‡
 _CRT_SECURE_NO_WARNINGS
 
 
-1224 
+1228 
 	#_CRT_SECURE_NO_WARNINGS
 
 
 	)
 
-1227 
+1231 
 	~<as£π.h
 >
 
-1228 
+1232 
 	~<limôs.h
 >
 
-1229 
+1233 
 	~<°ddef.h
 >
 
-1230 
+1234 
 	~<°dio.h
 >
 
-1231 
+1235 
 	~<°dlib.h
 >
 
-1232 
+1236 
 	~<time.h
 >
 
-1234 #¥agm®
+1238 #¥agm®
 commít
 (
 lib
 , "ws2.lib")
 
-1236 
+1240 
 	~<wösock2.h
 >
 
-1237 
+1241 
 	~<ws2t˝ù.h
 >
 
-1238 
+1242 
 	~<wödows.h
 >
 
-1240 
+1244 
 	#°rdup
  
 _°rdup
@@ -91011,11 +91089,11 @@ _°rdup
 
 	)
 
-1242 #i‚de‡
+1246 #i‚de‡
 EINPROGRESS
 
 
-1243 
+1247 
 	#EINPROGRESS
  
 WSAEINPROGRESS
@@ -91023,11 +91101,11 @@ WSAEINPROGRESS
 
 	)
 
-1246 #i‚de‡
+1250 #i‚de‡
 EWOULDBLOCK
 
 
-1247 
+1251 
 	#EWOULDBLOCK
  
 WSAEWOULDBLOCK
@@ -91035,11 +91113,11 @@ WSAEWOULDBLOCK
 
 	)
 
-1250 #i‚de‡
+1254 #i‚de‡
 __func__
 
 
-1251 
+1255 
 	#STRX
 (
 x
@@ -91047,7 +91125,7 @@ x
 
 	)
 
-1252 
+1256 
 	#STR
 (
 x
@@ -91057,7 +91135,7 @@ x
 
 	)
 
-1253 
+1257 
 	#__func__
  
 __FILE__
@@ -91069,7 +91147,7 @@ __LINE__
 
 	)
 
-1256 
+1260 
 	#¢¥ötf
  
 _¢¥ötf
@@ -91077,7 +91155,7 @@ _¢¥ötf
 
 	)
 
-1257 
+1261 
 	#fûío
  
 _fûío
@@ -91085,7 +91163,7 @@ _fûío
 
 	)
 
-1258 
+1262 
 	#v¢¥ötf
  
 _v¢¥ötf
@@ -91093,7 +91171,7 @@ _v¢¥ötf
 
 	)
 
-1259 
+1263 
 	#¶ìp
 (
 x
@@ -91103,7 +91181,7 @@ x
 
 	)
 
-1260 
+1264 
 	#to64
 (
 x
@@ -91113,7 +91191,7 @@ x
 
 	)
 
-1261 
+1265 
 	#rmdú
  
 _rmdú
@@ -91121,13 +91199,13 @@ _rmdú
 
 	)
 
-1263 #i‡
+1267 #i‡
 deföed
 (
 _MSC_VER
 ) && _MSC_VER >= 1400
 
-1264 
+1268 
 	#f£eko
 (
 x
@@ -91141,7 +91219,7 @@ z
 
 	)
 
-1266 
+1270 
 	#f£eko
 (
 x
@@ -91155,91 +91233,91 @@ z
 
 	)
 
-1269 
+1273 
 	tsockÀn_t
 ;
 
-1271 #i‡
+1275 #i‡
 _MSC_VER
  >= 1700
 
-1272 
+1276 
 	~<°döt.h
 >
 
-1274 sig√d 
+1278 sig√d 
 	töt8_t
 ;
 
-1275 
+1279 
 	tuöt8_t
 ;
 
-1276 
+1280 
 	töt32_t
 ;
 
-1277 
+1281 
 	tuöt32_t
 ;
 
-1278 
+1282 
 	töt16_t
 ;
 
-1279 
+1283 
 	tuöt16_t
 ;
 
-1280 
+1284 
 __öt64
  
 	töt64_t
 ;
 
-1281 
+1285 
 	t__öt64
  
 	tuöt64_t
 ;
 
-1284 
+1288 
 SOCKET
  
 	tsock_t
 ;
 
-1285 
+1289 
 uöt32_t
  
 	tö_addr_t
 ;
 
-1287 #i‚de‡
+1291 #i‚de‡
 UINT16_MAX
 
 
-1288 
+1292 
 	#UINT16_MAX
  65535
 
 	)
 
-1291 #i‚de‡
+1295 #i‚de‡
 UINT32_MAX
 
 
-1292 
+1296 
 	#UINT32_MAX
  4294967295
 
 	)
 
-1295 #i‚de‡
+1299 #i‚de‡
 pid_t
 
 
-1296 
+1300 
 	#pid_t
  
 HANDLE
@@ -91247,45 +91325,45 @@ HANDLE
 
 	)
 
-1299 
+1303 
 	#INT64_FMT
  "I64d"
 
 	)
 
-1300 
+1304 
 	#INT64_X_FMT
  "I64x"
 
 	)
 
-1302 
+1306 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-1304 
+1308 
 	#DIRSEP
  '\\'
 
 	)
 
-1305 
+1309 
 	#CS_DEFINE_DIRENT
 
 
 	)
 
-1307 #i‚de‡
+1311 #i‚de‡
 va_c›y
 
 
-1308 #ifde‡
+1312 #ifde‡
 __va_c›y
 
 
-1309 
+1313 
 	#va_c›y
  
 __va_c›y
@@ -91293,7 +91371,7 @@ __va_c›y
 
 	)
 
-1311 
+1315 
 	#va_c›y
 (
 x
@@ -91303,47 +91381,47 @@ y
 
 	)
 
-1315 #i‚de‡
+1319 #i‚de‡
 MG_MAX_HTTP_REQUEST_SIZE
 
 
-1316 
+1320 
 	#MG_MAX_HTTP_REQUEST_SIZE
  8192
 
 	)
 
-1319 #i‚de‡
+1323 #i‚de‡
 MG_MAX_HTTP_SEND_MBUF
 
 
-1320 
+1324 
 	#MG_MAX_HTTP_SEND_MBUF
  4096
 
 	)
 
-1323 #i‚de‡
+1327 #i‚de‡
 MG_MAX_HTTP_HEADERS
 
 
-1324 
+1328 
 	#MG_MAX_HTTP_HEADERS
  40
 
 	)
 
-1327 #i‚de‡
+1331 #i‚de‡
 CS_ENABLE_STDIO
 
 
-1328 
+1332 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-1331 
+1335 
 	#ab‹t
 (Ë
 	`DebugBªak
@@ -91351,41 +91429,41 @@ CS_ENABLE_STDIO
 
 	)
 
-1333 #i‚de‡
+1337 #i‚de‡
 BUFSIZ
 
 
-1334 
+1338 
 	#BUFSIZ
  4096
 
 	)
 
-1340 #i‚de‡
+1344 #i‚de‡
 MG_ENABLE_THREADS
 
 
-1341 
+1345 
 	#MG_ENABLE_THREADS
  0
 
 	)
 
-1344 #i‚de‡
+1348 #i‚de‡
 MG_ENABLE_FILESYSTEM
 
 
-1345 
+1349 
 	#MG_ENABLE_FILESYSTEM
  1
 
 	)
 
-1348 #i‚de‡
+1352 #i‚de‡
 MG_NET_IF
 
 
-1349 
+1353 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -91393,37 +91471,37 @@ MG_NET_IF_SOCKET
 
 	)
 
-1352 
+1356 
 	s_°©i64
  {
 
-1353 
+1357 
 uöt32_t
  
 	g°_mtime
 ;
 
-1354 
+1358 
 uöt32_t
  
 	g°_size
 ;
 
-1355 
+1359 
 uöt32_t
  
 	g°_mode
 ;
 
-1356 } 
+1360 } 
 	tcs_°©_t
 ;
 
-1363 #i‚de‡
+1367 #i‚de‡
 ENOENT
 
 
-1364 
+1368 
 	#ENOENT
  
 ERROR_PATH_NOT_FOUND
@@ -91431,11 +91509,11 @@ ERROR_PATH_NOT_FOUND
 
 	)
 
-1367 #i‚de‡
+1371 #i‚de‡
 EACCES
 
 
-1368 
+1372 
 	#EACCES
  
 ERROR_ACCESS_DENIED
@@ -91443,11 +91521,11 @@ ERROR_ACCESS_DENIED
 
 	)
 
-1371 #i‚de‡
+1375 #i‚de‡
 ENOMEM
 
 
-1372 
+1376 
 	#ENOMEM
  
 ERROR_NOT_ENOUGH_MEMORY
@@ -91455,31 +91533,31 @@ ERROR_NOT_ENOUGH_MEMORY
 
 	)
 
-1375 #i‚de‡
+1379 #i‚de‡
 _UINTPTR_T_DEFINED
 
 
-1376 * 
+1380 * 
 	tuöçå_t
 ;
 
-1379 
+1383 
 	#_S_IFREG
  2
 
 	)
 
-1380 
+1384 
 	#_S_IFDIR
  4
 
 	)
 
-1382 #i‚de‡
+1386 #i‚de‡
 S_ISDIR
 
 
-1383 
+1387 
 	#S_ISDIR
 (
 x
@@ -91489,11 +91567,11 @@ _S_IFDIR
 
 	)
 
-1386 #i‚de‡
+1390 #i‚de‡
 S_ISREG
 
 
-1387 
+1391 
 	#S_ISREG
 (
 x
@@ -91503,7 +91581,7 @@ _S_IFREG
 
 	)
 
-1390 
+1394 
 ›í
 (c⁄° *
 fûíame
@@ -91513,7 +91591,7 @@ oÊag
 pmode
 );
 
-1391 
+1395 
 _w°©i64
 (c⁄° 
 wch¨_t
@@ -91525,79 +91603,79 @@ cs_°©_t
 °
 );
 
-1392 c⁄° *
+1396 c⁄° *
 °ªº‹
 ();
 
-1396 #ifde‡
+1400 #ifde‡
 MG_MODULE_LINES
 
 
-1404 #i‚de‡
+1408 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_NXP_LPC_H_
 
 
-1405 
+1409 
 	#CS_COMMON_PLATFORMS_PLATFORM_NXP_LPC_H_
 
 
 	)
 
-1407 #i‡
+1411 #i‡
 CS_PLATFORM
  =
 CS_P_NXP_LPC
 
 
-1409 
+1413 
 	~<˘y≥.h
 >
 
-1410 
+1414 
 	~<°döt.h
 >
 
-1411 
+1415 
 	~<°rög.h
 >
 
-1413 
+1417 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-1414 
+1418 
 °©
  
 	tcs_°©_t
 ;
 
-1415 
+1419 
 	#INT64_FMT
  "Œd"
 
 	)
 
-1416 
+1420 
 	#INT64_X_FMT
  "Œx"
 
 	)
 
-1417 
+1421 
 	#__cde˛
 
 
 	)
 
-1419 
+1423 
 	#MG_LWIP
  1
 
 	)
 
-1421 
+1425 
 	#MG_NET_IF
  
 MG_NET_IF_LWIP_LOW_LEVEL
@@ -91605,17 +91683,17 @@ MG_NET_IF_LWIP_LOW_LEVEL
 
 	)
 
-1429 #ifde‡
+1433 #ifde‡
 __REDLIB_INTERFACE_VERSION__
 
 
-1432 
+1436 
 	#LWIP_TIMEVAL_PRIVATE
  1
 
 	)
 
-1434 
+1438 
 	#va_c›y
 (
 d
@@ -91627,13 +91705,13 @@ s
 
 	)
 
-1436 
+1440 
 	#CS_ENABLE_TO64
  1
 
 	)
 
-1437 
+1441 
 	#to64
 (
 x
@@ -91643,23 +91721,23 @@ x
 
 	)
 
-1439 
+1443 
 	#CS_ENABLE_STRDUP
  1
 
 	)
 
-1443 
+1447 
 	~<sys/time.h
 >
 
-1444 
+1448 
 	#LWIP_TIMEVAL_PRIVATE
  0
 
 	)
 
-1445 
+1449 
 	#to64
 (
 x
@@ -91671,55 +91749,55 @@ NULL
 
 	)
 
-1451 #ifde‡
+1455 #ifde‡
 MG_MODULE_LINES
 
 
-1459 #i‚de‡
+1463 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_NXP_KINETIS_H_
 
 
-1460 
+1464 
 	#CS_COMMON_PLATFORMS_PLATFORM_NXP_KINETIS_H_
 
 
 	)
 
-1462 #i‡
+1466 #i‡
 CS_PLATFORM
  =
 CS_P_NXP_KINETIS
 
 
-1464 
+1468 
 	~<˘y≥.h
 >
 
-1465 
+1469 
 	~<öây≥s.h
 >
 
-1466 
+1470 
 	~<°rög.h
 >
 
-1467 
+1471 
 	~<sys/time.h
 >
 
-1469 
+1473 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-1470 
+1474 
 °©
  
 	tcs_°©_t
 ;
 
-1471 
+1475 
 	#to64
 (
 x
@@ -91731,31 +91809,31 @@ NULL
 
 	)
 
-1472 
+1476 
 	#INT64_FMT
  "Œd"
 
 	)
 
-1473 
+1477 
 	#INT64_X_FMT
  "Œx"
 
 	)
 
-1474 
+1478 
 	#__cde˛
 
 
 	)
 
-1476 
+1480 
 	#MG_LWIP
  1
 
 	)
 
-1478 
+1482 
 	#MG_NET_IF
  
 MG_NET_IF_LWIP_LOW_LEVEL
@@ -91763,33 +91841,33 @@ MG_NET_IF_LWIP_LOW_LEVEL
 
 	)
 
-1481 
+1485 
 	#LWIP_TIMEVAL_PRIVATE
  0
 
 	)
 
-1485 #ifde‡
+1489 #ifde‡
 MG_MODULE_LINES
 
 
-1493 #i‚de‡
+1497 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_PIC32_H_
 
 
-1494 
+1498 
 	#CS_COMMON_PLATFORMS_PLATFORM_PIC32_H_
 
 
 	)
 
-1496 #i‡
+1500 #i‡
 CS_PLATFORM
  =
 CS_P_PIC32
 
 
-1498 
+1502 
 	#MG_NET_IF
  
 MG_NET_IF_PIC32
@@ -91797,41 +91875,41 @@ MG_NET_IF_PIC32
 
 	)
 
-1500 
+1504 
 	~<°döt.h
 >
 
-1501 
+1505 
 	~<time.h
 >
 
-1502 
+1506 
 	~<˘y≥.h
 >
 
-1503 
+1507 
 	~<°dlib.h
 >
 
-1505 
+1509 
 	~<sy°em_c⁄fig.h
 >
 
-1506 
+1510 
 	~<sy°em_deföôi⁄s.h
 >
 
-1508 
+1512 
 	~<sys/ty≥s.h
 >
 
-1510 
+1514 
 TCP_SOCKET
  
 	tsock_t
 ;
 
-1511 
+1515 
 	#to64
 (
 x
@@ -91843,29 +91921,29 @@ NULL
 
 	)
 
-1513 
+1517 
 	#SIZE_T_FMT
  "lu"
 
 	)
 
-1514 
+1518 
 	#INT64_FMT
  "Œd"
 
 	)
 
-1516 #i‚de‡
+1520 #i‚de‡
 CS_ENABLE_STDIO
 
 
-1517 
+1521 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-1520 * 
+1524 * 
 öë_¡ﬂ
 (
 ö_addr
@@ -91873,67 +91951,67 @@ CS_ENABLE_STDIO
 ö
 );
 
-1525 #ifde‡
+1529 #ifde‡
 MG_MODULE_LINES
 
 
-1533 #i‚de‡
+1537 #i‚de‡
 CS_COMMON_PLATFORMS_PLATFORM_STM32_H_
 
 
-1534 
+1538 
 	#CS_COMMON_PLATFORMS_PLATFORM_STM32_H_
 
 
 	)
 
-1535 #i‡
+1539 #i‡
 CS_PLATFORM
  =
 CS_P_STM32
 
 
-1537 
+1541 
 	~<sys/ty≥s.h
 >
 
-1538 
+1542 
 	~<sys/°©.h
 >
 
-1539 
+1543 
 	~<°döt.h
 >
 
-1540 
+1544 
 	~<öây≥s.h
 >
 
-1541 
+1545 
 	~<°dio.h
 >
 
-1542 
+1546 
 	~<˘y≥.h
 >
 
-1543 
+1547 
 	~<î∫o.h
 >
 
-1544 
+1548 
 	~<mem‹y.h
 >
 
-1545 
+1549 
 	~<f˙é.h
 >
 
-1546 
+1550 
 	~<°m32_sdk_hÆ.h
 >
 
-1548 
+1552 
 	#to64
 (
 x
@@ -91945,7 +92023,7 @@ NULL
 
 	)
 
-1549 
+1553 
 	#INT64_FMT
  
 PRId64
@@ -91953,79 +92031,79 @@ PRId64
 
 	)
 
-1550 
+1554 
 	#SIZE_T_FMT
  "u"
 
 	)
 
-1551 
+1555 
 °©
  
 	tcs_°©_t
 ;
 
-1552 
+1556 
 	#DIRSEP
  '/'
 
 	)
 
-1554 #i‚de‡
+1558 #i‚de‡
 CS_ENABLE_STDIO
 
 
-1555 
+1559 
 	#CS_ENABLE_STDIO
  1
 
 	)
 
-1558 #i‚de‡
+1562 #i‚de‡
 MG_ENABLE_FILESYSTEM
 
 
-1559 
+1563 
 	#MG_ENABLE_FILESYSTEM
  1
 
 	)
 
-1562 
+1566 
 	#CS_DEFINE_DIRENT
 
 
 	)
 
-1566 #ifde‡
+1570 #ifde‡
 MG_MODULE_LINES
 
 
-1574 #i‚de‡
+1578 #i‚de‡
 CS_COMMON_PLATFORMS_LWIP_MG_LWIP_H_
 
 
-1575 
+1579 
 	#CS_COMMON_PLATFORMS_LWIP_MG_LWIP_H_
 
 
 	)
 
-1577 #i‚de‡
+1581 #i‚de‡
 MG_LWIP
 
 
-1578 
+1582 
 	#MG_LWIP
  0
 
 	)
 
-1581 #i‡
+1585 #i‡
 MG_LWIP
 
 
-1592 #i‡
+1596 #i‡
 CS_PLATFORM
  =
 CS_P_NRF51
@@ -92033,105 +92111,105 @@ CS_P_NRF51
 CS_P_NRF52
 
 
-1593 #unde‡
+1597 #unde‡
 BYTE_ORDER
 
 
-1596 
+1600 
 	~<lwù/›t.h
 >
 
-1597 
+1601 
 	~<lwù/îr.h
 >
 
-1598 
+1602 
 	~<lwù/ù_addr.h
 >
 
-1599 
+1603 
 	~<lwù/öë.h
 >
 
-1600 
+1604 
 	~<lwù/√tdb.h
 >
 
-1601 
+1605 
 	~<lwù/dns.h
 >
 
-1603 #i‚de‡
+1607 #i‚de‡
 LWIP_PROVIDE_ERRNO
 
 
-1604 
+1608 
 	~<î∫o.h
 >
 
-1607 #i‡
+1611 #i‡
 LWIP_SOCKET
 
 
-1608 
+1612 
 	~<lwù/sockës.h
 >
 
-1611 #unde‡
+1615 #unde‡
 LWIP_SOCKET
 
 
-1612 
+1616 
 	#LWIP_SOCKET
  1
 
 	)
 
-1613 
+1617 
 	~<lwù/sockës.h
 >
 
-1614 #unde‡
+1618 #unde‡
 LWIP_SOCKET
 
 
-1615 
+1619 
 	#LWIP_SOCKET
  0
 
 	)
 
-1618 
+1622 
 	#INVALID_SOCKET
  (-1)
 
 	)
 
-1619 
+1623 
 	#SOMAXCONN
  10
 
 	)
 
-1620 
+1624 
 	tsock_t
 ;
 
-1622 #i‡
+1626 #i‡
 MG_NET_IF
  =
 MG_NET_IF_LWIP_LOW_LEVEL
 
 
-1623 
+1627 
 	gmg_mgr
 ;
 
-1624 
+1628 
 	gmg_c⁄√˘i⁄
 ;
 
-1625 
+1629 
 uöt32_t
  
 mg_lwù_gë_pﬁl_dñay_ms
@@ -92141,7 +92219,7 @@ mg_mgr
 mgr
 );
 
-1626 
+1630 
 mg_lwù_£t_kì∑live_∑øms
 (
 mg_c⁄√˘i⁄
@@ -92151,17 +92229,17 @@ nc
 idÀ
 ,
 
-1627 
+1631 
 öãrvÆ
 , 
 cou¡
 );
 
-1631 #i‚de‡
+1635 #i‚de‡
 ùX_2_ù
 
 
-1632 
+1636 
 	#ùX_2_ù
 (
 x
@@ -92169,69 +92247,69 @@ x
 
 	)
 
-1638 #ifde‡
+1642 #ifde‡
 MG_MODULE_LINES
 
 
-1646 #i‚de‡
+1650 #i‚de‡
 CS_COMMON_CS_TIME_H_
 
 
-1647 
+1651 
 	#CS_COMMON_CS_TIME_H_
 
 
 	)
 
-1651 #ifde‡
+1655 #ifde‡
 __˝lu•lus
 
 
-1656 
+1660 
 cs_time
 ();
 
-1658 #ifde‡
+1662 #ifde‡
 __˝lu•lus
 
 
-1663 #ifde‡
+1667 #ifde‡
 MG_MODULE_LINES
 
 
-1671 #i‚de‡
+1675 #i‚de‡
 CS_COMMON_MG_STR_H_
 
 
-1672 
+1676 
 	#CS_COMMON_MG_STR_H_
 
 
 	)
 
-1674 
+1678 
 	~<°ddef.h
 >
 
-1678 #ifde‡
+1682 #ifde‡
 __˝lu•lus
 
 
-1683 
+1687 
 	smg_°r
  {
 
-1684 c⁄° *
+1688 c⁄° *
 p
 ;
 
-1685 
+1689 
 size_t
  
 Àn
 ;
 
-1692 
+1696 
 mg_°r
  
 mg_mk_°r
@@ -92239,7 +92317,7 @@ mg_mk_°r
 s
 );
 
-1693 
+1697 
 mg_°r
  
 mg_mk_°r_n
@@ -92251,19 +92329,19 @@ size_t
 Àn
 );
 
-1696 
+1700 
 	#MG_MK_STR
 (
 °r_lôîÆ
 ) \
 
-1697 { 
+1701 { 
 °r_lôîÆ
 , (°r_lôîÆË- 1 }
 
 	)
 
-1703 
+1707 
 mg_vcmp
 (c⁄° 
 mg_°r
@@ -92273,7 +92351,7 @@ mg_°r
 °r1
 );
 
-1709 
+1713 
 mg_vˇ£cmp
 (c⁄° 
 mg_°r
@@ -92283,7 +92361,7 @@ mg_°r
 °r1
 );
 
-1711 
+1715 
 mg_°r
  
 mg_°rdup
@@ -92291,7 +92369,7 @@ mg_°rdup
 s
 );
 
-1712 
+1716 
 mg_°rcmp
 (c⁄° 
 mg_°r
@@ -92301,7 +92379,7 @@ mg_°r
 °r2
 );
 
-1713 
+1717 
 mg_°∫cmp
 (c⁄° 
 mg_°r
@@ -92315,65 +92393,65 @@ size_t
 n
 );
 
-1715 #ifde‡
+1719 #ifde‡
 __˝lu•lus
 
 
-1720 #ifde‡
+1724 #ifde‡
 MG_MODULE_LINES
 
 
-1737 #i‚de‡
+1741 #i‚de‡
 CS_COMMON_MBUF_H_
 
 
-1738 
+1742 
 	#CS_COMMON_MBUF_H_
 
 
 	)
 
-1740 
+1744 
 	~<°dlib.h
 >
 
-1743 #i‡
+1747 #i‡
 deföed
 (
 __˝lu•lus
 )
 
-1747 #i‚de‡
+1751 #i‚de‡
 MBUF_SIZE_MULTIPLIER
 
 
-1748 
+1752 
 	#MBUF_SIZE_MULTIPLIER
  1.5
 
 	)
 
-1752 
+1756 
 	smbuf
  {
 
-1753 *
+1757 *
 buf
 ;
 
-1754 
+1758 
 size_t
  
 Àn
 ;
 
-1755 
+1759 
 size_t
  
 size
 ;
 
-1762 
+1766 
 mbuf_öô
 (
 mbuf
@@ -92383,13 +92461,13 @@ size_t
 öôül_ˇ∑côy
 );
 
-1765 
+1769 
 mbuf_‰ì
 (
 mbuf
  *);
 
-1772 
+1776 
 size_t
  
 mbuf_≠≥nd
@@ -92401,7 +92479,7 @@ d©a
 d©a_size
 );
 
-1781 
+1785 
 size_t
  
 mbuf_ö£π
@@ -92409,7 +92487,7 @@ mbuf_ö£π
 mbuf
  *, size_t, const *, size_t);
 
-1784 
+1788 
 mbuf_ªmove
 (
 mbuf
@@ -92419,7 +92497,7 @@ size_t
 d©a_size
 );
 
-1792 
+1796 
 mbuf_ªsize
 (
 mbuf
@@ -92429,77 +92507,77 @@ size_t
 √w_size
 );
 
-1795 
+1799 
 mbuf_åim
 (
 mbuf
  *);
 
-1797 #i‡
+1801 #i‡
 deföed
 (
 __˝lu•lus
 )
 
-1802 #ifde‡
+1806 #ifde‡
 MG_MODULE_LINES
 
 
-1810 #i‚de‡
+1814 #i‚de‡
 CS_COMMON_SHA1_H_
 
 
-1811 
+1815 
 	#CS_COMMON_SHA1_H_
 
 
 	)
 
-1813 #i‚de‡
+1817 #i‚de‡
 DISABLE_SHA1
 
 
-1814 
+1818 
 	#DISABLE_SHA1
  0
 
 	)
 
-1817 #i‡!
+1821 #i‡!
 DISABLE_SHA1
 
 
-1821 #ifde‡
+1825 #ifde‡
 __˝lu•lus
 
 
-1826 
+1830 
 uöt32_t
  
 °©e
 [5];
 
-1827 
+1831 
 uöt32_t
  
 cou¡
 [2];
 
-1828 
+1832 
 buf„r
 [64];
 
-1829 } 
+1833 } 
 	tcs_sha1_˘x
 ;
 
-1831 
+1835 
 cs_sha1_öô
 (
 cs_sha1_˘x
  *);
 
-1832 
+1836 
 cs_sha1_upd©e
 (
 cs_sha1_˘x
@@ -92511,7 +92589,7 @@ uöt32_t
 Àn
 );
 
-1833 
+1837 
 cs_sha1_föÆ
 (
 dige°
@@ -92519,7 +92597,7 @@ dige°
 cs_sha1_˘x
  *);
 
-1834 
+1838 
 cs_hmac_sha1
 (c⁄° *
 key
@@ -92529,7 +92607,7 @@ size_t
 key_Àn
 ,
 
-1835 c⁄° *
+1839 c⁄° *
 ãxt
 , 
 size_t
@@ -92537,67 +92615,67 @@ size_t
 ãxt_Àn
 ,
 
-1836 
+1840 
 out
 [20]);
 
-1837 #ifde‡
+1841 #ifde‡
 __˝lu•lus
 
 
-1844 #ifde‡
+1848 #ifde‡
 MG_MODULE_LINES
 
 
-1852 #i‚de‡
+1856 #i‚de‡
 CS_COMMON_MD5_H_
 
 
-1853 
+1857 
 	#CS_COMMON_MD5_H_
 
 
 	)
 
-1857 #i‚de‡
+1861 #i‚de‡
 DISABLE_MD5
 
 
-1858 
+1862 
 	#DISABLE_MD5
  0
 
 	)
 
-1861 #ifde‡
+1865 #ifde‡
 __˝lu•lus
 
 
-1865 
+1869 
 	sMD5C⁄ãxt
  {
 
-1866 
+1870 
 uöt32_t
  
 buf
 [4];
 
-1867 
+1871 
 uöt32_t
  
 bôs
 [2];
 
-1868 
+1872 
 ö
 [64];
 
-1869 } 
+1873 } 
 	tMD5_CTX
 ;
 
-1871 
+1875 
 MD5_Inô
 (
 MD5_CTX
@@ -92605,7 +92683,7 @@ MD5_CTX
 c
 );
 
-1872 
+1876 
 MD5_Upd©e
 (
 MD5_CTX
@@ -92619,7 +92697,7 @@ size_t
 Àn
 );
 
-1873 
+1877 
 MD5_FöÆ
 (*
 md
@@ -92629,79 +92707,79 @@ MD5_CTX
 c
 );
 
-1883 *
+1887 *
 cs_md5
 (
 buf
 [33], ...);
 
-1885 #ifde‡
+1889 #ifde‡
 __˝lu•lus
 
 
-1890 #ifde‡
+1894 #ifde‡
 MG_MODULE_LINES
 
 
-1898 #i‚de‡
+1902 #i‚de‡
 CS_COMMON_BASE64_H_
 
 
-1899 
+1903 
 	#CS_COMMON_BASE64_H_
 
 
 	)
 
-1901 #i‚de‡
+1905 #i‚de‡
 DISABLE_BASE64
 
 
-1902 
+1906 
 	#DISABLE_BASE64
  0
 
 	)
 
-1905 #i‡!
+1909 #i‡!
 DISABLE_BASE64
 
 
-1907 
+1911 
 	~<°dio.h
 >
 
-1909 #ifde‡
+1913 #ifde‡
 __˝lu•lus
 
 
-1913 (*
+1917 (*
 cs_ba£64_putc_t
 )(, *);
 
-1915 
+1919 
 	scs_ba£64_˘x
  {
 
-1917 
+1921 
 cs_ba£64_putc_t
  
 b64_putc
 ;
 
-1918 
+1922 
 chunk
 [3];
 
-1919 
+1923 
 chunk_size
 ;
 
-1920 *
+1924 *
 u£r_d©a
 ;
 
-1923 
+1927 
 cs_ba£64_öô
 (
 cs_ba£64_˘x
@@ -92713,11 +92791,11 @@ cs_ba£64_putc_t
 putc
 ,
 
-1924 *
+1928 *
 u£r_d©a
 );
 
-1925 
+1929 
 cs_ba£64_upd©e
 (
 cs_ba£64_˘x
@@ -92731,7 +92809,7 @@ size_t
 Àn
 );
 
-1926 
+1930 
 cs_ba£64_föish
 (
 cs_ba£64_˘x
@@ -92739,7 +92817,7 @@ cs_ba£64_˘x
 ˘x
 );
 
-1928 
+1932 
 cs_ba£64_ícode
 (c⁄° *
 §c
@@ -92749,7 +92827,7 @@ cs_ba£64_ícode
 d°
 );
 
-1929 
+1933 
 cs_Âröt_ba£64
 (
 FILE
@@ -92761,7 +92839,7 @@ f
 §c_Àn
 );
 
-1930 
+1934 
 cs_ba£64_decode
 (c⁄° *
 s
@@ -92773,53 +92851,53 @@ d°
 dec_Àn
 );
 
-1932 #ifde‡
+1936 #ifde‡
 __˝lu•lus
 
 
-1939 #ifde‡
+1943 #ifde‡
 MG_MODULE_LINES
 
 
-1947 #i‚de‡
+1951 #i‚de‡
 CS_COMMON_STR_UTIL_H_
 
 
-1948 
+1952 
 	#CS_COMMON_STR_UTIL_H_
 
 
 	)
 
-1950 
+1954 
 	~<°d¨g.h
 >
 
-1951 
+1955 
 	~<°dlib.h
 >
 
-1955 #i‚de‡
+1959 #i‚de‡
 CS_ENABLE_STRDUP
 
 
-1956 
+1960 
 	#CS_ENABLE_STRDUP
  0
 
 	)
 
-1959 #i‚de‡
+1963 #i‚de‡
 CS_ENABLE_TO64
 
 
-1960 
+1964 
 	#CS_ENABLE_TO64
  0
 
 	)
 
-1967 
+1971 
 	#CS_STRINGIFY_LIT
 (
 x
@@ -92827,7 +92905,7 @@ x
 
 	)
 
-1978 
+1982 
 	#CS_STRINGIFY_MACRO
 (
 x
@@ -92837,11 +92915,11 @@ x
 
 	)
 
-1980 #ifde‡
+1984 #ifde‡
 __˝lu•lus
 
 
-1984 
+1988 
 size_t
  
 c_°∫Àn
@@ -92851,7 +92929,7 @@ s
 maxÀn
 );
 
-1985 
+1989 
 c_¢¥ötf
 (*
 buf
@@ -92863,7 +92941,7 @@ buf_size
 f‹m©
 , ...);
 
-1986 
+1990 
 c_v¢¥ötf
 (*
 buf
@@ -92879,7 +92957,7 @@ va_li°
 ≠
 );
 
-1991 c⁄° *
+1995 c⁄° *
 c_°∫°r
 (c⁄° *
 s
@@ -92891,7 +92969,7 @@ size_t
 ¶í
 );
 
-1998 
+2002 
 cs_to_hex
 (*
 to
@@ -92903,7 +92981,7 @@ size_t
 Àn
 );
 
-2004 
+2008 
 cs_‰om_hex
 (*
 to
@@ -92915,25 +92993,25 @@ size_t
 Àn
 );
 
-2006 #i‡
+2010 #i‡
 CS_ENABLE_STRDUP
 
 
-2007 *
+2011 *
 °rdup
 (c⁄° *
 §c
 );
 
-2010 #i‡
+2014 #i‡
 CS_ENABLE_TO64
 
 
-2011 
+2015 
 	~<°döt.h
 >
 
-2015 
+2019 
 öt64_t
  
 cs_to64
@@ -92941,7 +93019,7 @@ cs_to64
 s
 );
 
-2021 
+2025 
 mg_nˇ£cmp
 (c⁄° *
 s1
@@ -92953,7 +93031,7 @@ size_t
 Àn
 );
 
-2026 
+2030 
 mg_ˇ£cmp
 (c⁄° *
 s1
@@ -92961,7 +93039,7 @@ s1
 s2
 );
 
-2043 
+2047 
 mg_a•rötf
 (**
 buf
@@ -92973,7 +93051,7 @@ size
 fmt
 , ...);
 
-2046 
+2050 
 mg_av¥ötf
 (**
 buf
@@ -92989,49 +93067,49 @@ va_li°
 ≠
 );
 
-2048 #ifde‡
+2052 #ifde‡
 __˝lu•lus
 
 
-2053 #ifde‡
+2057 #ifde‡
 MG_MODULE_LINES
 
 
-2089 #i‚de‡
+2093 #i‚de‡
 _SYS_QUEUE_H_
 
 
-2090 
+2094 
 	#_SYS_QUEUE_H_
 
 
 	)
 
-2165 #ifde‡
+2169 #ifde‡
 QUEUE_MACRO_DEBUG
 
 
-2167 
+2171 
 	sqm_åa˚
  {
 
-2168 
+2172 
 œ°löe
 ;
 
-2169 
+2173 
 ¥evlöe
 ;
 
-2170 c⁄° *
+2174 c⁄° *
 œ°fûe
 ;
 
-2171 c⁄° *
+2175 c⁄° *
 ¥evfûe
 ;
 
-2174 
+2178 
 	#TRACEBUF
  
 qm_åa˚
@@ -93041,7 +93119,7 @@ qm_åa˚
 
 	)
 
-2175 
+2179 
 	#TRACEBUF_INITIALIZER
  { 
 __LINE__
@@ -93053,7 +93131,7 @@ NULL
 
 	)
 
-2176 
+2180 
 	#TRASHIT
 (
 x
@@ -93061,7 +93139,7 @@ x
 
 	)
 
-2177 
+2181 
 	#QMD_SAVELINK
 (
 «me
@@ -93071,13 +93149,13 @@ lök
 
 	)
 
-2179 
+2183 
 	#QMD_TRACE_HEAD
 (
 hód
 ) do { \
 
-2180 (
+2184 (
 hód
 )->
 åa˚
@@ -93087,7 +93165,7 @@ hód
 œ°löe
 ; \
 
-2181 (
+2185 (
 hód
 )->
 åa˚
@@ -93097,7 +93175,7 @@ hód
 œ°fûe
 ; \
 
-2182 (
+2186 (
 hód
 )->
 åa˚
@@ -93106,28 +93184,28 @@ hód
  = 
 __LINE__
 ; \
-
-2183 (
-hód
-)->
-åa˚
-.
-œ°fûe
- = 
-__FILE__
-; \
-
-2184 } 0)
-
-	)
-
-2186 
-	#QMD_TRACE_ELEM
-(
-ñem
-) do { \
 
 2187 (
+hód
+)->
+åa˚
+.
+œ°fûe
+ = 
+__FILE__
+; \
+
+2188 } 0)
+
+	)
+
+2190 
+	#QMD_TRACE_ELEM
+(
+ñem
+) do { \
+
+2191 (
 ñem
 )->
 åa˚
@@ -93137,7 +93215,7 @@ __FILE__
 œ°löe
 ; \
 
-2188 (
+2192 (
 ñem
 )->
 åa˚
@@ -93147,7 +93225,7 @@ __FILE__
 œ°fûe
 ; \
 
-2189 (
+2193 (
 ñem
 )->
 åa˚
@@ -93157,7 +93235,7 @@ __FILE__
 __LINE__
 ; \
 
-2190 (
+2194 (
 ñem
 )->
 åa˚
@@ -93167,11 +93245,11 @@ __LINE__
 __FILE__
 ; \
 
-2191 } 0)
+2195 } 0)
 
 	)
 
-2194 
+2198 
 	#QMD_TRACE_ELEM
 (
 ñem
@@ -93179,7 +93257,7 @@ __FILE__
 
 	)
 
-2195 
+2199 
 	#QMD_TRACE_HEAD
 (
 hód
@@ -93187,7 +93265,7 @@ hód
 
 	)
 
-2196 
+2200 
 	#QMD_SAVELINK
 (
 «me
@@ -93197,19 +93275,19 @@ lök
 
 	)
 
-2197 
+2201 
 	#TRACEBUF
 
 
 	)
 
-2198 
+2202 
 	#TRACEBUF_INITIALIZER
 
 
 	)
 
-2199 
+2203 
 	#TRASHIT
 (
 x
@@ -93217,11 +93295,11 @@ x
 
 	)
 
-2202 #ifde‡
+2206 #ifde‡
 __˝lu•lus
 
 
-2206 
+2210 
 	#QUEUE_TYPEOF
 (
 ty≥
@@ -93229,7 +93307,7 @@ ty≥
 	)
 type
 
-2208 
+2212 
 	#QUEUE_TYPEOF
 (
 ty≥
@@ -93237,7 +93315,7 @@ ty≥
 	)
 type
 
-2214 
+2218 
 	#SLIST_HEAD
 (
 «me
@@ -93245,21 +93323,21 @@ type
 ty≥
 ) \
 
-2215 
+2219 
 	s«me
  { \
 
-2216 
+2220 
 ty≥
  *
 ¶h_fú°
 ; \
 
-2217 }
+2221 }
 
 	)
 
-2219 
+2223 
 	#SLIST_CLASS_HEAD
 (
 «me
@@ -93267,11 +93345,11 @@ ty≥
 ty≥
 ) \
 
-2220 
+2224 
 	s«me
  { \
 
-2221 
+2225 
 ˛ass
  
 ty≥
@@ -93279,45 +93357,45 @@ ty≥
 ¶h_fú°
 ; \
 
-2222 }
+2226 }
 
 	)
 
-2224 
+2228 
 	#SLIST_HEAD_INITIALIZER
 (
 hód
 ) \
 
-2225 { 
+2229 { 
 NULL
  }
 
 	)
 
-2227 
+2231 
 	#SLIST_ENTRY
 (
 ty≥
 ) \
 
-2229 
+2233 
 ty≥
  *
 ¶e_√xt
 ; \
 
-2230 }
+2234 }
 
 	)
 
-2232 
+2236 
 	#SLIST_CLASS_ENTRY
 (
 ty≥
 ) \
 
-2234 
+2238 
 ˛ass
  
 ty≥
@@ -93325,11 +93403,11 @@ ty≥
 ¶e_√xt
 ; \
 
-2235 }
+2239 }
 
 	)
 
-2240 
+2244 
 	#SLIST_EMPTY
 (
 hód
@@ -93341,7 +93419,7 @@ NULL
 
 	)
 
-2242 
+2246 
 	#SLIST_FIRST
 (
 hód
@@ -93351,7 +93429,7 @@ hód
 
 	)
 
-2244 
+2248 
 	#SLIST_FOREACH
 (
 v¨
@@ -93361,7 +93439,7 @@ hód
 fõld
 ) \
 
-2245 (
+2249 (
 v¨
 Ë
 	`SLIST_FIRST
@@ -93369,11 +93447,11 @@ v¨
 hód
 )); \
 
-2246 (
+2250 (
 v¨
 ); \
 
-2247 (
+2251 (
 v¨
 Ë
 	`SLIST_NEXT
@@ -93383,7 +93461,7 @@ fõld
 
 	)
 
-2249 
+2253 
 	#SLIST_FOREACH_FROM
 (
 v¨
@@ -93393,7 +93471,7 @@ hód
 fõld
 ) \
 
-2250 (
+2254 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`SLIST_FIRST
@@ -93401,11 +93479,11 @@ v¨
 hód
 ))); \
 
-2251 (
+2255 (
 v¨
 ); \
 
-2252 (
+2256 (
 v¨
 Ë
 	`SLIST_NEXT
@@ -93415,7 +93493,7 @@ fõld
 
 	)
 
-2254 
+2258 
 	#SLIST_FOREACH_SAFE
 (
 v¨
@@ -93427,7 +93505,7 @@ fõld
 tv¨
 ) \
 
-2255 (
+2259 (
 v¨
 Ë
 	`SLIST_FIRST
@@ -93435,7 +93513,7 @@ v¨
 hód
 )); \
 
-2256 (
+2260 (
 v¨
 Ë&& ((
 tv¨
@@ -93445,7 +93523,7 @@ tv¨
 fõld
 ), 1); \
 
-2257 (
+2261 (
 v¨
 Ë(
 tv¨
@@ -93453,7 +93531,7 @@ tv¨
 
 	)
 
-2259 
+2263 
 	#SLIST_FOREACH_FROM_SAFE
 (
 v¨
@@ -93465,7 +93543,7 @@ fõld
 tv¨
 ) \
 
-2260 (
+2264 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`SLIST_FIRST
@@ -93473,7 +93551,7 @@ v¨
 hód
 ))); \
 
-2261 (
+2265 (
 v¨
 Ë&& ((
 tv¨
@@ -93483,7 +93561,7 @@ tv¨
 fõld
 ), 1); \
 
-2262 (
+2266 (
 v¨
 Ë(
 tv¨
@@ -93491,7 +93569,7 @@ tv¨
 
 	)
 
-2264 
+2268 
 	#SLIST_FOREACH_PREVPTR
 (
 v¨
@@ -93503,7 +93581,7 @@ hód
 fõld
 ) \
 
-2265 (
+2269 (
 v¨p
 Ë&
 	`SLIST_FIRST
@@ -93511,7 +93589,7 @@ v¨p
 hód
 )); \
 
-2266 ((
+2270 ((
 v¨
 Ë*(
 v¨p
@@ -93519,7 +93597,7 @@ v¨p
 NULL
 ; \
 
-2267 (
+2271 (
 v¨p
 Ë&
 	`SLIST_NEXT
@@ -93531,13 +93609,13 @@ fõld
 
 	)
 
-2269 
+2273 
 	#SLIST_INIT
 (
 hód
 ) do { \
 
-2270 
+2274 
 	`SLIST_FIRST
 ((
 hód
@@ -93545,11 +93623,11 @@ hód
 NULL
 ; \
 
-2271 } 0)
+2275 } 0)
 
 	)
 
-2273 
+2277 
 	#SLIST_INSERT_AFTER
 (
 ¶i°ñm
@@ -93559,7 +93637,7 @@ NULL
 fõld
 ) do { \
 
-2274 
+2278 
 	`SLIST_NEXT
 ((
 ñm
@@ -93569,7 +93647,7 @@ fõld
 ¶i°ñm
 ), field); \
 
-2275 
+2279 
 	`SLIST_NEXT
 ((
 ¶i°ñm
@@ -93579,11 +93657,11 @@ fõld
 ñm
 ); \
 
-2276 } 0)
+2280 } 0)
 
 	)
 
-2278 
+2282 
 	#SLIST_INSERT_HEAD
 (
 hód
@@ -93593,7 +93671,7 @@ hód
 fõld
 ) do { \
 
-2279 
+2283 
 	`SLIST_NEXT
 ((
 ñm
@@ -93605,7 +93683,7 @@ fõld
 hód
 )); \
 
-2280 
+2284 
 	`SLIST_FIRST
 ((
 hód
@@ -93613,11 +93691,11 @@ hód
 ñm
 ); \
 
-2281 } 0)
+2285 } 0)
 
 	)
 
-2283 
+2287 
 	#SLIST_NEXT
 (
 ñm
@@ -93629,7 +93707,7 @@ fõld
 
 	)
 
-2285 
+2289 
 	#SLIST_REMOVE
 (
 hód
@@ -93641,7 +93719,7 @@ ty≥
 fõld
 ) do { \
 
-2286 
+2290 
 	`QMD_SAVELINK
 (
 ﬁd√xt
@@ -93653,7 +93731,7 @@ fõld
 ¶e_√xt
 ); \
 
-2287 i‡(
+2291 i‡(
 	`SLIST_FIRST
 ((
 hód
@@ -93661,7 +93739,7 @@ hód
 ñm
 )) { \
 
-2288 
+2292 
 	`SLIST_REMOVE_HEAD
 ((
 hód
@@ -93669,7 +93747,7 @@ hód
 fõld
 ); \
 
-2291 
+2295 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -93681,7 +93759,7 @@ cuªlm
 hód
 ); \
 
-2292 
+2296 
 	`SLIST_NEXT
 (
 cuªlm
@@ -93691,7 +93769,7 @@ fõld
 ñm
 )) \
 
-2293 
+2297 
 cuªlm
  = 
 	`SLIST_NEXT
@@ -93699,7 +93777,7 @@ cuªlm
 fõld
 ); \
 
-2294 
+2298 
 	`SLIST_REMOVE_AFTER
 (
 cuªlm
@@ -93707,17 +93785,17 @@ cuªlm
 fõld
 ); \
 
-2296 
+2300 
 	`TRASHIT
 (*
 ﬁd√xt
 ); \
 
-2297 } 0)
+2301 } 0)
 
 	)
 
-2299 
+2303 
 	#SLIST_REMOVE_AFTER
 (
 ñm
@@ -93725,7 +93803,7 @@ fõld
 fõld
 ) do { \
 
-2300 
+2304 
 	`SLIST_NEXT
 (
 ñm
@@ -93733,7 +93811,7 @@ fõld
 fõld
 ) = \
 
-2301 
+2305 
 	`SLIST_NEXT
 (SLIST_NEXT(
 ñm
@@ -93741,11 +93819,11 @@ fõld
 fõld
 ), field); \
 
-2302 } 0)
+2306 } 0)
 
 	)
 
-2304 
+2308 
 	#SLIST_REMOVE_HEAD
 (
 hód
@@ -93753,7 +93831,7 @@ hód
 fõld
 ) do { \
 
-2305 
+2309 
 	`SLIST_FIRST
 ((
 hód
@@ -93763,11 +93841,11 @@ hód
 fõld
 ); \
 
-2306 } 0)
+2310 } 0)
 
 	)
 
-2308 
+2312 
 	#SLIST_SWAP
 (
 hód1
@@ -93777,7 +93855,7 @@ hód2
 ty≥
 ) do { \
 
-2309 
+2313 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -93789,7 +93867,7 @@ sw≠_fú°
 hód1
 ); \
 
-2310 
+2314 
 	`SLIST_FIRST
 (
 hód1
@@ -93797,7 +93875,7 @@ hód1
 hód2
 ); \
 
-2311 
+2315 
 	`SLIST_FIRST
 (
 hód2
@@ -93805,11 +93883,11 @@ hód2
 sw≠_fú°
 ; \
 
-2312 } 0)
+2316 } 0)
 
 	)
 
-2317 
+2321 
 	#STAILQ_HEAD
 (
 «me
@@ -93817,27 +93895,27 @@ sw≠_fú°
 ty≥
 ) \
 
-2318 
+2322 
 	s«me
  { \
 
-2319 
+2323 
 ty≥
  *
 °qh_fú°
 ; \
 
-2320 
+2324 
 ty≥
  **
 °qh_œ°
 ; \
 
-2321 }
+2325 }
 
 	)
 
-2323 
+2327 
 	#STAILQ_CLASS_HEAD
 (
 «me
@@ -93845,11 +93923,11 @@ ty≥
 ty≥
 ) \
 
-2324 
+2328 
 	s«me
  { \
 
-2325 
+2329 
 ˛ass
  
 ty≥
@@ -93857,7 +93935,7 @@ ty≥
 °qh_fú°
 ; \
 
-2326 
+2330 
 ˛ass
  
 ty≥
@@ -93865,17 +93943,17 @@ ty≥
 °qh_œ°
 ; \
 
-2327 }
+2331 }
 
 	)
 
-2329 
+2333 
 	#STAILQ_HEAD_INITIALIZER
 (
 hód
 ) \
 
-2330 { 
+2334 { 
 NULL
 , &(
 hód
@@ -93885,29 +93963,29 @@ hód
 
 	)
 
-2332 
+2336 
 	#STAILQ_ENTRY
 (
 ty≥
 ) \
 
-2334 
+2338 
 ty≥
  *
 °qe_√xt
 ; \
 
-2335 }
+2339 }
 
 	)
 
-2337 
+2341 
 	#STAILQ_CLASS_ENTRY
 (
 ty≥
 ) \
 
-2339 
+2343 
 ˛ass
  
 ty≥
@@ -93915,11 +93993,11 @@ ty≥
 °qe_√xt
 ; \
 
-2340 }
+2344 }
 
 	)
 
-2345 
+2349 
 	#STAILQ_CONCAT
 (
 hód1
@@ -93927,13 +94005,13 @@ hód1
 hód2
 ) do { \
 
-2346 i‡(!
+2350 i‡(!
 	`STAILQ_EMPTY
 ((
 hód2
 ))) { \
 
-2347 *(
+2351 *(
 hód1
 )->
 °qh_œ°
@@ -93943,7 +94021,7 @@ hód2
 °qh_fú°
 ; \
 
-2348 (
+2352 (
 hód1
 )->
 °qh_œ°
@@ -93951,17 +94029,17 @@ hód1
 hód2
 )->stqh_last; \
 
-2349 
+2353 
 	`STAILQ_INIT
 ((
 hód2
 )); \
 
-2351 } 0)
+2355 } 0)
 
 	)
 
-2353 
+2357 
 	#STAILQ_EMPTY
 (
 hód
@@ -93973,7 +94051,7 @@ NULL
 
 	)
 
-2355 
+2359 
 	#STAILQ_FIRST
 (
 hód
@@ -93983,7 +94061,7 @@ hód
 
 	)
 
-2357 
+2361 
 	#STAILQ_FOREACH
 (
 v¨
@@ -93993,7 +94071,7 @@ hód
 fõld
 ) \
 
-2358 (
+2362 (
 v¨
 Ë
 	`STAILQ_FIRST
@@ -94001,11 +94079,11 @@ v¨
 hód
 )); \
 
-2359 (
+2363 (
 v¨
 ); \
 
-2360 (
+2364 (
 v¨
 Ë
 	`STAILQ_NEXT
@@ -94015,7 +94093,7 @@ fõld
 
 	)
 
-2362 
+2366 
 	#STAILQ_FOREACH_FROM
 (
 v¨
@@ -94025,7 +94103,7 @@ hód
 fõld
 ) \
 
-2363 (
+2367 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`STAILQ_FIRST
@@ -94033,11 +94111,11 @@ v¨
 hód
 ))); \
 
-2364 (
+2368 (
 v¨
 ); \
 
-2365 (
+2369 (
 v¨
 Ë
 	`STAILQ_NEXT
@@ -94047,7 +94125,7 @@ fõld
 
 	)
 
-2367 
+2371 
 	#STAILQ_FOREACH_SAFE
 (
 v¨
@@ -94059,7 +94137,7 @@ fõld
 tv¨
 ) \
 
-2368 (
+2372 (
 v¨
 Ë
 	`STAILQ_FIRST
@@ -94067,7 +94145,7 @@ v¨
 hód
 )); \
 
-2369 (
+2373 (
 v¨
 Ë&& ((
 tv¨
@@ -94077,7 +94155,7 @@ tv¨
 fõld
 ), 1); \
 
-2370 (
+2374 (
 v¨
 Ë(
 tv¨
@@ -94085,7 +94163,7 @@ tv¨
 
 	)
 
-2372 
+2376 
 	#STAILQ_FOREACH_FROM_SAFE
 (
 v¨
@@ -94097,7 +94175,7 @@ fõld
 tv¨
 ) \
 
-2373 (
+2377 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`STAILQ_FIRST
@@ -94105,7 +94183,7 @@ v¨
 hód
 ))); \
 
-2374 (
+2378 (
 v¨
 Ë&& ((
 tv¨
@@ -94115,7 +94193,7 @@ tv¨
 fõld
 ), 1); \
 
-2375 (
+2379 (
 v¨
 Ë(
 tv¨
@@ -94123,13 +94201,13 @@ tv¨
 
 	)
 
-2377 
+2381 
 	#STAILQ_INIT
 (
 hód
 ) do { \
 
-2378 
+2382 
 	`STAILQ_FIRST
 ((
 hód
@@ -94137,7 +94215,7 @@ hód
 NULL
 ; \
 
-2379 (
+2383 (
 hód
 )->
 °qh_œ°
@@ -94145,11 +94223,11 @@ hód
 	`STAILQ_FIRST
 ((head)); \
 
-2380 } 0)
+2384 } 0)
 
 	)
 
-2382 
+2386 
 	#STAILQ_INSERT_AFTER
 (
 hód
@@ -94161,7 +94239,7 @@ tqñm
 fõld
 ) do { \
 
-2383 i‡((
+2387 i‡((
 	`STAILQ_NEXT
 ((
 ñm
@@ -94173,7 +94251,7 @@ tqñm
 NULL
 )\
 
-2384 (
+2388 (
 hód
 )->
 °qh_œ°
@@ -94185,7 +94263,7 @@ hód
 fõld
 ); \
 
-2385 
+2389 
 	`STAILQ_NEXT
 ((
 tqñm
@@ -94195,11 +94273,11 @@ fõld
 ñm
 ); \
 
-2386 } 0)
+2390 } 0)
 
 	)
 
-2388 
+2392 
 	#STAILQ_INSERT_HEAD
 (
 hód
@@ -94209,7 +94287,7 @@ hód
 fõld
 ) do { \
 
-2389 i‡((
+2393 i‡((
 	`STAILQ_NEXT
 ((
 ñm
@@ -94223,7 +94301,7 @@ hód
 NULL
 ) \
 
-2390 (
+2394 (
 hód
 )->
 °qh_œ°
@@ -94235,7 +94313,7 @@ hód
 fõld
 ); \
 
-2391 
+2395 
 	`STAILQ_FIRST
 ((
 hód
@@ -94243,11 +94321,11 @@ hód
 ñm
 ); \
 
-2392 } 0)
+2396 } 0)
 
 	)
 
-2394 
+2398 
 	#STAILQ_INSERT_TAIL
 (
 hód
@@ -94257,7 +94335,7 @@ hód
 fõld
 ) do { \
 
-2395 
+2399 
 	`STAILQ_NEXT
 ((
 ñm
@@ -94267,7 +94345,7 @@ fõld
 NULL
 ; \
 
-2396 *(
+2400 *(
 hód
 )->
 °qh_œ°
@@ -94275,7 +94353,7 @@ hód
 ñm
 ); \
 
-2397 (
+2401 (
 hód
 )->
 °qh_œ°
@@ -94287,11 +94365,11 @@ hód
 fõld
 ); \
 
-2398 } 0)
+2402 } 0)
 
 	)
 
-2400 
+2404 
 	#STAILQ_LAST
 (
 hód
@@ -94301,7 +94379,7 @@ ty≥
 fõld
 ) \
 
-2401 (
+2405 (
 	`STAILQ_EMPTY
 ((
 hód
@@ -94309,7 +94387,7 @@ hód
 NULL
  : \
 
-2402 
+2406 
 	`__c⁄èöîof
 ((
 hód
@@ -94317,7 +94395,7 @@ hód
 °qh_œ°
 , \
 
-2403 
+2407 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -94329,7 +94407,7 @@ fõld
 
 	)
 
-2405 
+2409 
 	#STAILQ_NEXT
 (
 ñm
@@ -94341,7 +94419,7 @@ fõld
 
 	)
 
-2407 
+2411 
 	#STAILQ_REMOVE
 (
 hód
@@ -94353,7 +94431,7 @@ ty≥
 fõld
 ) do { \
 
-2408 
+2412 
 	`QMD_SAVELINK
 (
 ﬁd√xt
@@ -94365,7 +94443,7 @@ fõld
 °qe_√xt
 ); \
 
-2409 i‡(
+2413 i‡(
 	`STAILQ_FIRST
 ((
 hód
@@ -94373,7 +94451,7 @@ hód
 ñm
 )) { \
 
-2410 
+2414 
 	`STAILQ_REMOVE_HEAD
 ((
 hód
@@ -94381,7 +94459,7 @@ hód
 fõld
 ); \
 
-2413 
+2417 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -94393,7 +94471,7 @@ cuªlm
 hód
 ); \
 
-2414 
+2418 
 	`STAILQ_NEXT
 (
 cuªlm
@@ -94403,7 +94481,7 @@ fõld
 ñm
 )) \
 
-2415 
+2419 
 cuªlm
  = 
 	`STAILQ_NEXT
@@ -94411,7 +94489,7 @@ cuªlm
 fõld
 ); \
 
-2416 
+2420 
 	`STAILQ_REMOVE_AFTER
 (
 hód
@@ -94421,17 +94499,17 @@ cuªlm
 fõld
 ); \
 
-2418 
+2422 
 	`TRASHIT
 (*
 ﬁd√xt
 ); \
 
-2419 } 0)
+2423 } 0)
 
 	)
 
-2421 
+2425 
 	#STAILQ_REMOVE_AFTER
 (
 hód
@@ -94441,7 +94519,7 @@ hód
 fõld
 ) do { \
 
-2422 i‡((
+2426 i‡((
 	`STAILQ_NEXT
 (
 ñm
@@ -94449,7 +94527,7 @@ fõld
 fõld
 ) = \
 
-2423 
+2427 
 	`STAILQ_NEXT
 (STAILQ_NEXT(
 ñm
@@ -94459,7 +94537,7 @@ fõld
 NULL
 ) \
 
-2424 (
+2428 (
 hód
 )->
 °qh_œ°
@@ -94471,11 +94549,11 @@ hód
 fõld
 ); \
 
-2425 } 0)
+2429 } 0)
 
 	)
 
-2427 
+2431 
 	#STAILQ_REMOVE_HEAD
 (
 hód
@@ -94483,13 +94561,13 @@ hód
 fõld
 ) do { \
 
-2428 i‡((
+2432 i‡((
 	`STAILQ_FIRST
 ((
 hód
 )) = \
 
-2429 
+2433 
 	`STAILQ_NEXT
 (
 	`STAILQ_FIRST
@@ -94501,7 +94579,7 @@ fõld
 NULL
 ) \
 
-2430 (
+2434 (
 hód
 )->
 °qh_œ°
@@ -94509,11 +94587,11 @@ hód
 	`STAILQ_FIRST
 ((head)); \
 
-2431 } 0)
+2435 } 0)
 
 	)
 
-2433 
+2437 
 	#STAILQ_SWAP
 (
 hód1
@@ -94523,7 +94601,7 @@ hód2
 ty≥
 ) do { \
 
-2434 
+2438 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -94535,7 +94613,7 @@ sw≠_fú°
 hód1
 ); \
 
-2435 
+2439 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -94547,7 +94625,7 @@ hód1
 °qh_œ°
 ; \
 
-2436 
+2440 
 	`STAILQ_FIRST
 (
 hód1
@@ -94555,7 +94633,7 @@ hód1
 hód2
 ); \
 
-2437 (
+2441 (
 hód1
 )->
 °qh_œ°
@@ -94563,7 +94641,7 @@ hód1
 hód2
 )->stqh_last; \
 
-2438 
+2442 
 	`STAILQ_FIRST
 (
 hód2
@@ -94571,7 +94649,7 @@ hód2
 sw≠_fú°
 ; \
 
-2439 (
+2443 (
 hód2
 )->
 °qh_œ°
@@ -94579,13 +94657,13 @@ hód2
 sw≠_œ°
 ; \
 
-2440 i‡(
+2444 i‡(
 	`STAILQ_EMPTY
 (
 hód1
 )) \
 
-2441 (
+2445 (
 hód1
 )->
 °qh_œ°
@@ -94593,13 +94671,13 @@ hód1
 	`STAILQ_FIRST
 (head1); \
 
-2442 i‡(
+2446 i‡(
 	`STAILQ_EMPTY
 (
 hód2
 )) \
 
-2443 (
+2447 (
 hód2
 )->
 °qh_œ°
@@ -94607,11 +94685,11 @@ hód2
 	`STAILQ_FIRST
 (head2); \
 
-2444 } 0)
+2448 } 0)
 
 	)
 
-2450 
+2454 
 	#LIST_HEAD
 (
 «me
@@ -94619,21 +94697,21 @@ hód2
 ty≥
 ) \
 
-2451 
+2455 
 	s«me
  { \
 
-2452 
+2456 
 ty≥
  *
 lh_fú°
 ; \
 
-2453 }
+2457 }
 
 	)
 
-2455 
+2459 
 	#LIST_CLASS_HEAD
 (
 «me
@@ -94641,11 +94719,11 @@ lh_fú°
 ty≥
 ) \
 
-2456 
+2460 
 	s«me
  { \
 
-2457 
+2461 
 ˛ass
  
 ty≥
@@ -94653,51 +94731,51 @@ ty≥
 lh_fú°
 ; \
 
-2458 }
+2462 }
 
 	)
 
-2460 
+2464 
 	#LIST_HEAD_INITIALIZER
 (
 hód
 ) \
 
-2461 { 
+2465 { 
 NULL
  }
 
 	)
 
-2463 
+2467 
 	#LIST_ENTRY
 (
 ty≥
 ) \
 
-2465 
+2469 
 ty≥
  *
 À_√xt
 ; \
 
-2466 
+2470 
 ty≥
  **
 À_¥ev
 ; \
 
-2467 }
+2471 }
 
 	)
 
-2469 
+2473 
 	#LIST_CLASS_ENTRY
 (
 ty≥
 ) \
 
-2471 
+2475 
 ˛ass
  
 ty≥
@@ -94705,7 +94783,7 @@ ty≥
 À_√xt
 ; \
 
-2472 
+2476 
 ˛ass
  
 ty≥
@@ -94713,11 +94791,11 @@ ty≥
 À_¥ev
 ; \
 
-2473 }
+2477 }
 
 	)
 
-2479 #i‡(
+2483 #i‡(
 deföed
 (
 _KERNEL
@@ -94725,7 +94803,7 @@ _KERNEL
 INVARIANTS
 ))
 
-2480 
+2484 
 	#QMD_LIST_CHECK_HEAD
 (
 hód
@@ -94733,7 +94811,7 @@ hód
 fõld
 ) do { \
 
-2481 i‡(
+2485 i‡(
 	`LIST_FIRST
 ((
 hód
@@ -94741,7 +94819,7 @@ hód
 NULL
  && \
 
-2482 
+2486 
 	`LIST_FIRST
 ((
 hód
@@ -94751,23 +94829,23 @@ fõld
 À_¥ev
  != \
 
-2483 &
+2487 &
 	`LIST_FIRST
 ((
 hód
 ))) \
 
-2484 
+2488 
 	`∑nic
 ("BadÜi° hód %∞fú°->¥ev !hód", (
 hód
 )); \
 
-2485 } 0)
+2489 } 0)
 
 	)
 
-2487 
+2491 
 	#QMD_LIST_CHECK_NEXT
 (
 ñm
@@ -94775,7 +94853,7 @@ hód
 fõld
 ) do { \
 
-2488 i‡(
+2492 i‡(
 	`LIST_NEXT
 ((
 ñm
@@ -94785,7 +94863,7 @@ fõld
 NULL
  && \
 
-2489 
+2493 
 	`LIST_NEXT
 ((
 ñm
@@ -94795,7 +94873,7 @@ fõld
 À_¥ev
  != \
 
-2490 &((
+2494 &((
 ñm
 )->
 fõld
@@ -94803,17 +94881,17 @@ fõld
 À_√xt
 )) \
 
-2491 
+2495 
 	`∑nic
 ("BadÜökÉlm %∞√xt->¥ev !ñm", (
 ñm
 )); \
 
-2492 } 0)
+2496 } 0)
 
 	)
 
-2494 
+2498 
 	#QMD_LIST_CHECK_PREV
 (
 ñm
@@ -94821,7 +94899,7 @@ fõld
 fõld
 ) do { \
 
-2495 i‡(*(
+2499 i‡(*(
 ñm
 )->
 fõld
@@ -94829,17 +94907,17 @@ fõld
 À_¥ev
  != (elm)) \
 
-2496 
+2500 
 	`∑nic
 ("BadÜökÉlm %∞¥ev->√xà!ñm", (
 ñm
 )); \
 
-2497 } 0)
+2501 } 0)
 
 	)
 
-2499 
+2503 
 	#QMD_LIST_CHECK_HEAD
 (
 hód
@@ -94849,7 +94927,7 @@ fõld
 
 	)
 
-2500 
+2504 
 	#QMD_LIST_CHECK_NEXT
 (
 ñm
@@ -94859,7 +94937,7 @@ fõld
 
 	)
 
-2501 
+2505 
 	#QMD_LIST_CHECK_PREV
 (
 ñm
@@ -94869,7 +94947,7 @@ fõld
 
 	)
 
-2504 
+2508 
 	#LIST_EMPTY
 (
 hód
@@ -94881,7 +94959,7 @@ NULL
 
 	)
 
-2506 
+2510 
 	#LIST_FIRST
 (
 hód
@@ -94891,7 +94969,7 @@ lh_fú°
 
 	)
 
-2508 
+2512 
 	#LIST_FOREACH
 (
 v¨
@@ -94901,7 +94979,7 @@ hód
 fõld
 ) \
 
-2509 (
+2513 (
 v¨
 Ë
 	`LIST_FIRST
@@ -94909,11 +94987,11 @@ v¨
 hód
 )); \
 
-2510 (
+2514 (
 v¨
 ); \
 
-2511 (
+2515 (
 v¨
 Ë
 	`LIST_NEXT
@@ -94923,7 +95001,7 @@ fõld
 
 	)
 
-2513 
+2517 
 	#LIST_FOREACH_FROM
 (
 v¨
@@ -94933,7 +95011,7 @@ hód
 fõld
 ) \
 
-2514 (
+2518 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`LIST_FIRST
@@ -94941,11 +95019,11 @@ v¨
 hód
 ))); \
 
-2515 (
+2519 (
 v¨
 ); \
 
-2516 (
+2520 (
 v¨
 Ë
 	`LIST_NEXT
@@ -94955,7 +95033,7 @@ fõld
 
 	)
 
-2518 
+2522 
 	#LIST_FOREACH_SAFE
 (
 v¨
@@ -94967,7 +95045,7 @@ fõld
 tv¨
 ) \
 
-2519 (
+2523 (
 v¨
 Ë
 	`LIST_FIRST
@@ -94975,7 +95053,7 @@ v¨
 hód
 )); \
 
-2520 (
+2524 (
 v¨
 Ë&& ((
 tv¨
@@ -94985,7 +95063,7 @@ tv¨
 fõld
 ), 1); \
 
-2521 (
+2525 (
 v¨
 Ë(
 tv¨
@@ -94993,7 +95071,7 @@ tv¨
 
 	)
 
-2523 
+2527 
 	#LIST_FOREACH_FROM_SAFE
 (
 v¨
@@ -95005,7 +95083,7 @@ fõld
 tv¨
 ) \
 
-2524 (
+2528 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`LIST_FIRST
@@ -95013,7 +95091,7 @@ v¨
 hód
 ))); \
 
-2525 (
+2529 (
 v¨
 Ë&& ((
 tv¨
@@ -95023,7 +95101,7 @@ tv¨
 fõld
 ), 1); \
 
-2526 (
+2530 (
 v¨
 Ë(
 tv¨
@@ -95031,13 +95109,13 @@ tv¨
 
 	)
 
-2528 
+2532 
 	#LIST_INIT
 (
 hód
 ) do { \
 
-2529 
+2533 
 	`LIST_FIRST
 ((
 hód
@@ -95045,11 +95123,11 @@ hód
 NULL
 ; \
 
-2530 } 0)
+2534 } 0)
 
 	)
 
-2532 
+2536 
 	#LIST_INSERT_AFTER
 (
 li°ñm
@@ -95059,7 +95137,7 @@ li°ñm
 fõld
 ) do { \
 
-2533 
+2537 
 	`QMD_LIST_CHECK_NEXT
 (
 li°ñm
@@ -95067,7 +95145,7 @@ li°ñm
 fõld
 ); \
 
-2534 i‡((
+2538 i‡((
 	`LIST_NEXT
 ((
 ñm
@@ -95079,7 +95157,7 @@ li°ñm
 NULL
 )\
 
-2535 
+2539 
 	`LIST_NEXT
 ((
 li°ñm
@@ -95089,7 +95167,7 @@ fõld
 À_¥ev
  = \
 
-2536 &
+2540 &
 	`LIST_NEXT
 ((
 ñm
@@ -95097,7 +95175,7 @@ fõld
 fõld
 ); \
 
-2537 
+2541 
 	`LIST_NEXT
 ((
 li°ñm
@@ -95107,7 +95185,7 @@ fõld
 ñm
 ); \
 
-2538 (
+2542 (
 ñm
 )->
 fõld
@@ -95119,11 +95197,11 @@ fõld
 li°ñm
 ), field); \
 
-2539 } 0)
+2543 } 0)
 
 	)
 
-2541 
+2545 
 	#LIST_INSERT_BEFORE
 (
 li°ñm
@@ -95133,7 +95211,7 @@ li°ñm
 fõld
 ) do { \
 
-2542 
+2546 
 	`QMD_LIST_CHECK_PREV
 (
 li°ñm
@@ -95141,7 +95219,7 @@ li°ñm
 fõld
 ); \
 
-2543 (
+2547 (
 ñm
 )->
 fõld
@@ -95151,7 +95229,7 @@ fõld
 li°ñm
 )->field.le_prev; \
 
-2544 
+2548 
 	`LIST_NEXT
 ((
 ñm
@@ -95161,7 +95239,7 @@ fõld
 li°ñm
 ); \
 
-2545 *(
+2549 *(
 li°ñm
 )->
 fõld
@@ -95171,7 +95249,7 @@ fõld
 ñm
 ); \
 
-2546 (
+2550 (
 li°ñm
 )->
 fõld
@@ -95183,11 +95261,11 @@ fõld
 ñm
 ), field); \
 
-2547 } 0)
+2551 } 0)
 
 	)
 
-2549 
+2553 
 	#LIST_INSERT_HEAD
 (
 hód
@@ -95197,7 +95275,7 @@ hód
 fõld
 ) do { \
 
-2550 
+2554 
 	`QMD_LIST_CHECK_HEAD
 ((
 hód
@@ -95205,7 +95283,7 @@ hód
 fõld
 ); \
 
-2551 i‡((
+2555 i‡((
 	`LIST_NEXT
 ((
 ñm
@@ -95219,7 +95297,7 @@ hód
 NULL
 ) \
 
-2552 
+2556 
 	`LIST_FIRST
 ((
 hód
@@ -95233,7 +95311,7 @@ fõld
 ñm
 ), field);\
 
-2553 
+2557 
 	`LIST_FIRST
 ((
 hód
@@ -95241,7 +95319,7 @@ hód
 ñm
 ); \
 
-2554 (
+2558 (
 ñm
 )->
 fõld
@@ -95253,11 +95331,11 @@ fõld
 hód
 )); \
 
-2555 } 0)
+2559 } 0)
 
 	)
 
-2557 
+2561 
 	#LIST_NEXT
 (
 ñm
@@ -95269,7 +95347,7 @@ fõld
 
 	)
 
-2559 
+2563 
 	#LIST_PREV
 (
 ñm
@@ -95281,7 +95359,7 @@ ty≥
 fõld
 ) \
 
-2560 ((
+2564 ((
 ñm
 )->
 fõld
@@ -95295,7 +95373,7 @@ hód
 NULL
  : \
 
-2561 
+2565 
 	`__c⁄èöîof
 ((
 ñm
@@ -95305,7 +95383,7 @@ fõld
 À_¥ev
 , \
 
-2562 
+2566 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -95317,7 +95395,7 @@ fõld
 
 	)
 
-2564 
+2568 
 	#LIST_REMOVE
 (
 ñm
@@ -95325,7 +95403,7 @@ fõld
 fõld
 ) do { \
 
-2565 
+2569 
 	`QMD_SAVELINK
 (
 ﬁd√xt
@@ -95337,7 +95415,7 @@ fõld
 À_√xt
 ); \
 
-2566 
+2570 
 	`QMD_SAVELINK
 (
 ﬁd¥ev
@@ -95349,7 +95427,7 @@ fõld
 À_¥ev
 ); \
 
-2567 
+2571 
 	`QMD_LIST_CHECK_NEXT
 (
 ñm
@@ -95357,7 +95435,7 @@ fõld
 fõld
 ); \
 
-2568 
+2572 
 	`QMD_LIST_CHECK_PREV
 (
 ñm
@@ -95365,7 +95443,7 @@ fõld
 fõld
 ); \
 
-2569 i‡(
+2573 i‡(
 	`LIST_NEXT
 ((
 ñm
@@ -95375,7 +95453,7 @@ fõld
 NULL
 ) \
 
-2570 
+2574 
 	`LIST_NEXT
 ((
 ñm
@@ -95385,7 +95463,7 @@ fõld
 À_¥ev
  = \
 
-2571 (
+2575 (
 ñm
 )->
 fõld
@@ -95393,7 +95471,7 @@ fõld
 À_¥ev
 ; \
 
-2572 *(
+2576 *(
 ñm
 )->
 fõld
@@ -95403,23 +95481,23 @@ fõld
 	`LIST_NEXT
 ((elm), field); \
 
-2573 
+2577 
 	`TRASHIT
 (*
 ﬁd√xt
 ); \
 
-2574 
+2578 
 	`TRASHIT
 (*
 ﬁd¥ev
 ); \
 
-2575 } 0)
+2579 } 0)
 
 	)
 
-2577 
+2581 
 	#LIST_SWAP
 (
 hód1
@@ -95431,7 +95509,7 @@ ty≥
 fõld
 ) do { \
 
-2578 
+2582 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -95443,7 +95521,7 @@ sw≠_tmp
 hód1
 ); \
 
-2579 
+2583 
 	`LIST_FIRST
 ((
 hód1
@@ -95451,7 +95529,7 @@ hód1
 hód2
 )); \
 
-2580 
+2584 
 	`LIST_FIRST
 ((
 hód2
@@ -95459,7 +95537,7 @@ hód2
 sw≠_tmp
 ; \
 
-2581 i‡((
+2585 i‡((
 sw≠_tmp
  = 
 	`LIST_FIRST
@@ -95469,7 +95547,7 @@ hód1
 NULL
 ) \
 
-2582 
+2586 
 sw≠_tmp
 ->
 fõld
@@ -95481,7 +95559,7 @@ fõld
 hód1
 )); \
 
-2583 i‡((
+2587 i‡((
 sw≠_tmp
  = 
 	`LIST_FIRST
@@ -95491,7 +95569,7 @@ hód2
 NULL
 ) \
 
-2584 
+2588 
 sw≠_tmp
 ->
 fõld
@@ -95503,11 +95581,11 @@ fõld
 hód2
 )); \
 
-2585 } 0)
+2589 } 0)
 
 	)
 
-2590 
+2594 
 	#TAILQ_HEAD
 (
 «me
@@ -95515,31 +95593,31 @@ hód2
 ty≥
 ) \
 
-2591 
+2595 
 	s«me
  { \
 
-2592 
+2596 
 ty≥
  *
 tqh_fú°
 ; \
 
-2593 
+2597 
 ty≥
  **
 tqh_œ°
 ; \
 
-2594 
+2598 
 TRACEBUF
  \
 
-2595 }
+2599 }
 
 	)
 
-2597 
+2601 
 	#TAILQ_CLASS_HEAD
 (
 «me
@@ -95547,11 +95625,11 @@ TRACEBUF
 ty≥
 ) \
 
-2598 
+2602 
 	s«me
  { \
 
-2599 
+2603 
 ˛ass
  
 ty≥
@@ -95559,7 +95637,7 @@ ty≥
 tqh_fú°
 ; \
 
-2600 
+2604 
 ˛ass
  
 ty≥
@@ -95567,21 +95645,21 @@ ty≥
 tqh_œ°
 ; \
 
-2601 
+2605 
 TRACEBUF
  \
 
-2602 }
+2606 }
 
 	)
 
-2604 
+2608 
 	#TAILQ_HEAD_INITIALIZER
 (
 hód
 ) \
 
-2605 { 
+2609 { 
 NULL
 , &(
 hód
@@ -95593,39 +95671,39 @@ TRACEBUF_INITIALIZER
 
 	)
 
-2607 
+2611 
 	#TAILQ_ENTRY
 (
 ty≥
 ) \
 
-2609 
+2613 
 ty≥
  *
 tqe_√xt
 ; \
 
-2610 
+2614 
 ty≥
  **
 tqe_¥ev
 ; \
 
-2611 
+2615 
 TRACEBUF
  \
 
-2612 }
+2616 }
 
 	)
 
-2614 
+2618 
 	#TAILQ_CLASS_ENTRY
 (
 ty≥
 ) \
 
-2616 
+2620 
 ˛ass
  
 ty≥
@@ -95633,7 +95711,7 @@ ty≥
 tqe_√xt
 ; \
 
-2617 
+2621 
 ˛ass
  
 ty≥
@@ -95641,15 +95719,15 @@ ty≥
 tqe_¥ev
 ; \
 
-2618 
+2622 
 TRACEBUF
  \
 
-2619 }
+2623 }
 
 	)
 
-2624 #i‡(
+2628 #i‡(
 deföed
 (
 _KERNEL
@@ -95657,7 +95735,7 @@ _KERNEL
 INVARIANTS
 ))
 
-2625 
+2629 
 	#QMD_TAILQ_CHECK_HEAD
 (
 hód
@@ -95665,13 +95743,13 @@ hód
 fõld
 ) do { \
 
-2626 i‡(!
+2630 i‡(!
 	`TAILQ_EMPTY
 (
 hód
 ) && \
 
-2627 
+2631 
 	`TAILQ_FIRST
 ((
 hód
@@ -95681,23 +95759,23 @@ fõld
 tqe_¥ev
  != \
 
-2628 &
+2632 &
 	`TAILQ_FIRST
 ((
 hód
 ))) \
 
-2629 
+2633 
 	`∑nic
 ("BadÅaûq hód %∞fú°->¥ev !hód", (
 hód
 )); \
 
-2630 } 0)
+2634 } 0)
 
 	)
 
-2632 
+2636 
 	#QMD_TAILQ_CHECK_TAIL
 (
 hód
@@ -95705,7 +95783,7 @@ hód
 fõld
 ) do { \
 
-2633 i‡(*(
+2637 i‡(*(
 hód
 )->
 tqh_œ°
@@ -95713,17 +95791,17 @@ tqh_œ°
 NULL
 ) \
 
-2634 
+2638 
 	`∑nic
 ("BadÅaûq NEXT(%p->tqh_œ°Ë!NULL", (
 hód
 )); \
 
-2635 } 0)
+2639 } 0)
 
 	)
 
-2637 
+2641 
 	#QMD_TAILQ_CHECK_NEXT
 (
 ñm
@@ -95731,7 +95809,7 @@ hód
 fõld
 ) do { \
 
-2638 i‡(
+2642 i‡(
 	`TAILQ_NEXT
 ((
 ñm
@@ -95741,7 +95819,7 @@ fõld
 NULL
  && \
 
-2639 
+2643 
 	`TAILQ_NEXT
 ((
 ñm
@@ -95751,7 +95829,7 @@ fõld
 tqe_¥ev
  != \
 
-2640 &((
+2644 &((
 ñm
 )->
 fõld
@@ -95759,17 +95837,17 @@ fõld
 tqe_√xt
 )) \
 
-2641 
+2645 
 	`∑nic
 ("BadÜökÉlm %∞√xt->¥ev !ñm", (
 ñm
 )); \
 
-2642 } 0)
+2646 } 0)
 
 	)
 
-2644 
+2648 
 	#QMD_TAILQ_CHECK_PREV
 (
 ñm
@@ -95777,7 +95855,7 @@ tqe_√xt
 fõld
 ) do { \
 
-2645 i‡(*(
+2649 i‡(*(
 ñm
 )->
 fõld
@@ -95785,17 +95863,17 @@ fõld
 tqe_¥ev
  != (elm)) \
 
-2646 
+2650 
 	`∑nic
 ("BadÜökÉlm %∞¥ev->√xà!ñm", (
 ñm
 )); \
 
-2647 } 0)
+2651 } 0)
 
 	)
 
-2649 
+2653 
 	#QMD_TAILQ_CHECK_HEAD
 (
 hód
@@ -95805,7 +95883,7 @@ fõld
 
 	)
 
-2650 
+2654 
 	#QMD_TAILQ_CHECK_TAIL
 (
 hód
@@ -95815,7 +95893,7 @@ hód«me
 
 	)
 
-2651 
+2655 
 	#QMD_TAILQ_CHECK_NEXT
 (
 ñm
@@ -95825,7 +95903,7 @@ fõld
 
 	)
 
-2652 
+2656 
 	#QMD_TAILQ_CHECK_PREV
 (
 ñm
@@ -95835,7 +95913,7 @@ fõld
 
 	)
 
-2655 
+2659 
 	#TAILQ_CONCAT
 (
 hód1
@@ -95845,13 +95923,13 @@ hód2
 fõld
 ) do { \
 
-2656 i‡(!
+2660 i‡(!
 	`TAILQ_EMPTY
 (
 hód2
 )) { \
 
-2657 *(
+2661 *(
 hód1
 )->
 tqh_œ°
@@ -95861,7 +95939,7 @@ hód2
 tqh_fú°
 ; \
 
-2658 (
+2662 (
 hód2
 )->
 tqh_fú°
@@ -95875,7 +95953,7 @@ hód1
 tqh_œ°
 ; \
 
-2659 (
+2663 (
 hód1
 )->
 tqh_œ°
@@ -95883,29 +95961,29 @@ tqh_œ°
 hód2
 )->tqh_last; \
 
-2660 
+2664 
 	`TAILQ_INIT
 ((
 hód2
 )); \
 
-2661 
+2665 
 	`QMD_TRACE_HEAD
 (
 hód1
 ); \
 
-2662 
+2666 
 	`QMD_TRACE_HEAD
 (
 hód2
 ); \
 
-2664 } 0)
+2668 } 0)
 
 	)
 
-2666 
+2670 
 	#TAILQ_EMPTY
 (
 hód
@@ -95917,7 +95995,7 @@ NULL
 
 	)
 
-2668 
+2672 
 	#TAILQ_FIRST
 (
 hód
@@ -95927,7 +96005,7 @@ tqh_fú°
 
 	)
 
-2670 
+2674 
 	#TAILQ_FOREACH
 (
 v¨
@@ -95937,7 +96015,7 @@ hód
 fõld
 ) \
 
-2671 (
+2675 (
 v¨
 Ë
 	`TAILQ_FIRST
@@ -95945,11 +96023,11 @@ v¨
 hód
 )); \
 
-2672 (
+2676 (
 v¨
 ); \
 
-2673 (
+2677 (
 v¨
 Ë
 	`TAILQ_NEXT
@@ -95959,7 +96037,7 @@ fõld
 
 	)
 
-2675 
+2679 
 	#TAILQ_FOREACH_FROM
 (
 v¨
@@ -95969,7 +96047,7 @@ hód
 fõld
 ) \
 
-2676 (
+2680 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`TAILQ_FIRST
@@ -95977,11 +96055,11 @@ v¨
 hód
 ))); \
 
-2677 (
+2681 (
 v¨
 ); \
 
-2678 (
+2682 (
 v¨
 Ë
 	`TAILQ_NEXT
@@ -95991,7 +96069,7 @@ fõld
 
 	)
 
-2680 
+2684 
 	#TAILQ_FOREACH_SAFE
 (
 v¨
@@ -96003,7 +96081,7 @@ fõld
 tv¨
 ) \
 
-2681 (
+2685 (
 v¨
 Ë
 	`TAILQ_FIRST
@@ -96011,7 +96089,7 @@ v¨
 hód
 )); \
 
-2682 (
+2686 (
 v¨
 Ë&& ((
 tv¨
@@ -96021,7 +96099,7 @@ tv¨
 fõld
 ), 1); \
 
-2683 (
+2687 (
 v¨
 Ë(
 tv¨
@@ -96029,7 +96107,7 @@ tv¨
 
 	)
 
-2685 
+2689 
 	#TAILQ_FOREACH_FROM_SAFE
 (
 v¨
@@ -96041,7 +96119,7 @@ fõld
 tv¨
 ) \
 
-2686 (
+2690 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`TAILQ_FIRST
@@ -96049,7 +96127,7 @@ v¨
 hód
 ))); \
 
-2687 (
+2691 (
 v¨
 Ë&& ((
 tv¨
@@ -96059,7 +96137,7 @@ tv¨
 fõld
 ), 1); \
 
-2688 (
+2692 (
 v¨
 Ë(
 tv¨
@@ -96067,7 +96145,7 @@ tv¨
 
 	)
 
-2690 
+2694 
 	#TAILQ_FOREACH_REVERSE
 (
 v¨
@@ -96079,7 +96157,7 @@ hód«me
 fõld
 ) \
 
-2691 (
+2695 (
 v¨
 Ë
 	`TAILQ_LAST
@@ -96089,11 +96167,11 @@ hód
 hód«me
 ); \
 
-2692 (
+2696 (
 v¨
 ); \
 
-2693 (
+2697 (
 v¨
 Ë
 	`TAILQ_PREV
@@ -96105,7 +96183,7 @@ fõld
 
 	)
 
-2695 
+2699 
 	#TAILQ_FOREACH_REVERSE_FROM
 (
 v¨
@@ -96117,7 +96195,7 @@ hód«me
 fõld
 ) \
 
-2696 (
+2700 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`TAILQ_LAST
@@ -96127,11 +96205,11 @@ hód
 hód«me
 )); \
 
-2697 (
+2701 (
 v¨
 ); \
 
-2698 (
+2702 (
 v¨
 Ë
 	`TAILQ_PREV
@@ -96143,7 +96221,7 @@ fõld
 
 	)
 
-2700 
+2704 
 	#TAILQ_FOREACH_REVERSE_SAFE
 (
 v¨
@@ -96157,7 +96235,7 @@ fõld
 tv¨
 ) \
 
-2701 (
+2705 (
 v¨
 Ë
 	`TAILQ_LAST
@@ -96167,7 +96245,7 @@ hód
 hód«me
 ); \
 
-2702 (
+2706 (
 v¨
 Ë&& ((
 tv¨
@@ -96179,7 +96257,7 @@ hód«me
 fõld
 ), 1); \
 
-2703 (
+2707 (
 v¨
 Ë(
 tv¨
@@ -96187,7 +96265,7 @@ tv¨
 
 	)
 
-2705 
+2709 
 	#TAILQ_FOREACH_REVERSE_FROM_SAFE
 (
 v¨
@@ -96201,7 +96279,7 @@ fõld
 tv¨
 ) \
 
-2706 (
+2710 (
 v¨
 Ë((v¨Ë? (v¨Ë: 
 	`TAILQ_LAST
@@ -96211,7 +96289,7 @@ hód
 hód«me
 )); \
 
-2707 (
+2711 (
 v¨
 Ë&& ((
 tv¨
@@ -96223,7 +96301,7 @@ hód«me
 fõld
 ), 1); \
 
-2708 (
+2712 (
 v¨
 Ë(
 tv¨
@@ -96231,13 +96309,13 @@ tv¨
 
 	)
 
-2710 
+2714 
 	#TAILQ_INIT
 (
 hód
 ) do { \
 
-2711 
+2715 
 	`TAILQ_FIRST
 ((
 hód
@@ -96245,7 +96323,7 @@ hód
 NULL
 ; \
 
-2712 (
+2716 (
 hód
 )->
 tqh_œ°
@@ -96253,17 +96331,17 @@ tqh_œ°
 	`TAILQ_FIRST
 ((head)); \
 
-2713 
+2717 
 	`QMD_TRACE_HEAD
 (
 hód
 ); \
 
-2714 } 0)
+2718 } 0)
 
 	)
 
-2716 
+2720 
 	#TAILQ_INSERT_AFTER
 (
 hód
@@ -96275,7 +96353,7 @@ li°ñm
 fõld
 ) do { \
 
-2717 
+2721 
 	`QMD_TAILQ_CHECK_NEXT
 (
 li°ñm
@@ -96283,7 +96361,7 @@ li°ñm
 fõld
 ); \
 
-2718 i‡((
+2722 i‡((
 	`TAILQ_NEXT
 ((
 ñm
@@ -96295,7 +96373,7 @@ li°ñm
 NULL
 )\
 
-2719 
+2723 
 	`TAILQ_NEXT
 ((
 ñm
@@ -96305,7 +96383,7 @@ fõld
 tqe_¥ev
  = \
 
-2720 &
+2724 &
 	`TAILQ_NEXT
 ((
 ñm
@@ -96313,7 +96391,7 @@ tqe_¥ev
 fõld
 ); \
 
-2722 (
+2726 (
 hód
 )->
 tqh_œ°
@@ -96325,13 +96403,13 @@ tqh_œ°
 fõld
 ); \
 
-2723 
+2727 
 	`QMD_TRACE_HEAD
 (
 hód
 ); \
 
-2725 
+2729 
 	`TAILQ_NEXT
 ((
 li°ñm
@@ -96341,7 +96419,7 @@ fõld
 ñm
 ); \
 
-2726 (
+2730 (
 ñm
 )->
 fõld
@@ -96353,7 +96431,7 @@ tqe_¥ev
 li°ñm
 ), field); \
 
-2727 
+2731 
 	`QMD_TRACE_ELEM
 (&(
 ñm
@@ -96361,7 +96439,7 @@ li°ñm
 fõld
 ); \
 
-2728 
+2732 
 	`QMD_TRACE_ELEM
 (&(
 li°ñm
@@ -96369,11 +96447,11 @@ li°ñm
 fõld
 ); \
 
-2729 } 0)
+2733 } 0)
 
 	)
 
-2731 
+2735 
 	#TAILQ_INSERT_BEFORE
 (
 li°ñm
@@ -96383,7 +96461,7 @@ li°ñm
 fõld
 ) do { \
 
-2732 
+2736 
 	`QMD_TAILQ_CHECK_PREV
 (
 li°ñm
@@ -96391,7 +96469,7 @@ li°ñm
 fõld
 ); \
 
-2733 (
+2737 (
 ñm
 )->
 fõld
@@ -96401,7 +96479,7 @@ tqe_¥ev
 li°ñm
 )->field.tqe_prev; \
 
-2734 
+2738 
 	`TAILQ_NEXT
 ((
 ñm
@@ -96411,7 +96489,7 @@ fõld
 li°ñm
 ); \
 
-2735 *(
+2739 *(
 li°ñm
 )->
 fõld
@@ -96421,7 +96499,7 @@ tqe_¥ev
 ñm
 ); \
 
-2736 (
+2740 (
 li°ñm
 )->
 fõld
@@ -96433,7 +96511,7 @@ tqe_¥ev
 ñm
 ), field); \
 
-2737 
+2741 
 	`QMD_TRACE_ELEM
 (&(
 ñm
@@ -96441,7 +96519,7 @@ tqe_¥ev
 fõld
 ); \
 
-2738 
+2742 
 	`QMD_TRACE_ELEM
 (&(
 li°ñm
@@ -96449,11 +96527,11 @@ li°ñm
 fõld
 ); \
 
-2739 } 0)
+2743 } 0)
 
 	)
 
-2741 
+2745 
 	#TAILQ_INSERT_HEAD
 (
 hód
@@ -96463,7 +96541,7 @@ hód
 fõld
 ) do { \
 
-2742 
+2746 
 	`QMD_TAILQ_CHECK_HEAD
 (
 hód
@@ -96471,7 +96549,7 @@ hód
 fõld
 ); \
 
-2743 i‡((
+2747 i‡((
 	`TAILQ_NEXT
 ((
 ñm
@@ -96485,7 +96563,7 @@ hód
 NULL
 ) \
 
-2744 
+2748 
 	`TAILQ_FIRST
 ((
 hód
@@ -96495,7 +96573,7 @@ fõld
 tqe_¥ev
  = \
 
-2745 &
+2749 &
 	`TAILQ_NEXT
 ((
 ñm
@@ -96503,7 +96581,7 @@ tqe_¥ev
 fõld
 ); \
 
-2747 (
+2751 (
 hód
 )->
 tqh_œ°
@@ -96515,7 +96593,7 @@ tqh_œ°
 fõld
 ); \
 
-2748 
+2752 
 	`TAILQ_FIRST
 ((
 hód
@@ -96523,7 +96601,7 @@ hód
 ñm
 ); \
 
-2749 (
+2753 (
 ñm
 )->
 fõld
@@ -96535,13 +96613,13 @@ tqe_¥ev
 hód
 )); \
 
-2750 
+2754 
 	`QMD_TRACE_HEAD
 (
 hód
 ); \
 
-2751 
+2755 
 	`QMD_TRACE_ELEM
 (&(
 ñm
@@ -96549,11 +96627,11 @@ hód
 fõld
 ); \
 
-2752 } 0)
+2756 } 0)
 
 	)
 
-2754 
+2758 
 	#TAILQ_INSERT_TAIL
 (
 hód
@@ -96563,7 +96641,7 @@ hód
 fõld
 ) do { \
 
-2755 
+2759 
 	`QMD_TAILQ_CHECK_TAIL
 (
 hód
@@ -96571,7 +96649,7 @@ hód
 fõld
 ); \
 
-2756 
+2760 
 	`TAILQ_NEXT
 ((
 ñm
@@ -96581,7 +96659,7 @@ fõld
 NULL
 ; \
 
-2757 (
+2761 (
 ñm
 )->
 fõld
@@ -96593,7 +96671,7 @@ hód
 tqh_œ°
 ; \
 
-2758 *(
+2762 *(
 hód
 )->
 tqh_œ°
@@ -96601,7 +96679,7 @@ tqh_œ°
 ñm
 ); \
 
-2759 (
+2763 (
 hód
 )->
 tqh_œ°
@@ -96613,13 +96691,13 @@ tqh_œ°
 fõld
 ); \
 
-2760 
+2764 
 	`QMD_TRACE_HEAD
 (
 hód
 ); \
 
-2761 
+2765 
 	`QMD_TRACE_ELEM
 (&(
 ñm
@@ -96627,11 +96705,11 @@ hód
 fõld
 ); \
 
-2762 } 0)
+2766 } 0)
 
 	)
 
-2764 
+2768 
 	#TAILQ_LAST
 (
 hód
@@ -96639,7 +96717,7 @@ hód
 hód«me
 ) \
 
-2765 (*(((
+2769 (*(((
 hód«me
  *)((
 hód
@@ -96649,7 +96727,7 @@ tqh_œ°
 
 	)
 
-2767 
+2771 
 	#TAILQ_NEXT
 (
 ñm
@@ -96661,7 +96739,7 @@ tqe_√xt
 
 	)
 
-2769 
+2773 
 	#TAILQ_PREV
 (
 ñm
@@ -96671,7 +96749,7 @@ hód«me
 fõld
 ) \
 
-2770 (*(((
+2774 (*(((
 hód«me
  *)((
 ñm
@@ -96685,7 +96763,7 @@ tqh_œ°
 
 	)
 
-2772 
+2776 
 	#TAILQ_REMOVE
 (
 hód
@@ -96695,7 +96773,7 @@ hód
 fõld
 ) do { \
 
-2773 
+2777 
 	`QMD_SAVELINK
 (
 ﬁd√xt
@@ -96707,7 +96785,7 @@ fõld
 tqe_√xt
 ); \
 
-2774 
+2778 
 	`QMD_SAVELINK
 (
 ﬁd¥ev
@@ -96719,7 +96797,7 @@ fõld
 tqe_¥ev
 ); \
 
-2775 
+2779 
 	`QMD_TAILQ_CHECK_NEXT
 (
 ñm
@@ -96727,7 +96805,7 @@ tqe_¥ev
 fõld
 ); \
 
-2776 
+2780 
 	`QMD_TAILQ_CHECK_PREV
 (
 ñm
@@ -96735,7 +96813,7 @@ fõld
 fõld
 ); \
 
-2777 i‡((
+2781 i‡((
 	`TAILQ_NEXT
 ((
 ñm
@@ -96745,7 +96823,7 @@ fõld
 NULL
 ) \
 
-2778 
+2782 
 	`TAILQ_NEXT
 ((
 ñm
@@ -96755,7 +96833,7 @@ fõld
 tqe_¥ev
  = \
 
-2779 (
+2783 (
 ñm
 )->
 fõld
@@ -96763,7 +96841,7 @@ fõld
 tqe_¥ev
 ; \
 
-2781 (
+2785 (
 hód
 )->
 tqh_œ°
@@ -96775,13 +96853,13 @@ fõld
 tqe_¥ev
 ; \
 
-2782 
+2786 
 	`QMD_TRACE_HEAD
 (
 hód
 ); \
 
-2784 *(
+2788 *(
 ñm
 )->
 fõld
@@ -96791,19 +96869,19 @@ tqe_¥ev
 	`TAILQ_NEXT
 ((elm), field); \
 
-2785 
+2789 
 	`TRASHIT
 (*
 ﬁd√xt
 ); \
 
-2786 
+2790 
 	`TRASHIT
 (*
 ﬁd¥ev
 ); \
 
-2787 
+2791 
 	`QMD_TRACE_ELEM
 (&(
 ñm
@@ -96811,11 +96889,11 @@ tqe_¥ev
 fõld
 ); \
 
-2788 } 0)
+2792 } 0)
 
 	)
 
-2790 
+2794 
 	#TAILQ_SWAP
 (
 hód1
@@ -96827,7 +96905,7 @@ ty≥
 fõld
 ) do { \
 
-2791 
+2795 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -96839,7 +96917,7 @@ hód1
 tqh_fú°
 ; \
 
-2792 
+2796 
 	`QUEUE_TYPEOF
 (
 ty≥
@@ -96851,7 +96929,7 @@ hód1
 tqh_œ°
 ; \
 
-2793 (
+2797 (
 hód1
 )->
 tqh_fú°
@@ -96859,7 +96937,7 @@ tqh_fú°
 hód2
 )->tqh_first; \
 
-2794 (
+2798 (
 hód1
 )->
 tqh_œ°
@@ -96867,7 +96945,7 @@ tqh_œ°
 hód2
 )->tqh_last; \
 
-2795 (
+2799 (
 hód2
 )->
 tqh_fú°
@@ -96875,7 +96953,7 @@ tqh_fú°
 sw≠_fú°
 ; \
 
-2796 (
+2800 (
 hód2
 )->
 tqh_œ°
@@ -96883,40 +96961,10 @@ tqh_œ°
 sw≠_œ°
 ; \
 
-2797 i‡((
-sw≠_fú°
- = (
-hód1
-)->
-tqh_fú°
-Ë!
-NULL
-) \
-
-2798 
-sw≠_fú°
-->
-fõld
-.
-tqe_¥ev
- = &(
-hód1
-)->
-tqh_fú°
-; \
-
-2800 (
-hód1
-)->
-tqh_œ°
- = &(hód1)->
-tqh_fú°
-; \
-
 2801 i‡((
 sw≠_fú°
  = (
-hód2
+hód1
 )->
 tqh_fú°
 Ë!
@@ -96930,12 +96978,42 @@ fõld
 .
 tqe_¥ev
  = &(
-hód2
+hód1
 )->
 tqh_fú°
 ; \
 
 2804 (
+hód1
+)->
+tqh_œ°
+ = &(hód1)->
+tqh_fú°
+; \
+
+2805 i‡((
+sw≠_fú°
+ = (
+hód2
+)->
+tqh_fú°
+Ë!
+NULL
+) \
+
+2806 
+sw≠_fú°
+->
+fõld
+.
+tqe_¥ev
+ = &(
+hód2
+)->
+tqh_fú°
+; \
+
+2808 (
 hód2
 )->
 tqh_œ°
@@ -96943,169 +97021,169 @@ tqh_œ°
 tqh_fú°
 ; \
 
-2805 } 0)
+2809 } 0)
 
 	)
 
-2808 #ifde‡
+2812 #ifde‡
 MG_MODULE_LINES
 
 
-2816 #i‚de‡
+2820 #i‚de‡
 CS_MONGOOSE_SRC_FEATURES_H_
 
 
-2817 
+2821 
 	#CS_MONGOOSE_SRC_FEATURES_H_
 
 
 	)
 
-2819 #i‚de‡
+2823 #i‚de‡
 MG_DISABLE_HTTP_DIGEST_AUTH
 
 
-2820 
+2824 
 	#MG_DISABLE_HTTP_DIGEST_AUTH
  0
 
 	)
 
-2823 #i‚de‡
+2827 #i‚de‡
 MG_DISABLE_HTTP_KEEP_ALIVE
 
 
-2824 
+2828 
 	#MG_DISABLE_HTTP_KEEP_ALIVE
  0
 
 	)
 
-2827 #i‚de‡
+2831 #i‚de‡
 MG_DISABLE_PFS
 
 
-2828 
+2832 
 	#MG_DISABLE_PFS
  0
 
 	)
 
-2831 #i‚de‡
+2835 #i‚de‡
 MG_DISABLE_WS_RANDOM_MASK
 
 
-2832 
+2836 
 	#MG_DISABLE_WS_RANDOM_MASK
  0
 
 	)
 
-2835 #i‚de‡
+2839 #i‚de‡
 MG_ENABLE_ASYNC_RESOLVER
 
 
-2836 
+2840 
 	#MG_ENABLE_ASYNC_RESOLVER
  1
 
 	)
 
-2839 #i‚de‡
+2843 #i‚de‡
 MG_ENABLE_BROADCAST
 
 
-2840 
+2844 
 	#MG_ENABLE_BROADCAST
  0
 
 	)
 
-2843 #i‚de‡
+2847 #i‚de‡
 MG_ENABLE_COAP
 
 
-2844 
+2848 
 	#MG_ENABLE_COAP
  0
 
 	)
 
-2847 #i‚de‡
+2851 #i‚de‡
 MG_ENABLE_DEBUG
 
 
-2848 
+2852 
 	#MG_ENABLE_DEBUG
  0
 
 	)
 
-2851 #i‚de‡
+2855 #i‚de‡
 MG_ENABLE_DIRECTORY_LISTING
 
 
-2852 
+2856 
 	#MG_ENABLE_DIRECTORY_LISTING
  0
 
 	)
 
-2855 #i‚de‡
+2859 #i‚de‡
 MG_ENABLE_DNS
 
 
-2856 
+2860 
 	#MG_ENABLE_DNS
  1
 
 	)
 
-2859 #i‚de‡
+2863 #i‚de‡
 MG_ENABLE_DNS_SERVER
 
 
-2860 
+2864 
 	#MG_ENABLE_DNS_SERVER
  0
 
 	)
 
-2863 #i‚de‡
+2867 #i‚de‡
 MG_ENABLE_FAKE_DAVLOCK
 
 
-2864 
+2868 
 	#MG_ENABLE_FAKE_DAVLOCK
  0
 
 	)
 
-2867 #i‚de‡
+2871 #i‚de‡
 MG_ENABLE_FILESYSTEM
 
 
-2868 
+2872 
 	#MG_ENABLE_FILESYSTEM
  0
 
 	)
 
-2871 #i‚de‡
+2875 #i‚de‡
 MG_ENABLE_GETADDRINFO
 
 
-2872 
+2876 
 	#MG_ENABLE_GETADDRINFO
  0
 
 	)
 
-2875 #i‚de‡
+2879 #i‚de‡
 MG_ENABLE_HEXDUMP
 
 
-2876 
+2880 
 	#MG_ENABLE_HEXDUMP
  
 CS_ENABLE_STDIO
@@ -97113,31 +97191,31 @@ CS_ENABLE_STDIO
 
 	)
 
-2879 #i‚de‡
+2883 #i‚de‡
 MG_ENABLE_HTTP
 
 
-2880 
+2884 
 	#MG_ENABLE_HTTP
  1
 
 	)
 
-2883 #i‚de‡
+2887 #i‚de‡
 MG_ENABLE_HTTP_CGI
 
 
-2884 
+2888 
 	#MG_ENABLE_HTTP_CGI
  0
 
 	)
 
-2887 #i‚de‡
+2891 #i‚de‡
 MG_ENABLE_HTTP_SSI
 
 
-2888 
+2892 
 	#MG_ENABLE_HTTP_SSI
  
 MG_ENABLE_FILESYSTEM
@@ -97145,41 +97223,41 @@ MG_ENABLE_FILESYSTEM
 
 	)
 
-2891 #i‚de‡
+2895 #i‚de‡
 MG_ENABLE_HTTP_SSI_EXEC
 
 
-2892 
+2896 
 	#MG_ENABLE_HTTP_SSI_EXEC
  0
 
 	)
 
-2895 #i‚de‡
+2899 #i‚de‡
 MG_ENABLE_HTTP_STREAMING_MULTIPART
 
 
-2896 
+2900 
 	#MG_ENABLE_HTTP_STREAMING_MULTIPART
  0
 
 	)
 
-2899 #i‚de‡
+2903 #i‚de‡
 MG_ENABLE_HTTP_WEBDAV
 
 
-2900 
+2904 
 	#MG_ENABLE_HTTP_WEBDAV
  0
 
 	)
 
-2903 #i‚de‡
+2907 #i‚de‡
 MG_ENABLE_HTTP_WEBSOCKET
 
 
-2904 
+2908 
 	#MG_ENABLE_HTTP_WEBSOCKET
  
 MG_ENABLE_HTTP
@@ -97187,71 +97265,71 @@ MG_ENABLE_HTTP
 
 	)
 
-2907 #i‚de‡
+2911 #i‚de‡
 MG_ENABLE_IPV6
 
 
-2908 
+2912 
 	#MG_ENABLE_IPV6
  0
 
 	)
 
-2911 #i‚de‡
+2915 #i‚de‡
 MG_ENABLE_JAVASCRIPT
 
 
-2912 
+2916 
 	#MG_ENABLE_JAVASCRIPT
  0
 
 	)
 
-2915 #i‚de‡
+2919 #i‚de‡
 MG_ENABLE_MQTT
 
 
-2916 
+2920 
 	#MG_ENABLE_MQTT
  1
 
 	)
 
-2919 #i‚de‡
+2923 #i‚de‡
 MG_ENABLE_MQTT_BROKER
 
 
-2920 
+2924 
 	#MG_ENABLE_MQTT_BROKER
  0
 
 	)
 
-2923 #i‚de‡
+2927 #i‚de‡
 MG_ENABLE_SSL
 
 
-2924 
+2928 
 	#MG_ENABLE_SSL
  0
 
 	)
 
-2927 #i‚de‡
+2931 #i‚de‡
 MG_ENABLE_SYNC_RESOLVER
 
 
-2928 
+2932 
 	#MG_ENABLE_SYNC_RESOLVER
  0
 
 	)
 
-2931 #i‚de‡
+2935 #i‚de‡
 MG_ENABLE_STDIO
 
 
-2932 
+2936 
 	#MG_ENABLE_STDIO
  
 CS_ENABLE_STDIO
@@ -97259,11 +97337,11 @@ CS_ENABLE_STDIO
 
 	)
 
-2935 #i‚de‡
+2939 #i‚de‡
 MG_NET_IF
 
 
-2936 
+2940 
 	#MG_NET_IF
  
 MG_NET_IF_SOCKET
@@ -97271,11 +97349,11 @@ MG_NET_IF_SOCKET
 
 	)
 
-2939 #i‚de‡
+2943 #i‚de‡
 MG_SSL_IF
 
 
-2940 
+2944 
 	#MG_SSL_IF
  
 MG_SSL_IF_OPENSSL
@@ -97283,27 +97361,27 @@ MG_SSL_IF_OPENSSL
 
 	)
 
-2943 #i‚de‡
+2947 #i‚de‡
 MG_ENABLE_THREADS
 
 
-2944 #ifde‡
+2948 #ifde‡
 _WIN32
 
 
-2946 
+2950 
 	#MG_ENABLE_THREADS
  0
 
 	)
 
-2948 
+2952 
 	#MG_ENABLE_THREADS
  0
 
 	)
 
-2952 #i‡
+2956 #i‡
 MG_ENABLE_DEBUG
  && !
 deföed
@@ -97311,37 +97389,37 @@ deföed
 CS_ENABLE_DEBUG
 )
 
-2953 
+2957 
 	#CS_ENABLE_DEBUG
  1
 
 	)
 
-2957 #i‡
+2961 #i‡
 MG_ENABLE_MQTT_BROKER
  && !
 MG_ENABLE_MQTT
 
 
-2958 #unde‡
+2962 #unde‡
 MG_ENABLE_MQTT
 
 
-2959 
+2963 
 	#MG_ENABLE_MQTT
  1
 
 	)
 
-2962 #i‚de‡
+2966 #i‚de‡
 MG_ENABLE_HTTP_URL_REWRITES
 
 
-2963 
+2967 
 	#MG_ENABLE_HTTP_URL_REWRITES
  \
 
-2964 (
+2968 (
 CS_PLATFORM
  =
 CS_P_WINDOWS
@@ -97351,11 +97429,11 @@ CS_P_UNIX
 
 	)
 
-2967 #i‚de‡
+2971 #i‚de‡
 MG_ENABLE_TUN
 
 
-2968 
+2972 
 	#MG_ENABLE_TUN
  
 MG_ENABLE_HTTP_WEBSOCKET
@@ -97363,91 +97441,91 @@ MG_ENABLE_HTTP_WEBSOCKET
 
 	)
 
-2971 #i‚de‡
+2975 #i‚de‡
 MG_ENABLE_SNTP
 
 
-2972 
+2976 
 	#MG_ENABLE_SNTP
  0
 
 	)
 
-2975 #i‚de‡
+2979 #i‚de‡
 MG_ENABLE_EXTRA_ERRORS_DESC
 
 
-2976 
+2980 
 	#MG_ENABLE_EXTRA_ERRORS_DESC
  0
 
 	)
 
-2980 #ifde‡
+2984 #ifde‡
 MG_MODULE_LINES
 
 
-2988 #i‚de‡
+2992 #i‚de‡
 CS_MONGOOSE_SRC_NET_IF_H_
 
 
-2989 
+2993 
 	#CS_MONGOOSE_SRC_NET_IF_H_
 
 
 	)
 
-3003 #ifde‡
+3007 #ifde‡
 __˝lu•lus
 
 
-3007 
+3011 
 	#MG_MAIN_IFACE
  0
 
 	)
 
-3009 
+3013 
 mg_mgr
 ;
 
-3010 
+3014 
 mg_c⁄√˘i⁄
 ;
 
-3011 
+3015 
 sockë_addªss
 ;
 
-3013 
+3017 
 mg_iÁ˚_vèbÀ
 ;
 
-3015 
+3019 
 	smg_iÁ˚
  {
 
-3016 
+3020 
 mg_mgr
  *
 mgr
 ;
 
-3017 *
+3021 *
 d©a
 ;
 
-3018 
+3022 
 mg_iÁ˚_vèbÀ
  *
 vèbÀ
 ;
 
-3021 
+3025 
 	smg_iÁ˚_vèbÀ
  {
 
-3022 (*
+3026 (*
 öô
 )(
 mg_iÁ˚
@@ -97455,7 +97533,7 @@ mg_iÁ˚
 iÁ˚
 );
 
-3023 (*
+3027 (*
 ‰ì
 )(
 mg_iÁ˚
@@ -97463,7 +97541,7 @@ mg_iÁ˚
 iÁ˚
 );
 
-3024 (*
+3028 (*
 add_c⁄n
 )(
 mg_c⁄√˘i⁄
@@ -97471,7 +97549,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3025 (*
+3029 (*
 ªmove_c⁄n
 )(
 mg_c⁄√˘i⁄
@@ -97479,7 +97557,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3026 
+3030 
 time_t
  (*
 pﬁl
@@ -97491,7 +97569,7 @@ iÁ˚
 timeout_ms
 );
 
-3029 (*
+3033 (*
 li°í_t˝
 )(
 mg_c⁄√˘i⁄
@@ -97503,7 +97581,7 @@ sockë_addªss
 ß
 );
 
-3031 (*
+3035 (*
 li°í_udp
 )(
 mg_c⁄√˘i⁄
@@ -97515,7 +97593,7 @@ sockë_addªss
 ß
 );
 
-3034 (*
+3038 (*
 c⁄√˘_t˝
 )(
 mg_c⁄√˘i⁄
@@ -97527,7 +97605,7 @@ sockë_addªss
 ß
 );
 
-3036 (*
+3040 (*
 c⁄√˘_udp
 )(
 mg_c⁄√˘i⁄
@@ -97535,7 +97613,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3039 (*
+3043 (*
 t˝_£nd
 )(
 mg_c⁄√˘i⁄
@@ -97549,7 +97627,7 @@ size_t
 Àn
 );
 
-3040 (*
+3044 (*
 udp_£nd
 )(
 mg_c⁄√˘i⁄
@@ -97563,7 +97641,7 @@ size_t
 Àn
 );
 
-3042 (*
+3046 (*
 ªcved
 )(
 mg_c⁄√˘i⁄
@@ -97575,7 +97653,7 @@ size_t
 Àn
 );
 
-3045 (*
+3049 (*
 ¸óã_c⁄n
 )(
 mg_c⁄√˘i⁄
@@ -97583,7 +97661,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3047 (*
+3051 (*
 de°roy_c⁄n
 )(
 mg_c⁄√˘i⁄
@@ -97591,7 +97669,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3050 (*
+3054 (*
 sock_£t
 )(
 mg_c⁄√˘i⁄
@@ -97603,7 +97681,7 @@ sock_t
 sock
 );
 
-3053 (*
+3057 (*
 gë_c⁄n_addr
 )(
 mg_c⁄√˘i⁄
@@ -97613,23 +97691,23 @@ nc
 ªmŸe
 ,
 
-3054 
+3058 
 sockë_addªss
  *
 ß
 );
 
-3057 
+3061 
 mg_iÁ˚_vèbÀ
  *
 mg_iÁ˚s
 [];
 
-3058 
+3062 
 mg_num_iÁ˚s
 ;
 
-3061 
+3065 
 mg_iÁ˚
  *
 mg_if_¸óã_iÁ˚
@@ -97639,13 +97717,13 @@ mg_iÁ˚_vèbÀ
 vèbÀ
 ,
 
-3062 
+3066 
 mg_mgr
  *
 mgr
 );
 
-3068 
+3072 
 mg_iÁ˚
  *
 mg_föd_iÁ˚
@@ -97655,19 +97733,19 @@ mg_mgr
 mgr
 ,
 
-3069 
+3073 
 mg_iÁ˚_vèbÀ
  *
 vèbÀ
 ,
 
-3070 
+3074 
 mg_iÁ˚
  *
 ‰om
 );
 
-3077 
+3081 
 mg_c⁄√˘i⁄
  *
 mg_if_ac˚±_√w_c⁄n
@@ -97675,7 +97753,7 @@ mg_if_ac˚±_√w_c⁄n
 lc
 );
 
-3078 
+3082 
 mg_if_ac˚±_t˝_cb
 (
 mg_c⁄√˘i⁄
@@ -97687,13 +97765,13 @@ sockë_addªss
 ß
 ,
 
-3079 
+3083 
 size_t
  
 ß_Àn
 );
 
-3082 
+3086 
 mg_if_c⁄√˘_cb
 (
 mg_c⁄√˘i⁄
@@ -97703,7 +97781,7 @@ nc
 îr
 );
 
-3084 
+3088 
 mg_if_£¡_cb
 (
 mg_c⁄√˘i⁄
@@ -97713,7 +97791,7 @@ nc
 num_£¡
 );
 
-3091 
+3095 
 mg_if_ªcv_t˝_cb
 (
 mg_c⁄√˘i⁄
@@ -97727,7 +97805,7 @@ buf
 own
 );
 
-3097 
+3101 
 mg_if_ªcv_udp_cb
 (
 mg_c⁄√˘i⁄
@@ -97739,7 +97817,7 @@ buf
 Àn
 ,
 
-3098 
+3102 
 sockë_addªss
  *
 ß
@@ -97749,7 +97827,7 @@ size_t
 ß_Àn
 );
 
-3103 
+3107 
 mg_if_pﬁl
 (
 mg_c⁄√˘i⁄
@@ -97761,7 +97839,7 @@ time_t
 now
 );
 
-3106 
+3110 
 mg_if_timî
 (
 mg_c⁄√˘i⁄
@@ -97771,103 +97849,103 @@ c
 now
 );
 
-3108 #ifde‡
+3112 #ifde‡
 __˝lu•lus
 
 
-3113 #ifde‡
+3117 #ifde‡
 MG_MODULE_LINES
 
 
-3121 #i‚de‡
+3125 #i‚de‡
 CS_MONGOOSE_SRC_SSL_IF_H_
 
 
-3122 
+3126 
 	#CS_MONGOOSE_SRC_SSL_IF_H_
 
 
 	)
 
-3124 #i‡
+3128 #i‡
 MG_ENABLE_SSL
 
 
-3126 #ifde‡
+3130 #ifde‡
 __˝lu•lus
 
 
-3130 
+3134 
 mg_s¶_if_˘x
 ;
 
-3131 
+3135 
 mg_c⁄√˘i⁄
 ;
 
-3133 
+3137 
 mg_s¶_if_öô
 ();
 
-3135 
+3139 
 	emg_s¶_if_ªsu…
  {
 
-3136 
+3140 
 MG_SSL_OK
  = 0,
 
-3137 
+3141 
 MG_SSL_WANT_READ
  = -1,
 
-3138 
+3142 
 MG_SSL_WANT_WRITE
  = -2,
 
-3139 
+3143 
 MG_SSL_ERROR
  = -3,
 
-3142 
+3146 
 	smg_s¶_if_c⁄n_∑øms
  {
 
-3143 c⁄° *
+3147 c⁄° *
 ˚π
 ;
 
-3144 c⁄° *
+3148 c⁄° *
 key
 ;
 
-3145 c⁄° *
+3149 c⁄° *
 ˇ_˚π
 ;
 
-3146 c⁄° *
+3150 c⁄° *
 £rvî_«me
 ;
 
-3147 c⁄° *
+3151 c⁄° *
 cùhî_suôes
 ;
 
-3148 c⁄° *
+3152 c⁄° *
 psk_idítôy
 ;
 
-3149 c⁄° *
+3153 c⁄° *
 psk_key
 ;
 
-3152 
+3156 
 mg_s¶_if_ªsu…
  
 mg_s¶_if_c⁄n_öô
 (
 
-3153 
+3157 
 mg_c⁄√˘i⁄
  *
 nc
@@ -97877,11 +97955,11 @@ mg_s¶_if_c⁄n_∑øms
 ∑øms
 ,
 
-3154 c⁄° **
+3158 c⁄° **
 îr_msg
 );
 
-3155 
+3159 
 mg_s¶_if_ªsu…
  
 mg_s¶_if_c⁄n_ac˚±
@@ -97891,13 +97969,13 @@ mg_c⁄√˘i⁄
 nc
 ,
 
-3156 
+3160 
 mg_c⁄√˘i⁄
  *
 lc
 );
 
-3157 
+3161 
 mg_s¶_if_c⁄n_‰ì
 (
 mg_c⁄√˘i⁄
@@ -97905,7 +97983,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3159 
+3163 
 mg_s¶_if_ªsu…
  
 mg_s¶_if_h™dshake
@@ -97915,7 +97993,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-3160 
+3164 
 mg_s¶_if_ªad
 (
 mg_c⁄√˘i⁄
@@ -97929,7 +98007,7 @@ size_t
 buf_size
 );
 
-3161 
+3165 
 mg_s¶_if_wrôe
 (
 mg_c⁄√˘i⁄
@@ -97943,53 +98021,53 @@ size_t
 Àn
 );
 
-3163 #ifde‡
+3167 #ifde‡
 __˝lu•lus
 
 
-3170 #ifde‡
+3174 #ifde‡
 MG_MODULE_LINES
 
 
-3200 #i‚de‡
+3204 #i‚de‡
 CS_MONGOOSE_SRC_NET_H_
 
 
-3201 
+3205 
 	#CS_MONGOOSE_SRC_NET_H_
 
 
 	)
 
-3203 #i‡
+3207 #i‡
 MG_ENABLE_JAVASCRIPT
 
 
-3204 
+3208 
 	#EXCLUDE_COMMON
 
 
 	)
 
-3205 
+3209 
 	~<v7.h
 >
 
-3212 #i‚de‡
+3216 #i‚de‡
 MG_VPRINTF_BUFFER_SIZE
 
 
-3213 
+3217 
 	#MG_VPRINTF_BUFFER_SIZE
  100
 
 	)
 
-3216 #ifde‡
+3220 #ifde‡
 MG_USE_READ_WRITE
 
 
-3217 
+3221 
 	#MG_RECV_FUNC
 (
 s
@@ -98005,7 +98083,7 @@ f
 
 	)
 
-3218 
+3222 
 	#MG_SEND_FUNC
 (
 s
@@ -98021,7 +98099,7 @@ f
 
 	)
 
-3220 
+3224 
 	#MG_RECV_FUNC
 (
 s
@@ -98037,7 +98115,7 @@ f
 
 	)
 
-3221 
+3225 
 	#MG_SEND_FUNC
 (
 s
@@ -98053,47 +98131,47 @@ f
 
 	)
 
-3224 #ifde‡
+3228 #ifde‡
 __˝lu•lus
 
 
-3228 
+3232 
 	usockë_addªss
  {
 
-3229 
+3233 
 sockaddr
  
 ß
 ;
 
-3230 
+3234 
 sockaddr_ö
  
 sö
 ;
 
-3231 #i‡
+3235 #i‡
 MG_ENABLE_IPV6
 
 
-3232 
+3236 
 sockaddr_ö6
  
 sö6
 ;
 
-3234 
+3238 
 sockaddr
  
 sö6
 ;
 
-3238 
+3242 
 mg_c⁄√˘i⁄
 ;
 
-3244 (*
+3248 (*
 mg_evít_h™dÀr_t
 )(
 	tmg_c⁄√˘i⁄
@@ -98103,107 +98181,107 @@ mg_evít_h™dÀr_t
 	tev
 ,
 
-3245 *
+3249 *
 	tev_d©a
 );
 
-3248 
+3252 
 	#MG_EV_POLL
  0
 
 	)
 
-3249 
+3253 
 	#MG_EV_ACCEPT
  1
 
 	)
 
-3250 
+3254 
 	#MG_EV_CONNECT
  2
 
 	)
 
-3251 
+3255 
 	#MG_EV_RECV
  3
 
 	)
 
-3252 
+3256 
 	#MG_EV_SEND
  4
 
 	)
 
-3253 
+3257 
 	#MG_EV_CLOSE
  5
 
 	)
 
-3254 
+3258 
 	#MG_EV_TIMER
  6
 
 	)
 
-3259 
+3263 
 	smg_mgr
  {
 
-3260 
+3264 
 mg_c⁄√˘i⁄
  *
 a˘ive_c⁄√˘i⁄s
 ;
 
-3261 #i‡
+3265 #i‡
 MG_ENABLE_HEXDUMP
 
 
-3262 c⁄° *
+3266 c⁄° *
 hexdump_fûe
 ;
 
-3264 #i‡
+3268 #i‡
 MG_ENABLE_BROADCAST
 
 
-3265 
+3269 
 sock_t
  
 ˘l
 [2];
 
-3267 *
+3271 *
 u£r_d©a
 ;
 
-3268 
+3272 
 num_iÁ˚s
 ;
 
-3269 
+3273 
 mg_iÁ˚
  **
 iÁ˚s
 ;
 
-3270 #i‡
+3274 #i‡
 MG_ENABLE_JAVASCRIPT
 
 
-3271 
+3275 
 v7
  *v7;
 
-3278 
+3282 
 	smg_c⁄√˘i⁄
  {
 
-3279 
+3283 
 mg_c⁄√˘i⁄
  *
 √xt
@@ -98211,267 +98289,267 @@ mg_c⁄√˘i⁄
 ¥ev
 ;
 
-3280 
+3284 
 mg_c⁄√˘i⁄
  *
 li°íî
 ;
 
-3281 
+3285 
 mg_mgr
  *
 mgr
 ;
 
-3283 
+3287 
 sock_t
  
 sock
 ;
 
-3284 
+3288 
 îr
 ;
 
-3285 
+3289 
 sockë_addªss
  
 ß
 ;
 
-3286 
+3290 
 size_t
  
 ªcv_mbuf_limô
 ;
 
-3287 
+3291 
 mbuf
  
 ªcv_mbuf
 ;
 
-3288 
+3292 
 mbuf
  
 £nd_mbuf
 ;
 
-3289 
+3293 
 time_t
  
 œ°_io_time
 ;
 
-3290 
+3294 
 ev_timî_time
 ;
 
-3291 #i‡
+3295 #i‡
 MG_ENABLE_SSL
 
 
-3292 *
+3296 *
 s¶_if_d©a
 ;
 
-3294 
+3298 
 mg_evít_h™dÀr_t
  
 ¥Ÿo_h™dÀr
 ;
 
-3295 *
+3299 *
 ¥Ÿo_d©a
 ;
 
-3296 (*
+3300 (*
 ¥Ÿo_d©a_de°ru˘‹
 )(*
 ¥Ÿo_d©a
 );
 
-3297 
+3301 
 mg_evít_h™dÀr_t
  
 h™dÀr
 ;
 
-3298 *
+3302 *
 u£r_d©a
 ;
 
-3300 *
+3304 *
 v
 ;
 
-3305 
+3309 
 mg_evít_h™dÀr_t
  
 f
 ;
 
-3306 } 
+3310 } 
 ¥iv_1
 ;
 
-3307 *
+3311 *
 ¥iv_2
 ;
 
-3308 *
+3312 *
 mgr_d©a
 ;
 
-3309 
+3313 
 mg_iÁ˚
  *
 iÁ˚
 ;
 
-3310 
+3314 
 Êags
 ;
 
-3312 
+3316 
 	#MG_F_LISTENING
  (1 << 0Ë
 
 	)
 
-3313 
+3317 
 	#MG_F_UDP
  (1 << 1Ë
 
 	)
 
-3314 
+3318 
 	#MG_F_RESOLVING
  (1 << 2Ë
 
 	)
 
-3315 
+3319 
 	#MG_F_CONNECTING
  (1 << 3Ë
 
 	)
 
-3316 
+3320 
 	#MG_F_SSL
  (1 << 4Ë
 
 	)
 
-3317 
+3321 
 	#MG_F_SSL_HANDSHAKE_DONE
  (1 << 5Ë
 
 	)
 
-3318 
+3322 
 	#MG_F_WANT_READ
  (1 << 6Ë
 
 	)
 
-3319 
+3323 
 	#MG_F_WANT_WRITE
  (1 << 7Ë
 
 	)
 
-3320 
+3324 
 	#MG_F_IS_WEBSOCKET
  (1 << 8Ë
 
 	)
 
-3323 
+3327 
 	#MG_F_SEND_AND_CLOSE
  (1 << 10Ë
 
 	)
 
-3324 
+3328 
 	#MG_F_CLOSE_IMMEDIATELY
  (1 << 11Ë
 
 	)
 
-3325 
+3329 
 	#MG_F_WEBSOCKET_NO_DEFRAG
  (1 << 12Ë
 
 	)
 
-3326 
+3330 
 	#MG_F_DELETE_CHUNK
  (1 << 13Ë
 
 	)
 
-3327 
+3331 
 	#MG_F_ENABLE_BROADCAST
  (1 << 14Ë
 
 	)
 
-3328 
+3332 
 	#MG_F_TUN_DO_NOT_RECONNECT
  (1 << 15Ë
 
 	)
 
-3330 
+3334 
 	#MG_F_USER_1
  (1 << 20Ë
 
 	)
 
-3331 
+3335 
 	#MG_F_USER_2
  (1 << 21)
 
 	)
 
-3332 
+3336 
 	#MG_F_USER_3
  (1 << 22)
 
 	)
 
-3333 
+3337 
 	#MG_F_USER_4
  (1 << 23)
 
 	)
 
-3334 
+3338 
 	#MG_F_USER_5
  (1 << 24)
 
 	)
 
-3335 
+3339 
 	#MG_F_USER_6
  (1 << 25)
 
 	)
 
-3337 
+3341 
 size_t
  
 r1
 ;
 
-3338 
+3342 
 size_t
  
 r˛
 ;
 
-3349 
+3353 
 mg_mgr_öô
 (
 mg_mgr
@@ -98481,27 +98559,27 @@ mgr
 u£r_d©a
 );
 
-3366 
+3370 
 	smg_mgr_öô_›ts
  {
 
-3367 
+3371 
 mg_iÁ˚_vèbÀ
  *
 maö_iÁ˚
 ;
 
-3368 
+3372 
 num_iÁ˚s
 ;
 
-3369 
+3373 
 mg_iÁ˚_vèbÀ
  **
 iÁ˚s
 ;
 
-3378 
+3382 
 mg_mgr_öô_›t
 (
 mg_mgr
@@ -98511,19 +98589,19 @@ mgr
 u£r_d©a
 ,
 
-3379 
+3383 
 mg_mgr_öô_›ts
  
 ›ts
 );
 
-3386 
+3390 
 mg_mgr_‰ì
 (
 mg_mgr
  *);
 
-3396 
+3400 
 time_t
  
 mg_mgr_pﬁl
@@ -98533,11 +98611,11 @@ mg_mgr
 mûli
 );
 
-3398 #i‡
+3402 #i‡
 MG_ENABLE_BROADCAST
 
 
-3411 
+3415 
 mg_brﬂdˇ°
 (
 mg_mgr
@@ -98549,7 +98627,7 @@ func
 size_t
 );
 
-3427 
+3431 
 mg_c⁄√˘i⁄
  *
 mg_√xt
@@ -98557,29 +98635,29 @@ mg_√xt
 mg_mgr
  *, mg_connection *);
 
-3435 
+3439 
 	smg_add_sock_›ts
  {
 
-3436 *
+3440 *
 u£r_d©a
 ;
 
-3437 
+3441 
 Êags
 ;
 
-3438 c⁄° **
+3442 c⁄° **
 îr‹_°rög
 ;
 
-3439 
+3443 
 mg_iÁ˚
  *
 iÁ˚
 ;
 
-3448 
+3452 
 mg_c⁄√˘i⁄
  *
 mg_add_sock
@@ -98591,7 +98669,7 @@ sock_t
 mg_evít_h™dÀr_t
 );
 
-3456 
+3460 
 mg_c⁄√˘i⁄
  *
 mg_add_sock_›t
@@ -98601,57 +98679,57 @@ mg_mgr
 sock_t
 ,
 
-3457 
+3461 
 mg_evít_h™dÀr_t
 ,
 
-3458 
+3462 
 mg_add_sock_›ts
 );
 
-3466 
+3470 
 	smg_böd_›ts
  {
 
-3467 *
+3471 *
 u£r_d©a
 ;
 
-3468 
+3472 
 Êags
 ;
 
-3469 c⁄° **
+3473 c⁄° **
 îr‹_°rög
 ;
 
-3470 
+3474 
 mg_iÁ˚
  *
 iÁ˚
 ;
 
-3471 #i‡
+3475 #i‡
 MG_ENABLE_SSL
 
 
-3478 c⁄° *
+3482 c⁄° *
 s¶_˚π
 ;
 
-3481 c⁄° *
+3485 c⁄° *
 s¶_key
 ;
 
-3483 c⁄° *
+3487 c⁄° *
 s¶_ˇ_˚π
 ;
 
-3495 c⁄° *
+3499 c⁄° *
 s¶_cùhî_suôes
 ;
 
-3504 
+3508 
 mg_c⁄√˘i⁄
  *
 mg_böd
@@ -98659,11 +98737,11 @@ mg_böd
 mg_mgr
  *, const *,
 
-3505 
+3509 
 mg_evít_h™dÀr_t
 );
 
-3524 
+3528 
 mg_c⁄√˘i⁄
  *
 mg_böd_›t
@@ -98675,73 +98753,73 @@ mgr
 addªss
 ,
 
-3525 
+3529 
 mg_evít_h™dÀr_t
  
 h™dÀr
 ,
 
-3526 
+3530 
 mg_böd_›ts
  
 ›ts
 );
 
-3529 
+3533 
 	smg_c⁄√˘_›ts
  {
 
-3530 *
+3534 *
 u£r_d©a
 ;
 
-3531 
+3535 
 Êags
 ;
 
-3532 c⁄° **
+3536 c⁄° **
 îr‹_°rög
 ;
 
-3533 
+3537 
 mg_iÁ˚
  *
 iÁ˚
 ;
 
-3534 #i‡
+3538 #i‡
 MG_ENABLE_SSL
 
 
-3539 c⁄° *
+3543 c⁄° *
 s¶_˚π
 ;
 
-3544 c⁄° *
+3548 c⁄° *
 s¶_key
 ;
 
-3549 c⁄° *
+3553 c⁄° *
 s¶_ˇ_˚π
 ;
 
-3561 c⁄° *
+3565 c⁄° *
 s¶_cùhî_suôes
 ;
 
-3569 c⁄° *
+3573 c⁄° *
 s¶_£rvî_«me
 ;
 
-3577 c⁄° *
+3581 c⁄° *
 s¶_psk_idítôy
 ;
 
-3578 c⁄° *
+3582 c⁄° *
 s¶_psk_key
 ;
 
-3587 
+3591 
 mg_c⁄√˘i⁄
  *
 mg_c⁄√˘
@@ -98753,13 +98831,13 @@ mgr
 addªss
 ,
 
-3588 
+3592 
 mg_evít_h™dÀr_t
  
 h™dÀr
 );
 
-3638 
+3642 
 mg_c⁄√˘i⁄
  *
 mg_c⁄√˘_›t
@@ -98771,19 +98849,19 @@ mgr
 addªss
 ,
 
-3639 
+3643 
 mg_evít_h™dÀr_t
  
 h™dÀr
 ,
 
-3640 
+3644 
 mg_c⁄√˘_›ts
  
 ›ts
 );
 
-3642 #i‡
+3646 #i‡
 MG_ENABLE_SSL
  && 
 MG_NET_IF
@@ -98791,7 +98869,7 @@ MG_NET_IF
 MG_NET_IF_SIMPLELINK
 
 
-3657 c⁄° *
+3661 c⁄° *
 mg_£t_s¶
 (
 mg_c⁄√˘i⁄
@@ -98801,11 +98879,11 @@ nc
 ˚π
 ,
 
-3658 c⁄° *
+3662 c⁄° *
 ˇ_˚π
 );
 
-3668 
+3672 
 mg_£nd
 (
 mg_c⁄√˘i⁄
@@ -98815,13 +98893,13 @@ buf
 Àn
 );
 
-3671 #i‡
+3675 #i‡
 deföed
 (
 __GNUC__
 )
 
-3672 
+3676 
 __©åibuã__
 ((
 f‹m©
@@ -98829,7 +98907,7 @@ f‹m©
 ¥ötf
 , 2, 3)))
 
-3681 
+3685 
 mg_¥ötf
 (
 mg_c⁄√˘i⁄
@@ -98837,7 +98915,7 @@ mg_c⁄√˘i⁄
 fmt
 , ...);
 
-3684 
+3688 
 mg_v¥ötf
 (
 mg_c⁄√˘i⁄
@@ -98849,7 +98927,7 @@ va_li°
 ≠
 );
 
-3691 
+3695 
 mg_sockë∑ú
 (
 sock_t
@@ -98857,11 +98935,11 @@ sock_t
 sock_ty≥
 );
 
-3693 #i‡
+3697 #i‡
 MG_ENABLE_SYNC_RESOLVER
 
 
-3704 
+3708 
 mg_ªsﬁve
 (c⁄° *
 domaö_«me
@@ -98873,7 +98951,7 @@ size_t
 buf_Àn
 );
 
-3727 
+3731 
 mg_check_ù_a˛
 (c⁄° *
 a˛
@@ -98883,11 +98961,11 @@ uöt32_t
 ªmŸe_ù
 );
 
-3729 #i‡
+3733 #i‡
 MG_ENABLE_JAVASCRIPT
 
 
-3736 
+3740 
 v7_îr
  
 mg_íabÀ_javas¸ùt
@@ -98899,11 +98977,11 @@ m
 v7
  *v7,
 
-3737 c⁄° *
+3741 c⁄° *
 öô_js_fûe_«me
 );
 
-3764 
+3768 
 mg_£t_timî
 (
 mg_c⁄√˘i⁄
@@ -98913,33 +98991,33 @@ c
 time°amp
 );
 
-3769 
+3773 
 mg_time
 ();
 
-3771 #ifde‡
+3775 #ifde‡
 __˝lu•lus
 
 
-3776 #ifde‡
+3780 #ifde‡
 MG_MODULE_LINES
 
 
-3788 #i‚de‡
+3792 #i‚de‡
 CS_MONGOOSE_SRC_URI_H_
 
 
-3789 
+3793 
 	#CS_MONGOOSE_SRC_URI_H_
 
 
 	)
 
-3793 #ifde‡
+3797 #ifde‡
 __˝lu•lus
 
 
-3820 
+3824 
 mg_∑r£_uri
 (
 mg_°r
@@ -98949,7 +99027,7 @@ uri
 scheme
 ,
 
-3821 
+3825 
 mg_°r
  *
 u£r_öfo
@@ -98957,7 +99035,7 @@ u£r_öfo
 ho°
 ,
 
-3822 *
+3826 *
 p‹t
 , 
 mg_°r
@@ -98967,13 +99045,13 @@ mg_°r
 quîy
 ,
 
-3823 
+3827 
 mg_°r
  *
 ‰agmít
 );
 
-3825 
+3829 
 mg_n‹mÆize_uri_∑th
 (c⁄° 
 mg_°r
@@ -98983,43 +99061,43 @@ mg_°r
 out
 );
 
-3827 #ifde‡
+3831 #ifde‡
 __˝lu•lus
 
 
-3831 #ifde‡
+3835 #ifde‡
 MG_MODULE_LINES
 
 
-3843 #i‚de‡
+3847 #i‚de‡
 CS_MONGOOSE_SRC_UTIL_H_
 
 
-3844 
+3848 
 	#CS_MONGOOSE_SRC_UTIL_H_
 
 
 	)
 
-3846 
+3850 
 	~<°dio.h
 >
 
-3851 #ifde‡
+3855 #ifde‡
 __˝lu•lus
 
 
-3855 #i‚de‡
+3859 #i‚de‡
 MAX_PATH_SIZE
 
 
-3856 
+3860 
 	#MAX_PATH_SIZE
  500
 
 	)
 
-3868 c⁄° *
+3872 c⁄° *
 mg_skù
 (c⁄° *
 s
@@ -99027,7 +99105,7 @@ s
 íd_°rög
 ,
 
-3869 c⁄° *
+3873 c⁄° *
 dñimôîs
 , 
 mg_°r
@@ -99035,7 +99113,7 @@ mg_°r
 v
 );
 
-3881 
+3885 
 mg_ba£64_decode
 (c⁄° *
 s
@@ -99045,7 +99123,7 @@ s
 d°
 );
 
-3888 
+3892 
 mg_ba£64_ícode
 (c⁄° *
 §c
@@ -99055,11 +99133,11 @@ mg_ba£64_ícode
 d°
 );
 
-3890 #i‡
+3894 #i‡
 MG_ENABLE_FILESYSTEM
 
 
-3898 
+3902 
 mg_°©
 (c⁄° *
 ∑th
@@ -99069,7 +99147,7 @@ cs_°©_t
 °
 );
 
-3907 
+3911 
 FILE
  *
 mg_f›í
@@ -99079,7 +99157,7 @@ mg_f›í
 mode
 );
 
-3916 
+3920 
 mg_›í
 (c⁄° *
 ∑th
@@ -99089,11 +99167,11 @@ mg_›í
 mode
 );
 
-3919 #i‡
+3923 #i‡
 MG_ENABLE_THREADS
 
 
-3926 *
+3930 *
 mg_°¨t_thªad
 (*(*
 thªad_func
@@ -99101,31 +99179,31 @@ thªad_func
 thªad_func_∑øm
 );
 
-3929 
+3933 
 mg_£t_˛o£_⁄_exec
 (
 sock_t
 );
 
-3931 
+3935 
 	#MG_SOCK_STRINGIFY_IP
  1
 
 	)
 
-3932 
+3936 
 	#MG_SOCK_STRINGIFY_PORT
  2
 
 	)
 
-3933 
+3937 
 	#MG_SOCK_STRINGIFY_REMOTE
  4
 
 	)
 
-3947 
+3951 
 mg_c⁄n_addr_to_°r
 (
 mg_c⁄√˘i⁄
@@ -99139,17 +99217,17 @@ size_t
 Àn
 ,
 
-3948 
+3952 
 Êags
 );
 
-3949 #i‡
+3953 #i‡
 MG_NET_IF
  =
 MG_NET_IF_SOCKET
 
 
-3951 
+3955 
 mg_sock_to_°r
 (
 sock_t
@@ -99165,7 +99243,7 @@ size_t
 Êags
 );
 
-3959 
+3963 
 mg_sock_addr_to_°r
 (c⁄° 
 sockë_addªss
@@ -99179,15 +99257,15 @@ size_t
 Àn
 ,
 
-3960 
+3964 
 Êags
 );
 
-3962 #i‡
+3966 #i‡
 MG_ENABLE_HEXDUMP
 
 
-3971 
+3975 
 mg_hexdump
 (c⁄° *
 buf
@@ -99199,7 +99277,7 @@ d°
 d°_Àn
 );
 
-3974 
+3978 
 mg_hexdumpf
 (
 FILE
@@ -99211,7 +99289,7 @@ buf
 Àn
 );
 
-3983 
+3987 
 mg_hexdump_c⁄√˘i⁄
 (
 mg_c⁄√˘i⁄
@@ -99221,7 +99299,7 @@ nc
 ∑th
 ,
 
-3984 c⁄° *
+3988 c⁄° *
 buf
 , 
 num_byãs
@@ -99229,11 +99307,11 @@ num_byãs
 ev
 );
 
-3990 
+3994 
 mg_is_big_ídün
 ();
 
-4005 c⁄° *
+4009 c⁄° *
 mg_√xt_comma_li°_íåy
 (c⁄° *
 li°
@@ -99243,13 +99321,13 @@ mg_°r
 vÆ
 ,
 
-4006 
+4010 
 mg_°r
  *
 eq_vÆ
 );
 
-4015 
+4019 
 mg_m©ch_¥efix
 (c⁄° *
 ∑âîn
@@ -99259,7 +99337,7 @@ mg_m©ch_¥efix
 °r
 );
 
-4016 
+4020 
 mg_m©ch_¥efix_n
 (c⁄° 
 mg_°r
@@ -99269,7 +99347,7 @@ mg_°r
 °r
 );
 
-4021 
+4025 
 mg_mbuf_≠≥nd_ba£64_putc
 (
 ch
@@ -99277,7 +99355,7 @@ ch
 u£r_d©a
 );
 
-4026 
+4030 
 mg_mbuf_≠≥nd_ba£64
 (
 mbuf
@@ -99289,7 +99367,7 @@ size_t
 Àn
 );
 
-4033 
+4037 
 mg_basic_auth_hódî
 (c⁄° *
 u£r
@@ -99301,61 +99379,61 @@ mbuf
 buf
 );
 
-4035 #ifde‡
+4039 #ifde‡
 __˝lu•lus
 
 
-4039 #ifde‡
+4043 #ifde‡
 MG_MODULE_LINES
 
 
-4051 #i‚de‡
+4055 #i‚de‡
 CS_MONGOOSE_SRC_HTTP_H_
 
 
-4052 
+4056 
 	#CS_MONGOOSE_SRC_HTTP_H_
 
 
 	)
 
-4054 #i‡
+4058 #i‡
 MG_ENABLE_HTTP
 
 
-4059 #ifde‡
+4063 #ifde‡
 __˝lu•lus
 
 
-4063 #i‚de‡
+4067 #i‚de‡
 MG_MAX_HTTP_HEADERS
 
 
-4064 
+4068 
 	#MG_MAX_HTTP_HEADERS
  20
 
 	)
 
-4067 #i‚de‡
+4071 #i‚de‡
 MG_MAX_HTTP_REQUEST_SIZE
 
 
-4068 
+4072 
 	#MG_MAX_HTTP_REQUEST_SIZE
  1024
 
 	)
 
-4071 #i‚de‡
+4075 #i‚de‡
 MG_MAX_PATH
 
 
-4072 #ifde‡
+4076 #ifde‡
 PATH_MAX
 
 
-4073 
+4077 
 	#MG_MAX_PATH
  
 PATH_MAX
@@ -99363,77 +99441,77 @@ PATH_MAX
 
 	)
 
-4075 
+4079 
 	#MG_MAX_PATH
  256
 
 	)
 
-4079 #i‚de‡
+4083 #i‚de‡
 MG_MAX_HTTP_SEND_MBUF
 
 
-4080 
+4084 
 	#MG_MAX_HTTP_SEND_MBUF
  1024
 
 	)
 
-4083 #i‚de‡
+4087 #i‚de‡
 MG_CGI_ENVIRONMENT_SIZE
 
 
-4084 
+4088 
 	#MG_CGI_ENVIRONMENT_SIZE
  8192
 
 	)
 
-4088 
+4092 
 	shâp_mesßge
  {
 
-4089 
+4093 
 mg_°r
  
 mesßge
 ;
 
-4092 
+4096 
 mg_°r
  
 mëhod
 ;
 
-4093 
+4097 
 mg_°r
  
 uri
 ;
 
-4094 
+4098 
 mg_°r
  
 ¥Ÿo
 ;
 
-4097 
+4101 
 ª•_code
 ;
 
-4098 
+4102 
 mg_°r
  
 ª•_°©us_msg
 ;
 
-4108 
+4112 
 mg_°r
  
 quîy_°rög
 ;
 
-4111 
+4115 
 mg_°r
  
 hódî_«mes
@@ -99441,7 +99519,7 @@ hódî_«mes
 MG_MAX_HTTP_HEADERS
 ];
 
-4112 
+4116 
 mg_°r
  
 hódî_vÆues
@@ -99449,175 +99527,175 @@ hódî_vÆues
 MG_MAX_HTTP_HEADERS
 ];
 
-4115 
+4119 
 mg_°r
  
 body
 ;
 
-4118 #i‡
+4122 #i‡
 MG_ENABLE_HTTP_WEBSOCKET
 
 
-4120 
+4124 
 	swebsockë_mesßge
  {
 
-4121 *
+4125 *
 d©a
 ;
 
-4122 
+4126 
 size_t
  
 size
 ;
 
-4123 
+4127 
 Êags
 ;
 
-4128 
+4132 
 	smg_hâp_mu…ù¨t_∑π
  {
 
-4129 c⁄° *
+4133 c⁄° *
 fûe_«me
 ;
 
-4130 c⁄° *
+4134 c⁄° *
 v¨_«me
 ;
 
-4131 
+4135 
 mg_°r
  
 d©a
 ;
 
-4132 
+4136 
 °©us
 ;
 
-4133 *
+4137 *
 u£r_d©a
 ;
 
-4137 
+4141 
 	smg_ssi_ˇŒ_˘x
  {
 
-4138 
+4142 
 hâp_mesßge
  *
 ªq
 ;
 
-4139 
+4143 
 mg_°r
  
 fûe
 ;
 
-4140 
+4144 
 mg_°r
  
 ¨g
 ;
 
-4144 
+4148 
 	#MG_EV_HTTP_REQUEST
  100
 
 	)
 
-4145 
+4149 
 	#MG_EV_HTTP_REPLY
  101
 
 	)
 
-4146 
+4150 
 	#MG_EV_HTTP_CHUNK
  102
 
 	)
 
-4147 
+4151 
 	#MG_EV_SSI_CALL
  105
 
 	)
 
-4148 
+4152 
 	#MG_EV_SSI_CALL_CTX
  106
 
 	)
 
-4150 #i‡
+4154 #i‡
 MG_ENABLE_HTTP_WEBSOCKET
 
 
-4151 
+4155 
 	#MG_EV_WEBSOCKET_HANDSHAKE_REQUEST
  111
 
 	)
 
-4152 
+4156 
 	#MG_EV_WEBSOCKET_HANDSHAKE_DONE
  112
 
 	)
 
-4153 
+4157 
 	#MG_EV_WEBSOCKET_FRAME
  113
 
 	)
 
-4154 
+4158 
 	#MG_EV_WEBSOCKET_CONTROL_FRAME
  114
 
 	)
 
-4157 #i‡
+4161 #i‡
 MG_ENABLE_HTTP_STREAMING_MULTIPART
 
 
-4158 
+4162 
 	#MG_EV_HTTP_MULTIPART_REQUEST
  121
 
 	)
 
-4159 
+4163 
 	#MG_EV_HTTP_PART_BEGIN
  122
 
 	)
 
-4160 
+4164 
 	#MG_EV_HTTP_PART_DATA
  123
 
 	)
 
-4161 
+4165 
 	#MG_EV_HTTP_PART_END
  124
 
 	)
 
-4163 
+4167 
 	#MG_EV_HTTP_MULTIPART_REQUEST_END
  125
 
 	)
 
-4218 
+4222 
 mg_£t_¥Ÿocﬁ_hâp_websockë
 (
 mg_c⁄√˘i⁄
@@ -99625,11 +99703,11 @@ mg_c⁄√˘i⁄
 nc
 );
 
-4220 #i‡
+4224 #i‡
 MG_ENABLE_HTTP_WEBSOCKET
 
 
-4235 
+4239 
 mg_£nd_websockë_h™dshake
 (
 mg_c⁄√˘i⁄
@@ -99639,11 +99717,11 @@ nc
 uri
 ,
 
-4236 c⁄° *
+4240 c⁄° *
 exåa_hódîs
 );
 
-4248 
+4252 
 mg_£nd_websockë_h™dshake2
 (
 mg_c⁄√˘i⁄
@@ -99653,17 +99731,17 @@ nc
 ∑th
 ,
 
-4249 c⁄° *
+4253 c⁄° *
 ho°
 , c⁄° *
 ¥Ÿocﬁ
 ,
 
-4250 c⁄° *
+4254 c⁄° *
 exåa_hódîs
 );
 
-4253 
+4257 
 mg_£nd_websockë_h™dshake3
 (
 mg_c⁄√˘i⁄
@@ -99673,23 +99751,23 @@ nc
 ∑th
 ,
 
-4254 c⁄° *
+4258 c⁄° *
 ho°
 , c⁄° *
 ¥Ÿocﬁ
 ,
 
-4255 c⁄° *
+4259 c⁄° *
 exåa_hódîs
 , c⁄° *
 u£r
 ,
 
-4256 c⁄° *
+4260 c⁄° *
 ∑ss
 );
 
-4277 
+4281 
 mg_c⁄√˘i⁄
  *
 mg_c⁄√˘_ws
@@ -99699,23 +99777,23 @@ mg_mgr
 mgr
 ,
 
-4278 
+4282 
 mg_evít_h™dÀr_t
  
 evít_h™dÀr
 ,
 
-4279 c⁄° *
+4283 c⁄° *
 uæ
 , c⁄° *
 ¥Ÿocﬁ
 ,
 
-4280 c⁄° *
+4284 c⁄° *
 exåa_hódîs
 );
 
-4288 
+4292 
 mg_c⁄√˘i⁄
  *
 mg_c⁄√˘_ws_›t
@@ -99725,29 +99803,29 @@ mg_mgr
 mgr
 ,
 
-4289 
+4293 
 mg_evít_h™dÀr_t
  
 ev_h™dÀr
 ,
 
-4290 
+4294 
 mg_c⁄√˘_›ts
  
 ›ts
 ,
 
-4291 c⁄° *
+4295 c⁄° *
 uæ
 , c⁄° *
 ¥Ÿocﬁ
 ,
 
-4292 c⁄° *
+4296 c⁄° *
 exåa_hódîs
 );
 
-4312 
+4316 
 mg_£nd_websockë_‰ame
 (
 mg_c⁄√˘i⁄
@@ -99757,7 +99835,7 @@ nc
 ›_™d_Êags
 ,
 
-4313 c⁄° *
+4317 c⁄° *
 d©a
 , 
 size_t
@@ -99765,7 +99843,7 @@ size_t
 d©a_Àn
 );
 
-4320 
+4324 
 mg_£nd_websockë_‰amev
 (
 mg_c⁄√˘i⁄
@@ -99775,7 +99853,7 @@ nc
 ›_™d_Êags
 ,
 
-4321 c⁄° 
+4325 c⁄° 
 mg_°r
  *
 °rögs
@@ -99783,7 +99861,7 @@ mg_°r
 num_°rögs
 );
 
-4329 
+4333 
 mg_¥ötf_websockë_‰ame
 (
 mg_c⁄√˘i⁄
@@ -99793,53 +99871,53 @@ nc
 ›_™d_Êags
 ,
 
-4330 c⁄° *
+4334 c⁄° *
 fmt
 , ...);
 
-4333 
+4337 
 	#WEBSOCKET_OP_CONTINUE
  0
 
 	)
 
-4334 
+4338 
 	#WEBSOCKET_OP_TEXT
  1
 
 	)
 
-4335 
+4339 
 	#WEBSOCKET_OP_BINARY
  2
 
 	)
 
-4336 
+4340 
 	#WEBSOCKET_OP_CLOSE
  8
 
 	)
 
-4337 
+4341 
 	#WEBSOCKET_OP_PING
  9
 
 	)
 
-4338 
+4342 
 	#WEBSOCKET_OP_PONG
  10
 
 	)
 
-4352 
+4356 
 	#WEBSOCKET_DONT_FIN
  0x100
 
 	)
 
-4366 
+4370 
 mg_uæ_decode
 (c⁄° *
 §c
@@ -99851,37 +99929,37 @@ d°
 d°_Àn
 ,
 
-4367 
+4371 
 is_f‹m_uæ_ícoded
 );
 
-4369 #ifde‡
+4373 #ifde‡
 __˝lu•lus
 
 
-4376 #ifde‡
+4380 #ifde‡
 MG_MODULE_LINES
 
 
-4383 #i‚de‡
+4387 #i‚de‡
 CS_MONGOOSE_SRC_HTTP_SERVER_H_
 
 
-4384 
+4388 
 	#CS_MONGOOSE_SRC_HTTP_SERVER_H_
 
 
 	)
 
-4386 #i‡
+4390 #i‡
 MG_ENABLE_HTTP
 
 
-4388 #ifde‡
+4392 #ifde‡
 __˝lu•lus
 
 
-4400 
+4404 
 mg_∑r£_hâp
 (c⁄° *
 s
@@ -99895,7 +99973,7 @@ hm
 is_ªq
 );
 
-4408 
+4412 
 mg_°r
  *
 mg_gë_hâp_hódî
@@ -99907,7 +99985,7 @@ hm
 «me
 );
 
-4425 
+4429 
 mg_hâp_∑r£_hódî
 (
 mg_°r
@@ -99919,13 +99997,13 @@ v¨_«me
 buf
 ,
 
-4426 
+4430 
 size_t
  
 buf_size
 );
 
-4434 
+4438 
 mg_gë_hâp_basic_auth
 (
 hâp_mesßge
@@ -99939,7 +100017,7 @@ size_t
 u£r_Àn
 ,
 
-4435 *
+4439 *
 ∑ss
 , 
 size_t
@@ -99947,7 +100025,7 @@ size_t
 ∑ss_Àn
 );
 
-4442 
+4446 
 mg_∑r£_hâp_basic_auth
 (
 mg_°r
@@ -99961,7 +100039,7 @@ size_t
 u£r_Àn
 ,
 
-4443 *
+4447 *
 ∑ss
 , 
 size_t
@@ -99969,7 +100047,7 @@ size_t
 ∑ss_Àn
 );
 
-4481 
+4485 
 size_t
  
 mg_∑r£_mu…ù¨t
@@ -99981,7 +100059,7 @@ buf_Àn
 v¨_«me
 ,
 
-4482 
+4486 
 size_t
  
 v¨_«me_Àn
@@ -99989,7 +100067,7 @@ v¨_«me_Àn
 fûe_«me
 ,
 
-4483 
+4487 
 size_t
  
 fûe_«me_Àn
@@ -99997,13 +100075,13 @@ fûe_«me_Àn
 chunk
 ,
 
-4484 
+4488 
 size_t
  *
 chunk_Àn
 );
 
-4494 
+4498 
 mg_gë_hâp_v¨
 (c⁄° 
 mg_°r
@@ -100015,89 +100093,89 @@ buf
 d°
 ,
 
-4495 
+4499 
 size_t
  
 d°_Àn
 );
 
-4497 #i‡
+4501 #i‡
 MG_ENABLE_FILESYSTEM
 
 
-4502 
+4506 
 	smg_£rve_hâp_›ts
  {
 
-4504 c⁄° *
+4508 c⁄° *
 documít_roŸ
 ;
 
-4507 c⁄° *
+4511 c⁄° *
 ödex_fûes
 ;
 
-4518 c⁄° *
+4522 c⁄° *
 ≥r_dúe˘‹y_auth_fûe
 ;
 
-4521 c⁄° *
+4525 c⁄° *
 auth_domaö
 ;
 
-4531 c⁄° *
+4535 c⁄° *
 globÆ_auth_fûe
 ;
 
-4534 c⁄° *
+4538 c⁄° *
 íabÀ_dúe˘‹y_li°ög
 ;
 
-4594 c⁄° *
+4598 c⁄° *
 ssi_∑âîn
 ;
 
-4597 c⁄° *
+4601 c⁄° *
 ù_a˛
 ;
 
-4599 #i‡
+4603 #i‡
 MG_ENABLE_HTTP_URL_REWRITES
 
 
-4624 c⁄° *
+4628 c⁄° *
 uæ_ªwrôes
 ;
 
-4628 c⁄° *
+4632 c⁄° *
 dav_documít_roŸ
 ;
 
-4634 c⁄° *
+4638 c⁄° *
 dav_auth_fûe
 ;
 
-4637 c⁄° *
+4641 c⁄° *
 hiddí_fûe_∑âîn
 ;
 
-4640 c⁄° *
+4644 c⁄° *
 cgi_fûe_∑âîn
 ;
 
-4643 c⁄° *
+4647 c⁄° *
 cgi_öãΩªãr
 ;
 
-4649 c⁄° *
+4653 c⁄° *
 cu°om_mime_ty≥s
 ;
 
-4655 c⁄° *
+4659 c⁄° *
 exåa_hódîs
 ;
 
-4678 
+4682 
 mg_£rve_hâp
 (
 mg_c⁄√˘i⁄
@@ -100109,13 +100187,13 @@ hâp_mesßge
 hm
 ,
 
-4679 
+4683 
 mg_£rve_hâp_›ts
  
 ›ts
 );
 
-4700 
+4704 
 mg_hâp_£rve_fûe
 (
 mg_c⁄√˘i⁄
@@ -100127,7 +100205,7 @@ hâp_mesßge
 hm
 ,
 
-4701 c⁄° *
+4705 c⁄° *
 ∑th
 , c⁄° 
 mg_°r
@@ -100135,17 +100213,17 @@ mg_°r
 mime_ty≥
 ,
 
-4702 c⁄° 
+4706 c⁄° 
 mg_°r
  
 exåa_hódîs
 );
 
-4704 #i‡
+4708 #i‡
 MG_ENABLE_HTTP_STREAMING_MULTIPART
 
 
-4707 
+4711 
 mg_°r
  (*
 	tmg_fu_‚ame_‚
@@ -100155,13 +100233,13 @@ mg_°r
 	tnc
 ,
 
-4708 
+4712 
 	tmg_°r
  
 	t‚ame
 );
 
-4742 
+4746 
 mg_fûe_u∂ﬂd_h™dÀr
 (
 mg_c⁄√˘i⁄
@@ -100173,13 +100251,13 @@ ev
 ev_d©a
 ,
 
-4743 
+4747 
 mg_fu_‚ame_‚
  
 loˇl_«me_‚
 );
 
-4774 
+4778 
 mg_ªgi°î_hâp_ídpoöt
 (
 mg_c⁄√˘i⁄
@@ -100189,13 +100267,13 @@ nc
 uri_∑th
 ,
 
-4775 
+4779 
 mg_evít_h™dÀr_t
  
 h™dÀr
 );
 
-4781 
+4785 
 mg_hâp_check_dige°_auth
 (
 hâp_mesßge
@@ -100205,13 +100283,13 @@ hm
 auth_domaö
 ,
 
-4782 
+4786 
 FILE
  *
 Â
 );
 
-4802 
+4806 
 mg_£nd_hâp_chunk
 (
 mg_c⁄√˘i⁄
@@ -100225,7 +100303,7 @@ size_t
 Àn
 );
 
-4808 
+4812 
 mg_¥ötf_hâp_chunk
 (
 mg_c⁄√˘i⁄
@@ -100235,7 +100313,7 @@ nc
 fmt
 , ...);
 
-4823 
+4827 
 mg_£nd_ª•⁄£_löe
 (
 mg_c⁄√˘i⁄
@@ -100245,11 +100323,11 @@ nc
 °©us_code
 ,
 
-4824 c⁄° *
+4828 c⁄° *
 exåa_hódîs
 );
 
-4830 
+4834 
 mg_hâp_£nd_îr‹
 (
 mg_c⁄√˘i⁄
@@ -100261,7 +100339,7 @@ code
 ªas⁄
 );
 
-4843 
+4847 
 mg_hâp_£nd_ªdúe˘
 (
 mg_c⁄√˘i⁄
@@ -100271,19 +100349,19 @@ nc
 °©us_code
 ,
 
-4844 c⁄° 
+4848 c⁄° 
 mg_°r
  
 loˇti⁄
 ,
 
-4845 c⁄° 
+4849 c⁄° 
 mg_°r
  
 exåa_hódîs
 );
 
-4861 
+4865 
 mg_£nd_hód
 (
 mg_c⁄√˘i⁄
@@ -100293,7 +100371,7 @@ n
 °©us_code
 ,
 
-4862 
+4866 
 öt64_t
  
 c⁄ã¡_Àngth
@@ -100301,7 +100379,7 @@ c⁄ã¡_Àngth
 exåa_hódîs
 );
 
-4867 
+4871 
 mg_¥ötf_html_esˇ≥
 (
 mg_c⁄√˘i⁄
@@ -100311,11 +100389,11 @@ nc
 fmt
 , ...);
 
-4869 #i‡
+4873 #i‡
 MG_ENABLE_HTTP_URL_REWRITES
 
 
-4880 
+4884 
 mg_hâp_ªvî£_¥oxy
 (
 mg_c⁄√˘i⁄
@@ -100323,7 +100401,7 @@ mg_c⁄√˘i⁄
 nc
 ,
 
-4881 c⁄° 
+4885 c⁄° 
 hâp_mesßge
  *
 hm
@@ -100333,35 +100411,35 @@ mg_°r
 mou¡
 ,
 
-4882 
+4886 
 mg_°r
  
 up°ªam
 );
 
-4885 #ifde‡
+4889 #ifde‡
 __˝lu•lus
 
 
-4892 #ifde‡
+4896 #ifde‡
 MG_MODULE_LINES
 
 
-4899 #i‚de‡
+4903 #i‚de‡
 CS_MONGOOSE_SRC_HTTP_CLIENT_H_
 
 
-4900 
+4904 
 	#CS_MONGOOSE_SRC_HTTP_CLIENT_H_
 
 
 	)
 
-4902 #ifde‡
+4906 #ifde‡
 __˝lu•lus
 
 
-4930 
+4934 
 mg_c⁄√˘i⁄
  *
 mg_c⁄√˘_hâp
@@ -100371,25 +100449,25 @@ mg_mgr
 mgr
 ,
 
-4931 
+4935 
 mg_evít_h™dÀr_t
  
 evít_h™dÀr
 ,
 
-4932 c⁄° *
+4936 c⁄° *
 uæ
 ,
 
-4933 c⁄° *
+4937 c⁄° *
 exåa_hódîs
 ,
 
-4934 c⁄° *
+4938 c⁄° *
 po°_d©a
 );
 
-4943 
+4947 
 mg_c⁄√˘i⁄
  *
 mg_c⁄√˘_hâp_›t
@@ -100399,31 +100477,31 @@ mg_mgr
 mgr
 ,
 
-4944 
+4948 
 mg_evít_h™dÀr_t
  
 ev_h™dÀr
 ,
 
-4945 
+4949 
 mg_c⁄√˘_›ts
  
 ›ts
 ,
 
-4946 c⁄° *
+4950 c⁄° *
 uæ
 ,
 
-4947 c⁄° *
+4951 c⁄° *
 exåa_hódîs
 ,
 
-4948 c⁄° *
+4952 c⁄° *
 po°_d©a
 );
 
-4951 
+4955 
 mg_hâp_¸óã_dige°_auth_hódî
 (*
 buf
@@ -100433,275 +100511,275 @@ size_t
 buf_Àn
 ,
 
-4952 c⁄° *
+4956 c⁄° *
 mëhod
 , c⁄° *
 uri
 ,
 
-4953 c⁄° *
+4957 c⁄° *
 auth_domaö
 , c⁄° *
 u£r
 ,
 
-4954 c⁄° *
+4958 c⁄° *
 ∑sswd
 );
 
-4956 #ifde‡
+4960 #ifde‡
 __˝lu•lus
 
 
-4960 #ifde‡
+4964 #ifde‡
 MG_MODULE_LINES
 
 
-4984 #i‚de‡
+4988 #i‚de‡
 CS_MONGOOSE_SRC_MQTT_H_
 
 
-4985 
+4989 
 	#CS_MONGOOSE_SRC_MQTT_H_
 
 
 	)
 
-4989 
+4993 
 	smg_mqâ_mesßge
  {
 
-4990 
+4994 
 cmd
 ;
 
-4991 
+4995 
 qos
 ;
 
-4992 
+4996 
 mg_°r
  
 t›ic
 ;
 
-4993 
+4997 
 mg_°r
  
 ∑ylﬂd
 ;
 
-4995 
+4999 
 uöt8_t
  
 c⁄«ck_ªt_code
 ;
 
-4996 
+5000 
 uöt16_t
  
 mesßge_id
 ;
 
-4999 
+5003 
 uöt8_t
  
 ¥Ÿocﬁ_vîsi⁄
 ;
 
-5000 
+5004 
 uöt8_t
  
 c⁄√˘_Êags
 ;
 
-5001 
+5005 
 uöt16_t
  
 kìp_Æive_timî
 ;
 
-5002 
+5006 
 mg_°r
  
 ¥Ÿocﬁ_«me
 ;
 
-5003 
+5007 
 mg_°r
  
 ˛õ¡_id
 ;
 
-5004 
+5008 
 mg_°r
  
 wûl_t›ic
 ;
 
-5005 
+5009 
 mg_°r
  
 wûl_mesßge
 ;
 
-5006 
+5010 
 mg_°r
  
 u£r_«me
 ;
 
-5007 
+5011 
 mg_°r
  
 ∑ssw‹d
 ;
 
-5010 
+5014 
 	smg_mqâ_t›ic_ex¥essi⁄
  {
 
-5011 c⁄° *
+5015 c⁄° *
 	gt›ic
 ;
 
-5012 
+5016 
 uöt8_t
  
 	gqos
 ;
 
-5015 
+5019 
 	smg_£nd_mqâ_h™dshake_›ts
  {
 
-5016 
+5020 
 	gÊags
 ;
 
-5017 
+5021 
 uöt16_t
  
 	gkìp_Æive
 ;
 
-5018 c⁄° *
+5022 c⁄° *
 	gwûl_t›ic
 ;
 
-5019 c⁄° *
+5023 c⁄° *
 	gwûl_mesßge
 ;
 
-5020 c⁄° *
+5024 c⁄° *
 	gu£r_«me
 ;
 
-5021 c⁄° *
+5025 c⁄° *
 	g∑ssw‹d
 ;
 
-5025 
+5029 
 	smg_mqâ_¥Ÿo_d©a
  {
 
-5026 
+5030 
 uöt16_t
  
 	gkìp_Æive
 ;
 
-5030 
+5034 
 	#MG_MQTT_CMD_CONNECT
  1
 
 	)
 
-5031 
+5035 
 	#MG_MQTT_CMD_CONNACK
  2
 
 	)
 
-5032 
+5036 
 	#MG_MQTT_CMD_PUBLISH
  3
 
 	)
 
-5033 
+5037 
 	#MG_MQTT_CMD_PUBACK
  4
 
 	)
 
-5034 
+5038 
 	#MG_MQTT_CMD_PUBREC
  5
 
 	)
 
-5035 
+5039 
 	#MG_MQTT_CMD_PUBREL
  6
 
 	)
 
-5036 
+5040 
 	#MG_MQTT_CMD_PUBCOMP
  7
 
 	)
 
-5037 
+5041 
 	#MG_MQTT_CMD_SUBSCRIBE
  8
 
 	)
 
-5038 
+5042 
 	#MG_MQTT_CMD_SUBACK
  9
 
 	)
 
-5039 
+5043 
 	#MG_MQTT_CMD_UNSUBSCRIBE
  10
 
 	)
 
-5040 
+5044 
 	#MG_MQTT_CMD_UNSUBACK
  11
 
 	)
 
-5041 
+5045 
 	#MG_MQTT_CMD_PINGREQ
  12
 
 	)
 
-5042 
+5046 
 	#MG_MQTT_CMD_PINGRESP
  13
 
 	)
 
-5043 
+5047 
 	#MG_MQTT_CMD_DISCONNECT
  14
 
 	)
 
-5046 
+5050 
 	#MG_MQTT_EVENT_BASE
  200
 
 	)
 
-5047 
+5051 
 	#MG_EV_MQTT_CONNECT
  (
 MG_MQTT_EVENT_BASE
@@ -100711,7 +100789,7 @@ MG_MQTT_CMD_CONNECT
 
 	)
 
-5048 
+5052 
 	#MG_EV_MQTT_CONNACK
  (
 MG_MQTT_EVENT_BASE
@@ -100721,7 +100799,7 @@ MG_MQTT_CMD_CONNACK
 
 	)
 
-5049 
+5053 
 	#MG_EV_MQTT_PUBLISH
  (
 MG_MQTT_EVENT_BASE
@@ -100731,7 +100809,7 @@ MG_MQTT_CMD_PUBLISH
 
 	)
 
-5050 
+5054 
 	#MG_EV_MQTT_PUBACK
  (
 MG_MQTT_EVENT_BASE
@@ -100741,7 +100819,7 @@ MG_MQTT_CMD_PUBACK
 
 	)
 
-5051 
+5055 
 	#MG_EV_MQTT_PUBREC
  (
 MG_MQTT_EVENT_BASE
@@ -100751,7 +100829,7 @@ MG_MQTT_CMD_PUBREC
 
 	)
 
-5052 
+5056 
 	#MG_EV_MQTT_PUBREL
  (
 MG_MQTT_EVENT_BASE
@@ -100761,7 +100839,7 @@ MG_MQTT_CMD_PUBREL
 
 	)
 
-5053 
+5057 
 	#MG_EV_MQTT_PUBCOMP
  (
 MG_MQTT_EVENT_BASE
@@ -100771,7 +100849,7 @@ MG_MQTT_CMD_PUBCOMP
 
 	)
 
-5054 
+5058 
 	#MG_EV_MQTT_SUBSCRIBE
  (
 MG_MQTT_EVENT_BASE
@@ -100781,7 +100859,7 @@ MG_MQTT_CMD_SUBSCRIBE
 
 	)
 
-5055 
+5059 
 	#MG_EV_MQTT_SUBACK
  (
 MG_MQTT_EVENT_BASE
@@ -100791,7 +100869,7 @@ MG_MQTT_CMD_SUBACK
 
 	)
 
-5056 
+5060 
 	#MG_EV_MQTT_UNSUBSCRIBE
  (
 MG_MQTT_EVENT_BASE
@@ -100801,7 +100879,7 @@ MG_MQTT_CMD_UNSUBSCRIBE
 
 	)
 
-5057 
+5061 
 	#MG_EV_MQTT_UNSUBACK
  (
 MG_MQTT_EVENT_BASE
@@ -100811,7 +100889,7 @@ MG_MQTT_CMD_UNSUBACK
 
 	)
 
-5058 
+5062 
 	#MG_EV_MQTT_PINGREQ
  (
 MG_MQTT_EVENT_BASE
@@ -100821,7 +100899,7 @@ MG_MQTT_CMD_PINGREQ
 
 	)
 
-5059 
+5063 
 	#MG_EV_MQTT_PINGRESP
  (
 MG_MQTT_EVENT_BASE
@@ -100831,7 +100909,7 @@ MG_MQTT_CMD_PINGRESP
 
 	)
 
-5060 
+5064 
 	#MG_EV_MQTT_DISCONNECT
  (
 MG_MQTT_EVENT_BASE
@@ -100841,19 +100919,19 @@ MG_MQTT_CMD_DISCONNECT
 
 	)
 
-5063 
+5067 
 	#MG_MQTT_RETAIN
  0x1
 
 	)
 
-5064 
+5068 
 	#MG_MQTT_DUP
  0x4
 
 	)
 
-5065 
+5069 
 	#MG_MQTT_QOS
 (
 qos
@@ -100861,7 +100939,7 @@ qos
 
 	)
 
-5066 
+5070 
 	#MG_MQTT_GET_QOS
 (
 Êags
@@ -100869,7 +100947,7 @@ qos
 
 	)
 
-5067 
+5071 
 	#MG_MQTT_SET_QOS
 (
 Êags
@@ -100879,37 +100957,37 @@ qos
 
 	)
 
-5070 
+5074 
 	#MG_MQTT_CLEAN_SESSION
  0x02
 
 	)
 
-5071 
+5075 
 	#MG_MQTT_HAS_WILL
  0x04
 
 	)
 
-5072 
+5076 
 	#MG_MQTT_WILL_RETAIN
  0x20
 
 	)
 
-5073 
+5077 
 	#MG_MQTT_HAS_PASSWORD
  0x40
 
 	)
 
-5074 
+5078 
 	#MG_MQTT_HAS_USER_NAME
  0x80
 
 	)
 
-5075 
+5079 
 	#MG_MQTT_GET_WILL_QOS
 (
 Êags
@@ -100917,7 +100995,7 @@ qos
 
 	)
 
-5076 
+5080 
 	#MG_MQTT_SET_WILL_QOS
 (
 Êags
@@ -100925,7 +101003,7 @@ qos
 qos
 ) \
 
-5077 (
+5081 (
 Êags
 Ë((ÊagsË& ~0x18Ë| ((
 qos
@@ -100933,47 +101011,47 @@ qos
 
 	)
 
-5080 
+5084 
 	#MG_EV_MQTT_CONNACK_ACCEPTED
  0
 
 	)
 
-5081 
+5085 
 	#MG_EV_MQTT_CONNACK_UNACCEPTABLE_VERSION
  1
 
 	)
 
-5082 
+5086 
 	#MG_EV_MQTT_CONNACK_IDENTIFIER_REJECTED
  2
 
 	)
 
-5083 
+5087 
 	#MG_EV_MQTT_CONNACK_SERVER_UNAVAILABLE
  3
 
 	)
 
-5084 
+5088 
 	#MG_EV_MQTT_CONNACK_BAD_AUTH
  4
 
 	)
 
-5085 
+5089 
 	#MG_EV_MQTT_CONNACK_NOT_AUTHORIZED
  5
 
 	)
 
-5087 #ifde‡
+5091 #ifde‡
 __˝lu•lus
 
 
-5104 
+5108 
 mg_£t_¥Ÿocﬁ_mqâ
 (
 mg_c⁄√˘i⁄
@@ -100981,7 +101059,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-5107 
+5111 
 mg_£nd_mqâ_h™dshake
 (
 mg_c⁄√˘i⁄
@@ -100991,7 +101069,7 @@ nc
 ˛õ¡_id
 );
 
-5110 
+5114 
 mg_£nd_mqâ_h™dshake_›t
 (
 mg_c⁄√˘i⁄
@@ -101001,11 +101079,11 @@ nc
 ˛õ¡_id
 ,
 
-5111 
+5115 
 mg_£nd_mqâ_h™dshake_›ts
 );
 
-5114 
+5118 
 mg_mqâ_publish
 (
 mg_c⁄√˘i⁄
@@ -101015,7 +101093,7 @@ nc
 t›ic
 ,
 
-5115 
+5119 
 uöt16_t
  
 mesßge_id
@@ -101025,13 +101103,13 @@ mesßge_id
 d©a
 ,
 
-5116 
+5120 
 size_t
  
 Àn
 );
 
-5119 
+5123 
 mg_mqâ_subs¸ibe
 (
 mg_c⁄√˘i⁄
@@ -101039,29 +101117,9 @@ mg_c⁄√˘i⁄
 nc
 ,
 
-5120 c⁄° 
+5124 c⁄° 
 mg_mqâ_t›ic_ex¥essi⁄
  *
-t›ics
-,
-
-5121 
-size_t
- 
-t›ics_Àn
-, 
-uöt16_t
- 
-mesßge_id
-);
-
-5124 
-mg_mqâ_unsubs¸ibe
-(
-mg_c⁄√˘i⁄
- *
-nc
-, **
 t›ics
 ,
 
@@ -101076,6 +101134,26 @@ mesßge_id
 );
 
 5128 
+mg_mqâ_unsubs¸ibe
+(
+mg_c⁄√˘i⁄
+ *
+nc
+, **
+t›ics
+,
+
+5129 
+size_t
+ 
+t›ics_Àn
+, 
+uöt16_t
+ 
+mesßge_id
+);
+
+5132 
 mg_mqâ_disc⁄√˘
 (
 mg_c⁄√˘i⁄
@@ -101083,7 +101161,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-5131 
+5135 
 mg_mqâ_c⁄«ck
 (
 mg_c⁄√˘i⁄
@@ -101095,7 +101173,7 @@ uöt8_t
 ªtu∫_code
 );
 
-5134 
+5138 
 mg_mqâ_puback
 (
 mg_c⁄√˘i⁄
@@ -101107,7 +101185,7 @@ uöt16_t
 mesßge_id
 );
 
-5137 
+5141 
 mg_mqâ_pubªc
 (
 mg_c⁄√˘i⁄
@@ -101119,7 +101197,7 @@ uöt16_t
 mesßge_id
 );
 
-5140 
+5144 
 mg_mqâ_pubªl
 (
 mg_c⁄√˘i⁄
@@ -101131,7 +101209,7 @@ uöt16_t
 mesßge_id
 );
 
-5143 
+5147 
 mg_mqâ_pubcomp
 (
 mg_c⁄√˘i⁄
@@ -101143,7 +101221,7 @@ uöt16_t
 mesßge_id
 );
 
-5149 
+5153 
 mg_mqâ_suback
 (
 mg_c⁄√˘i⁄
@@ -101159,13 +101237,13 @@ size_t
 qoss_Àn
 ,
 
-5150 
+5154 
 uöt16_t
  
 mesßge_id
 );
 
-5153 
+5157 
 mg_mqâ_unsuback
 (
 mg_c⁄√˘i⁄
@@ -101177,7 +101255,7 @@ uöt16_t
 mesßge_id
 );
 
-5156 
+5160 
 mg_mqâ_pög
 (
 mg_c⁄√˘i⁄
@@ -101185,7 +101263,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-5159 
+5163 
 mg_mqâ_p⁄g
 (
 mg_c⁄√˘i⁄
@@ -101193,7 +101271,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-5168 
+5172 
 mg_mqâ_√xt_subs¸ibe_t›ic
 (
 mg_mqâ_mesßge
@@ -101201,7 +101279,7 @@ mg_mqâ_mesßge
 msg
 ,
 
-5169 
+5173 
 mg_°r
  *
 t›ic
@@ -101213,53 +101291,53 @@ qos
 pos
 );
 
-5171 #ifde‡
+5175 #ifde‡
 __˝lu•lus
 
 
-5176 #ifde‡
+5180 #ifde‡
 MG_MODULE_LINES
 
 
-5200 #i‚de‡
+5204 #i‚de‡
 CS_MONGOOSE_SRC_MQTT_BROKER_H_
 
 
-5201 
+5205 
 	#CS_MONGOOSE_SRC_MQTT_BROKER_H_
 
 
 	)
 
-5203 #i‡
+5207 #i‡
 MG_ENABLE_MQTT_BROKER
 
 
-5208 #ifde‡
+5212 #ifde‡
 __˝lu•lus
 
 
-5212 
+5216 
 	#MG_MQTT_MAX_SESSION_SUBSCRIPTIONS
  512;
 
 	)
 
-5214 
+5218 
 mg_mqâ_brokî
 ;
 
-5217 
+5221 
 	smg_mqâ_£ssi⁄
  {
 
-5218 
+5222 
 mg_mqâ_brokî
  *
 brk
 ;
 
-5219 
+5223 
 LIST_ENTRY
 (
 mg_mqâ_£ssi⁄
@@ -101267,33 +101345,33 @@ mg_mqâ_£ssi⁄
 lök
 ;
 
-5220 
+5224 
 mg_c⁄√˘i⁄
  *
 nc
 ;
 
-5221 
+5225 
 size_t
  
 num_subs¸ùti⁄s
 ;
 
-5222 *
+5226 *
 u£r_d©a
 ;
 
-5223 
+5227 
 mg_mqâ_t›ic_ex¥essi⁄
  *
 subs¸ùti⁄s
 ;
 
-5227 
+5231 
 	smg_mqâ_brokî
  {
 
-5228 
+5232 
 LIST_HEAD
 (
 _mg_£sshód
@@ -101303,11 +101381,11 @@ mg_mqâ_£ssi⁄
 £ssi⁄s
 ;
 
-5229 *
+5233 *
 u£r_d©a
 ;
 
-5233 
+5237 
 mg_mqâ_brokî_öô
 (
 mg_mqâ_brokî
@@ -101317,7 +101395,7 @@ brk
 u£r_d©a
 );
 
-5260 
+5264 
 mg_mqâ_brokî
 (
 mg_c⁄√˘i⁄
@@ -101329,7 +101407,7 @@ ev
 d©a
 );
 
-5272 
+5276 
 mg_mqâ_£ssi⁄
  *
 mg_mqâ_√xt
@@ -101339,175 +101417,175 @@ mg_mqâ_brokî
 brk
 ,
 
-5273 
+5277 
 mg_mqâ_£ssi⁄
  *
 s
 );
 
-5275 #ifde‡
+5279 #ifde‡
 __˝lu•lus
 
 
-5281 #ifde‡
+5285 #ifde‡
 MG_MODULE_LINES
 
 
-5293 #i‚de‡
+5297 #i‚de‡
 CS_MONGOOSE_SRC_DNS_H_
 
 
-5294 
+5298 
 	#CS_MONGOOSE_SRC_DNS_H_
 
 
 	)
 
-5298 #ifde‡
+5302 #ifde‡
 __˝lu•lus
 
 
-5302 
+5306 
 	#MG_DNS_A_RECORD
  0x01
 
 	)
 
-5303 
+5307 
 	#MG_DNS_CNAME_RECORD
  0x05
 
 	)
 
-5304 
+5308 
 	#MG_DNS_PTR_RECORD
  0x0¯
 
 	)
 
-5305 
+5309 
 	#MG_DNS_TXT_RECORD
  0x10
 
 	)
 
-5306 
+5310 
 	#MG_DNS_AAAA_RECORD
  0x1¯
 
 	)
 
-5307 
+5311 
 	#MG_DNS_SRV_RECORD
  0x21
 
 	)
 
-5308 
+5312 
 	#MG_DNS_MX_RECORD
  0x0‡
 
 	)
 
-5310 
+5314 
 	#MG_MAX_DNS_QUESTIONS
  32
 
 	)
 
-5311 
+5315 
 	#MG_MAX_DNS_ANSWERS
  32
 
 	)
 
-5313 
+5317 
 	#MG_DNS_MESSAGE
  100
 
 	)
 
-5315 
+5319 
 	emg_dns_ªsour˚_ªc‹d_köd
  {
 
-5316 
+5320 
 MG_DNS_INVALID_RECORD
  = 0,
 
-5317 
+5321 
 MG_DNS_QUESTION
 ,
 
-5318 
+5322 
 MG_DNS_ANSWER
 
 
-5322 
+5326 
 	smg_dns_ªsour˚_ªc‹d
  {
 
-5323 
+5327 
 mg_°r
  
 «me
 ;
 
-5324 
+5328 
 πy≥
 ;
 
-5325 
+5329 
 r˛ass
 ;
 
-5326 
+5330 
 âl
 ;
 
-5327 
+5331 
 mg_dns_ªsour˚_ªc‹d_köd
  
 köd
 ;
 
-5328 
+5332 
 mg_°r
  
 rd©a
 ;
 
-5332 
+5336 
 	smg_dns_mesßge
  {
 
-5333 
+5337 
 mg_°r
  
 pkt
 ;
 
-5334 
+5338 
 uöt16_t
  
 Êags
 ;
 
-5335 
+5339 
 uöt16_t
  
 å™ß˘i⁄_id
 ;
 
-5336 
+5340 
 num_que°i⁄s
 ;
 
-5337 
+5341 
 num_™swîs
 ;
 
-5338 
+5342 
 mg_dns_ªsour˚_ªc‹d
  
 que°i⁄s
@@ -101515,7 +101593,7 @@ que°i⁄s
 MG_MAX_DNS_QUESTIONS
 ];
 
-5339 
+5343 
 mg_dns_ªsour˚_ªc‹d
  
 ™swîs
@@ -101523,13 +101601,13 @@ mg_dns_ªsour˚_ªc‹d
 MG_MAX_DNS_ANSWERS
 ];
 
-5342 
+5346 
 mg_dns_ªsour˚_ªc‹d
  *
 mg_dns_√xt_ªc‹d
 (
 
-5343 
+5347 
 mg_dns_mesßge
  *
 msg
@@ -101541,7 +101619,7 @@ mg_dns_ªsour˚_ªc‹d
 ¥ev
 );
 
-5356 
+5360 
 mg_dns_∑r£_ªc‹d_d©a
 (
 mg_dns_mesßge
@@ -101549,7 +101627,7 @@ mg_dns_mesßge
 msg
 ,
 
-5357 
+5361 
 mg_dns_ªsour˚_ªc‹d
  *
 º
@@ -101557,13 +101635,13 @@ mg_dns_ªsour˚_ªc‹d
 d©a
 ,
 
-5358 
+5362 
 size_t
  
 d©a_Àn
 );
 
-5363 
+5367 
 mg_£nd_dns_quîy
 (
 mg_c⁄√˘i⁄
@@ -101573,11 +101651,11 @@ nc
 «me
 ,
 
-5364 
+5368 
 quîy_ty≥
 );
 
-5371 
+5375 
 mg_dns_ö£π_hódî
 (
 mbuf
@@ -101589,13 +101667,13 @@ size_t
 pos
 ,
 
-5372 
+5376 
 mg_dns_mesßge
  *
 msg
 );
 
-5382 
+5386 
 mg_dns_c›y_que°i⁄s
 (
 mbuf
@@ -101607,7 +101685,7 @@ mg_dns_mesßge
 msg
 );
 
-5400 
+5404 
 mg_dns_ícode_ªc‹d
 (
 mbuf
@@ -101619,7 +101697,7 @@ mg_dns_ªsour˚_ªc‹d
 º
 ,
 
-5401 c⁄° *
+5405 c⁄° *
 «me
 , 
 size_t
@@ -101629,13 +101707,13 @@ size_t
 rd©a
 ,
 
-5402 
+5406 
 size_t
  
 æí
 );
 
-5407 
+5411 
 mg_dns_ícode_«me
 (
 mbuf
@@ -101649,7 +101727,7 @@ size_t
 Àn
 );
 
-5410 
+5414 
 mg_∑r£_dns
 (c⁄° *
 buf
@@ -101661,7 +101739,7 @@ mg_dns_mesßge
 msg
 );
 
-5425 
+5429 
 size_t
  
 mg_dns_uncom¥ess_«me
@@ -101675,13 +101753,13 @@ mg_°r
 «me
 ,
 
-5426 *
+5430 *
 d°
 , 
 d°_Àn
 );
 
-5440 
+5444 
 mg_£t_¥Ÿocﬁ_dns
 (
 mg_c⁄√˘i⁄
@@ -101689,61 +101767,61 @@ mg_c⁄√˘i⁄
 nc
 );
 
-5442 #ifde‡
+5446 #ifde‡
 __˝lu•lus
 
 
-5446 #ifde‡
+5450 #ifde‡
 MG_MODULE_LINES
 
 
-5460 #i‚de‡
+5464 #i‚de‡
 CS_MONGOOSE_SRC_DNS_SERVER_H_
 
 
-5461 
+5465 
 	#CS_MONGOOSE_SRC_DNS_SERVER_H_
 
 
 	)
 
-5463 #i‡
+5467 #i‡
 MG_ENABLE_DNS_SERVER
 
 
-5467 #ifde‡
+5471 #ifde‡
 __˝lu•lus
 
 
-5471 
+5475 
 	#MG_DNS_SERVER_DEFAULT_TTL
  3600
 
 	)
 
-5473 
+5477 
 	smg_dns_ª∂y
  {
 
-5474 
+5478 
 mg_dns_mesßge
  *
 msg
 ;
 
-5475 
+5479 
 mbuf
  *
 io
 ;
 
-5476 
+5480 
 size_t
  
 °¨t
 ;
 
-5507 
+5511 
 mg_dns_ª∂y
  
 mg_dns_¸óã_ª∂y
@@ -101753,13 +101831,13 @@ mbuf
 io
 ,
 
-5508 
+5512 
 mg_dns_mesßge
  *
 msg
 );
 
-5518 
+5522 
 mg_dns_ª∂y_ªc‹d
 (
 mg_dns_ª∂y
@@ -101767,13 +101845,13 @@ mg_dns_ª∂y
 ª∂y
 ,
 
-5519 
+5523 
 mg_dns_ªsour˚_ªc‹d
  *
 que°i⁄
 ,
 
-5520 c⁄° *
+5524 c⁄° *
 «me
 , 
 πy≥
@@ -101783,13 +101861,13 @@ que°i⁄
 rd©a
 ,
 
-5521 
+5525 
 size_t
  
 rd©a_Àn
 );
 
-5535 
+5539 
 mg_dns_£nd_ª∂y
 (
 mg_c⁄√˘i⁄
@@ -101801,49 +101879,49 @@ mg_dns_ª∂y
 r
 );
 
-5537 #ifde‡
+5541 #ifde‡
 __˝lu•lus
 
 
-5543 #ifde‡
+5547 #ifde‡
 MG_MODULE_LINES
 
 
-5555 #i‚de‡
+5559 #i‚de‡
 CS_MONGOOSE_SRC_RESOLV_H_
 
 
-5556 
+5560 
 	#CS_MONGOOSE_SRC_RESOLV_H_
 
 
 	)
 
-5560 #ifde‡
+5564 #ifde‡
 __˝lu•lus
 
 
-5564 
+5568 
 	emg_ªsﬁve_îr
  {
 
-5565 
+5569 
 MG_RESOLVE_OK
  = 0,
 
-5566 
+5570 
 MG_RESOLVE_NO_ANSWERS
  = 1,
 
-5567 
+5571 
 MG_RESOLVE_EXCEEDED_RETRY_COUNT
  = 2,
 
-5568 
+5572 
 MG_RESOLVE_TIMEOUT
  = 3
 
-5571 (*
+5575 (*
 mg_ªsﬁve_ˇŒback_t
 )(
 	tmg_dns_mesßge
@@ -101851,43 +101929,43 @@ mg_ªsﬁve_ˇŒback_t
 	tdns_mesßge
 ,
 
-5572 *
+5576 *
 	tu£r_d©a
 , 
 	tmg_ªsﬁve_îr
 );
 
-5575 
+5579 
 	smg_ªsﬁve_async_›ts
  {
 
-5576 c⁄° *
+5580 c⁄° *
 «me£rvî_uæ
 ;
 
-5577 
+5581 
 max_ªåõs
 ;
 
-5578 
+5582 
 timeout
 ;
 
-5579 
+5583 
 ac˚±_lôîÆ
 ;
 
-5580 
+5584 
 ⁄ly_lôîÆ
 ;
 
-5581 
+5585 
 mg_c⁄√˘i⁄
  **
 dns_c⁄n
 ;
 
-5585 
+5589 
 mg_ªsﬁve_async
 (
 mg_mgr
@@ -101899,7 +101977,7 @@ mgr
 quîy
 ,
 
-5586 
+5590 
 mg_ªsﬁve_ˇŒback_t
  
 cb
@@ -101907,7 +101985,7 @@ cb
 d©a
 );
 
-5609 
+5613 
 mg_ªsﬁve_async_›t
 (
 mg_mgr
@@ -101919,7 +101997,7 @@ mgr
 quîy
 ,
 
-5610 
+5614 
 mg_ªsﬁve_ˇŒback_t
  
 cb
@@ -101927,13 +102005,13 @@ cb
 d©a
 ,
 
-5611 
+5615 
 mg_ªsﬁve_async_›ts
  
 ›ts
 );
 
-5618 
+5622 
 mg_ªsﬁve_‰om_ho°s_fûe
 (c⁄° *
 ho°
@@ -101943,77 +102021,77 @@ sockë_addªss
 uß
 );
 
-5620 #ifde‡
+5624 #ifde‡
 __˝lu•lus
 
 
-5624 #ifde‡
+5628 #ifde‡
 MG_MODULE_LINES
 
 
-5658 #i‚de‡
+5662 #i‚de‡
 CS_MONGOOSE_SRC_COAP_H_
 
 
-5659 
+5663 
 	#CS_MONGOOSE_SRC_COAP_H_
 
 
 	)
 
-5661 #i‡
+5665 #i‡
 MG_ENABLE_COAP
 
 
-5663 
+5667 
 	#MG_COAP_MSG_TYPE_FIELD
  0x2
 
 	)
 
-5664 
+5668 
 	#MG_COAP_CODE_CLASS_FIELD
  0x4
 
 	)
 
-5665 
+5669 
 	#MG_COAP_CODE_DETAIL_FIELD
  0x8
 
 	)
 
-5666 
+5670 
 	#MG_COAP_MSG_ID_FIELD
  0x10
 
 	)
 
-5667 
+5671 
 	#MG_COAP_TOKEN_FIELD
  0x20
 
 	)
 
-5668 
+5672 
 	#MG_COAP_OPTIOMG_FIELD
  0x40
 
 	)
 
-5669 
+5673 
 	#MG_COAP_PAYLOAD_FIELD
  0x80
 
 	)
 
-5671 
+5675 
 	#MG_COAP_ERROR
  0x10000
 
 	)
 
-5672 
+5676 
 	#MG_COAP_FORMAT_ERROR
  (
 MG_COAP_ERROR
@@ -102021,7 +102099,7 @@ MG_COAP_ERROR
 
 	)
 
-5673 
+5677 
 	#MG_COAP_IGNORE
  (
 MG_COAP_ERROR
@@ -102029,7 +102107,7 @@ MG_COAP_ERROR
 
 	)
 
-5674 
+5678 
 	#MG_COAP_NOT_ENOUGH_DATA
  (
 MG_COAP_ERROR
@@ -102037,7 +102115,7 @@ MG_COAP_ERROR
 
 	)
 
-5675 
+5679 
 	#MG_COAP_NETWORK_ERROR
  (
 MG_COAP_ERROR
@@ -102045,67 +102123,67 @@ MG_COAP_ERROR
 
 	)
 
-5677 
+5681 
 	#MG_COAP_MSG_CON
  0
 
 	)
 
-5678 
+5682 
 	#MG_COAP_MSG_NOC
  1
 
 	)
 
-5679 
+5683 
 	#MG_COAP_MSG_ACK
  2
 
 	)
 
-5680 
+5684 
 	#MG_COAP_MSG_RST
  3
 
 	)
 
-5681 
+5685 
 	#MG_COAP_MSG_MAX
  3
 
 	)
 
-5683 
+5687 
 	#MG_COAP_CODECLASS_REQUEST
  0
 
 	)
 
-5684 
+5688 
 	#MG_COAP_CODECLASS_RESP_OK
  2
 
 	)
 
-5685 
+5689 
 	#MG_COAP_CODECLASS_CLIENT_ERR
  4
 
 	)
 
-5686 
+5690 
 	#MG_COAP_CODECLASS_SRV_ERR
  5
 
 	)
 
-5688 
+5692 
 	#MG_COAP_EVENT_BASE
  300
 
 	)
 
-5689 
+5693 
 	#MG_EV_COAP_CON
  (
 MG_COAP_EVENT_BASE
@@ -102115,7 +102193,7 @@ MG_COAP_MSG_CON
 
 	)
 
-5690 
+5694 
 	#MG_EV_COAP_NOC
  (
 MG_COAP_EVENT_BASE
@@ -102125,7 +102203,7 @@ MG_COAP_MSG_NOC
 
 	)
 
-5691 
+5695 
 	#MG_EV_COAP_ACK
  (
 MG_COAP_EVENT_BASE
@@ -102135,7 +102213,7 @@ MG_COAP_MSG_ACK
 
 	)
 
-5692 
+5696 
 	#MG_EV_COAP_RST
  (
 MG_COAP_EVENT_BASE
@@ -102145,91 +102223,91 @@ MG_COAP_MSG_RST
 
 	)
 
-5699 
+5703 
 	smg_cﬂp_›ti⁄
  {
 
-5700 
+5704 
 mg_cﬂp_›ti⁄
  *
 √xt
 ;
 
-5701 
+5705 
 uöt32_t
  
 numbî
 ;
 
-5702 
+5706 
 mg_°r
  
 vÆue
 ;
 
-5706 
+5710 
 	smg_cﬂp_mesßge
  {
 
-5707 
+5711 
 uöt32_t
  
 	gÊags
 ;
 
-5708 
+5712 
 uöt8_t
  
 	gmsg_ty≥
 ;
 
-5709 
+5713 
 uöt8_t
  
 	gcode_˛ass
 ;
 
-5710 
+5714 
 uöt8_t
  
 	gcode_dëaû
 ;
 
-5711 
+5715 
 uöt16_t
  
 	gmsg_id
 ;
 
-5712 
+5716 
 mg_°r
  
 	gtokí
 ;
 
-5713 
+5717 
 mg_cﬂp_›ti⁄
  *
 	g›ti⁄s
 ;
 
-5714 
+5718 
 mg_°r
  
 	g∑ylﬂd
 ;
 
-5715 
+5719 
 mg_cﬂp_›ti⁄
  *
 	g›tiomg_èû
 ;
 
-5718 #ifde‡
+5722 #ifde‡
 __˝lu•lus
 
 
-5723 
+5727 
 mg_£t_¥Ÿocﬁ_cﬂp
 (
 mg_c⁄√˘i⁄
@@ -102237,7 +102315,7 @@ mg_c⁄√˘i⁄
 nc
 );
 
-5730 
+5734 
 mg_cﬂp_›ti⁄
  *
 mg_cﬂp_add_›ti⁄
@@ -102247,7 +102325,7 @@ mg_cﬂp_mesßge
 cm
 ,
 
-5731 
+5735 
 uöt32_t
  
 numbî
@@ -102255,13 +102333,13 @@ numbî
 vÆue
 ,
 
-5732 
+5736 
 size_t
  
 Àn
 );
 
-5738 
+5742 
 mg_cﬂp_‰ì_›ti⁄s
 (
 mg_cﬂp_mesßge
@@ -102269,7 +102347,7 @@ mg_cﬂp_mesßge
 cm
 );
 
-5751 
+5755 
 uöt32_t
  
 mg_cﬂp_£nd_mesßge
@@ -102279,13 +102357,13 @@ mg_c⁄√˘i⁄
 nc
 ,
 
-5752 
+5756 
 mg_cﬂp_mesßge
  *
 cm
 );
 
-5759 
+5763 
 uöt32_t
  
 mg_cﬂp_£nd_ack
@@ -102299,7 +102377,7 @@ uöt16_t
 msg_id
 );
 
-5776 
+5780 
 uöt32_t
  
 mg_cﬂp_∑r£
@@ -102313,7 +102391,7 @@ mg_cﬂp_mesßge
 cm
 );
 
-5783 
+5787 
 uöt32_t
  
 mg_cﬂp_compo£
@@ -102327,35 +102405,35 @@ mbuf
 io
 );
 
-5785 #ifde‡
+5789 #ifde‡
 __˝lu•lus
 
 
-5792 #ifde‡
+5796 #ifde‡
 MG_MODULE_LINES
 
 
-5800 #i‚de‡
+5804 #i‚de‡
 CS_MONGOOSE_SRC_SNTP_H_
 
 
-5801 
+5805 
 	#CS_MONGOOSE_SRC_SNTP_H_
 
 
 	)
 
-5803 #i‡
+5807 #i‡
 MG_ENABLE_SNTP
 
 
-5805 
+5809 
 	#MG_SNTP_EVENT_BASE
  500
 
 	)
 
-5811 
+5815 
 	#MG_SNTP_REPLY
  (
 MG_SNTP_EVENT_BASE
@@ -102363,7 +102441,7 @@ MG_SNTP_EVENT_BASE
 
 	)
 
-5814 
+5818 
 	#MG_SNTP_MALFORMED_REPLY
  (
 MG_SNTP_EVENT_BASE
@@ -102371,7 +102449,7 @@ MG_SNTP_EVENT_BASE
 
 	)
 
-5817 
+5821 
 	#MG_SNTP_FAILED
  (
 MG_SNTP_EVENT_BASE
@@ -102379,19 +102457,19 @@ MG_SNTP_EVENT_BASE
 
 	)
 
-5819 
+5823 
 	smg_¢ç_mesßge
  {
 
-5821 
+5825 
 kiss_of_dóth
 ;
 
-5823 
+5827 
 time
 ;
 
-5827 
+5831 
 mg_c⁄√˘i⁄
  *
 mg_¢ç_c⁄√˘
@@ -102401,17 +102479,17 @@ mg_mgr
 mgr
 ,
 
-5828 
+5832 
 mg_evít_h™dÀr_t
  
 evít_h™dÀr
 ,
 
-5829 c⁄° *
+5833 c⁄° *
 ¢ç_£rvî_«me
 );
 
-5832 
+5836 
 mg_¢ç_£nd_ªque°
 (
 mg_c⁄√˘i⁄
@@ -102419,7 +102497,7 @@ mg_c⁄√˘i⁄
 c
 );
 
-5841 
+5845 
 mg_c⁄√˘i⁄
  *
 mg_¢ç_gë_time
@@ -102429,27 +102507,27 @@ mg_mgr
 mgr
 ,
 
-5842 
+5846 
 mg_evít_h™dÀr_t
  
 evít_h™dÀr
 ,
 
-5843 c⁄° *
+5847 c⁄° *
 ¢ç_£rvî_«me
 );
 
-5849 #ifde‡
+5853 #ifde‡
 UNSAFE_COMPILE
 
 
-5850 
+5854 
 	#sgx_¥iv©e
 
 
 	)
 
-5851 
+5855 
 	#‰ód_¥iv©e
  
 ‰ód
@@ -102457,7 +102535,7 @@ UNSAFE_COMPILE
 
 	)
 
-5853 
+5857 
 size_t
  
 ‰ód_¥iv©e
@@ -102475,7 +102553,7 @@ FILE
 °ªam
 );
 
-5857 
+5861 
 gë_í¸y±_Àngth
 (
 sgx_¥iv©e
@@ -102487,13 +102565,13 @@ size_t
 n
 );
 
-5858 
+5862 
 is_¥iv©e_fûe
 (c⁄° * 
 ∑th
 );
 
-5859 
+5863 
 í¸y±
 (* 
 de°

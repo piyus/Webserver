@@ -59,7 +59,7 @@ int is_private_file(const char* path){
 
 int encrypt(char * dest, const char *src, size_t n ) {
 	int i;
-	for(i=0;i<n; i++) {
+	for(i=0;i<2*n; i++) {
 		dest[i]='*';
 	}
 	return 0;
@@ -105,8 +105,6 @@ size_t fread__wrapper( void * ptr, size_t size, size_t count, FILE * stream ) {
 
 void* mymalloc(size_t);
 size_t fread_private__wrapper ( void * ptr, size_t size, size_t count, FILE * stream ) {
-
-/*	
 	assert_private(ptr);
 	assert_private((char*)ptr + size*count);
 	enum fd_type type = fds_type[_fileno(stream)];
@@ -117,9 +115,10 @@ size_t fread_private__wrapper ( void * ptr, size_t size, size_t count, FILE * st
 		printf("Attempting to read public file with private_read\n");
 		exit(-1);
 	}
-	*/
+	
 	char *public_ptr = mymalloc(size * count);
 	int ret = fread(public_ptr, size, count, stream);
+	memcpy(ptr, public_ptr, ret * size);
 	myfree(public_ptr);
 	return ret;
 }

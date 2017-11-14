@@ -7,11 +7,14 @@
 
 #include <time.h>
 #include <direct.h>
+#include <assert.h>
 
 
 #pragma comment(lib, "Ws2_32.lib")
 #pragma warning(disable:4996)
 
+
+#define _wassert assert
 
 extern "C" {
 void* mymalloc(size_t);
