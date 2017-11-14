@@ -83,4 +83,6 @@ void* function_pointers[] = {
 	(void*)myrealloc, // 80
 	(void*)mycalloc, // 81
 	(void*)myfree, // 82
+	(void*)fopen, // 83
+	(void*)exit, // 84
 };

@@ -4,7 +4,7 @@ move functions.asm enclave
 cd enclave
 set CCP=C:\Users\piyus\asplos\build\Release\bin
 rem call build.bat main
-rem call build.bat mongoose
+call build.bat mongoose
 call build.bat simplest_web_server
 rem ar -ru main.a mongoose.o simplest_web_server.o
 rem rem move main.a main.o
@@ -21,6 +21,8 @@ rem move main.a main.o
 
 ml64 -c main.asm
 ml64 -c stubs.asm
+cl -c library.c
+
 cd ..
 cd app
 ml64 -c app_asm.asm

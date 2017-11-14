@@ -191,7 +191,7 @@
       </FunctionLevelLinking>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\sgxc_support\sgx_start.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\mongoose.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\simplest_web_server.o;C:\Users\piyus\sgxc_support\sgx_end.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
+      <AdditionalDependencies>sgx_trts.lib;sgx_tstdc.lib;sgx_tservice.lib;sgx_tcxx.lib;sgx_tcrypto.lib;C:\Users\piyus\sgxc_support\sgx_start.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\mongoose.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\simplest_web_server.o;C:\Users\piyus\sgxc_support\sgx_end.o;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\library.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\main.obj;C:\Users\piyus\Desktop\INTEL\src\Webserver\Enclave\stubs.obj</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SGXSDKInstallPath)bin\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <EntryPointSymbol>

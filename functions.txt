@@ -80,3 +80,5 @@ mymalloc
 myrealloc
 mycalloc
 myfree
+fopen
+exit
